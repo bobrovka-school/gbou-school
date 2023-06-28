@@ -4,7 +4,8 @@
 	"description": "Сайт ГБОУ СОШ с. Бобровка",
 	"main": "Grunfile.js",
 	"scripts": {
-		"test": "npm i --legacy-peer-deps && bower install"
+		"test": "npm i --legacy-peer-deps && bower install",
+		"build": "grunt -v"
 	},
 	"repository": {
 		"type": "git",

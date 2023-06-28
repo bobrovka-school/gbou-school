@@ -432,6 +432,14 @@ module.exports = function(grunt) {
 			}
 		},
 		copy: {
+			favicons: {
+				expand: true,
+				cwd: 'src/favicons',
+				src: [
+					'**'
+				],
+				dest: __dirname + "/site/",
+			},
 			fonts: {
 				expand: true,
 				cwd: 'src/fonts',
