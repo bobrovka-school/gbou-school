@@ -1,0 +1,17 @@
+{
+	"name": "bobrovka_site",
+	"description": "Сайт ГБОУ СОШ с. Бобровка",
+	"main": "Grunfile.js",
+	"authors": [
+		"ProjectSoft <projectsoft2009@yandex.ru>"
+	],
+	"license": "MIT",
+	"homepage": "https://github.com/bobrovka-school/gbou-school",
+	"ignore": [
+		"**/.*",
+		"node_modules",
+		"bower_components",
+		"test",
+		"tests"
+	]
+}

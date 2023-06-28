@@ -1,0 +1,19 @@
+{
+	"name": "bobrovka_site",
+	"version": "1.0.0",
+	"description": "Сайт ГБОУ СОШ с. Бобровка",
+	"main": "Grunfile.js",
+	"scripts": {
+		"test": "npm i --legacy-peer-deps && bower install"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/bobrovka-school/gbou-school.git"
+	},
+	"author": "ProjectSoft <projectsoft2009@yandex.ru>",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/bobrovka-school/gbou-school/issues"
+	},
+	"homepage": "https://github.com/bobrovka-school/gbou-school#readme"
+}
