@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" prefix="og: http://ogp.me/ns#">
 	<head>
-		<title>[*titl*]</title>
 		<base href="[(site_url)]">
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="cmsmagazine" content="d8e7426ec72ad3e4ea38b09ebf01284">
 		<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
-		<meta name="yandex-verification" content="[(yandex_verification)]">[*noIndex*]
+		<meta name="yandex-verification" content="[(yandex_verification)]">
+		<title>[*titl*]</title>[*noIndex*]
 		<!-- Favicons-->
 		<link rel="apple-touch-icon" sizes="57x57" href="[(site_url)]apple-icon-57x57.png">
 		<link rel="apple-touch-icon" sizes="60x60" href="[(site_url)]apple-icon-60x60.png">
@@ -27,16 +27,18 @@
 		<meta name="msapplication-TileColor" content="#ffffff">
 		<meta name="msapplication-TileImage" content="[(site_url)]ms-icon-144x144.png">
 		<meta name="theme-color" content="#ffffff">
-		<link type="text/css" rel="stylesheet" href="[(site_url)]assets/templates/projectsoft/css/main.min.css?f72f033b0e2cc7d69bfa32d4dfbcd664">
-		<link type="text/css" rel="stylesheet" href="[(site_url)]css.css?f72f033b0e2cc7d69bfa32d4dfbcd664">
+		<link type="text/css" rel="stylesheet" href="[(site_url)]assets/templates/projectsoft/css/main.min.css?661af8329b149be1c730f13a666739df">
+		<link type="text/css" rel="stylesheet" href="[(site_url)]css.css?661af8329b149be1c730f13a666739df">
 		<meta name="apple-mobile-web-app-title" content="[(site_name:notags:strip)]">
 		<meta name="application-name" content="[(site_name:notags:strip)]">
 		<meta name="title" content="[*pagetitle:notags:strip*]">
 		<meta name="description" content="[*desc:notags:strip*]">
 		<meta name="keywords" content="[*keyw:notags:strip*]">
 		<meta name="author" content="[(site_name)]">
-		<link rel="alternate" type="application/rss+xml" title="RSS-лента [(site_name)]" href="[(site_url)][~32~]"><@IF:[*id:is(2)*]>
+		<!-- RSS-->
+		<link rel="alternate" type="application/rss+xml" title="RSS-лента [(site_name)]" href="[(site_url)]sitemap.xml"><@IF:[*id:is(2)*]>
 		<link rel="canonical" href="[(site_url)][~[*id*]~]"><@ENDIF>
+		<!-- Open Graph-->
 		<meta name="og:title" content="[*pagetitle:notags:strip*]">
 		<meta name="og:description" content="[*desc:notags:strip*]">[[ogImage]]
 	</head>

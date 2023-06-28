@@ -27,7 +27,15 @@ site/assets/vendor
 # Snippets
 site/assets/snippets/*
 
+# Snippet phpthumb
+!site/assets/snippets/phpthumb
+site/assets/snippets/phpthumb/*
+!site/assets/snippets/phpthumb/snippet.thumb.php
+
+# Custom snippets
 !site/assets/snippets/ogImage
+!site/assets/snippets/dateRus
+!site/assets/snippets/GetEvoVideo
 
 # Modules
 site/assets/modules/*
@@ -35,14 +43,29 @@ site/assets/modules/*
 # Plugins
 site/assets/plugins/*
 
+# Custom plugins
+!site/assets/plugins/EvoVideo
+!site/assets/plugins/help_widget
+
+# Plugin PageBuilder
+!site/assets/plugins/pagebuilder
+site/assets/plugins/pagebuilder/*
+!site/assets/plugins/pagebuilder/config
+site/assets/plugins/pagebuilder/config/*
+!site/assets/plugins/pagebuilder/config/container.programms.php
+!site/assets/plugins/pagebuilder/config/documents.php
+
 # Templates
 site/assets/templates/*
 
+# Custom Templates
 !site/assets/templates/.*
 !site/assets/templates/projectsoft
 
 # TV
-site/assets/tvs/*.*
+site/assets/tvs/*
+
+!site/assets/tvs/EvoVideo
 
 # Files
 site/.*
@@ -55,3 +78,4 @@ site/food/*.xlsx
 !.gitignore
 !site/.htaccess
 !site/LICENSE.md
+!site/robots.txt
