@@ -6,6 +6,7 @@ node_modules
 test
 tests
 
+# SublimeText workspace file
 *.sublime-workspace
 
 site/manager
@@ -23,20 +24,27 @@ site/assets/lib
 site/assets/site
 site/assets/vendor
 
+# Snippets
 site/assets/snippets/*
 
+!site/assets/snippets/ogImage
+
+# Modules
 site/assets/modules/*
 
+# Plugins
 site/assets/plugins/*
 
+# Templates
 site/assets/templates/*
 
 !site/assets/templates/.*
 !site/assets/templates/projectsoft
 
+# TV
 site/assets/tvs/*.*
 
-
+# Files
 site/.*
 site/*.md
 site/*.php
@@ -44,5 +52,6 @@ site/*.txt
 site/food/*.xlsx
 
 !site/.editorconfig
+!.gitignore
 !site/.htaccess
 !site/LICENSE.md
