@@ -55,6 +55,16 @@ site/assets/plugins/pagebuilder/config/*
 !site/assets/plugins/pagebuilder/config/container.programms.php
 !site/assets/plugins/pagebuilder/config/documents.php
 
+# Plugin TinyMCE4
+!site/assets/plugins/tinymce4
+site/assets/plugins/tinymce4/*
+!site/assets/plugins/tinymce4/theme
+site/assets/plugins/tinymce4/theme/*
+!site/assets/plugins/tinymce4/theme/theme.tinymce4.site.inc.php
+
+# Plugin Global
+!site/assets/plugins/global
+
 # Templates
 site/assets/templates/*
 
