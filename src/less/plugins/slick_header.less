@@ -1,10 +1,18 @@
 #slick-header {
+	aspect-ratio: ~'3 / 1';
 	.slick {
 		&-item {
-			display: block !important;
+			display: none !important;
 			img {
 				display: block;
 				width: 100%;
+			}
+		}
+	}
+	&.slick-initialized {
+		.slick {
+			&-item {
+				display: block !important;
 			}
 		}
 	}

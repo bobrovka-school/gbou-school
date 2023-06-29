@@ -1,0 +1,41 @@
+.header {
+	&-navigation {
+		background-color: #3a3d41;
+		margin-bottom: 0;
+		display: block;
+		.clearfix();
+		text-align: center;
+		nav {
+			> ul {
+				margin: 0;
+				padding: 0;
+				display: flex;
+				justify-content: center;
+				list-style: none;
+				flex-wrap: wrap;
+			}
+			li {
+				display: block;
+				list-style: none;
+				a,
+				span {
+					color: #eee;
+					display: block;
+					text-decoration: none !important;
+					line-height: 2.7;
+					outline: none !important;
+					padding-left: 15px;
+					padding-right: 15px;
+				}
+				span {
+					background-color: #000;
+				}
+				&:hover {
+					> a {
+						background-color: #000;
+					}
+				}
+			}
+		}
+	}
+}
