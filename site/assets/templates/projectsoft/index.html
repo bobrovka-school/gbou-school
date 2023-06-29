@@ -28,8 +28,8 @@
 		<meta name="msapplication-TileColor" content="#ffffff">
 		<meta name="msapplication-TileImage" content="[(site_url)]ms-icon-144x144.png">
 		<meta name="theme-color" content="#ffffff">
-		<link type="text/css" rel="stylesheet" href="[(site_url)]assets/templates/projectsoft/css/main.min.css?80d97035c9d4657dddecd58a3331320c">
-		<link type="text/css" rel="stylesheet" href="[(site_url)]css.css?80d97035c9d4657dddecd58a3331320c">
+		<link type="text/css" rel="stylesheet" href="[(site_url)]assets/templates/projectsoft/css/main.min.css?dfefd6fb34c27709949cbf21b73f52fd">
+		<link type="text/css" rel="stylesheet" href="[(site_url)]css.css?dfefd6fb34c27709949cbf21b73f52fd">
 		<meta name="apple-mobile-web-app-title" content="[(site_name:notags:strip)]">
 		<meta name="application-name" content="[(site_name:notags:strip)]">
 		<meta name="title" content="[*pagetitle:notags:strip*]">
@@ -82,7 +82,10 @@
 							<header class="entry-header">
 								<h1 class="entry-title">[*longtitle*]</h1>
 							</header>
-							<div class="entry-content">[*content*]</div>
+							<div class="entry-content">
+								{{@FILE assets/templates/projectsoft/tpl/gosuslugi.html}}
+								[*content*]
+							</div>
 						</article>
 					</div>
 				</div>
