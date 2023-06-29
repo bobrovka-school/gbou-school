@@ -8,6 +8,7 @@
 		<meta name="cmsmagazine" content="d8e7426ec72ad3e4ea38b09ebf01284">
 		<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
 		<meta name="yandex-verification" content="[(yandex_verification)]">
+		<style type="text/css"></style>
 		<title>[*titl*]</title>[*noIndex*]
 		<!-- Favicons-->
 		<link rel="apple-touch-icon" sizes="57x57" href="[(site_url)]apple-icon-57x57.png">
@@ -27,8 +28,8 @@
 		<meta name="msapplication-TileColor" content="#ffffff">
 		<meta name="msapplication-TileImage" content="[(site_url)]ms-icon-144x144.png">
 		<meta name="theme-color" content="#ffffff">
-		<link type="text/css" rel="stylesheet" href="[(site_url)]assets/templates/projectsoft/css/main.min.css?59e1b3404b1ff2a690fe5b5b7eac00e6">
-		<link type="text/css" rel="stylesheet" href="[(site_url)]css.css?59e1b3404b1ff2a690fe5b5b7eac00e6">
+		<link type="text/css" rel="stylesheet" href="[(site_url)]assets/templates/projectsoft/css/main.min.css?96ae3aa3c86ef0dea39ac0568f551be6">
+		<link type="text/css" rel="stylesheet" href="[(site_url)]css.css?96ae3aa3c86ef0dea39ac0568f551be6">
 		<meta name="apple-mobile-web-app-title" content="[(site_name:notags:strip)]">
 		<meta name="application-name" content="[(site_name:notags:strip)]">
 		<meta name="title" content="[*pagetitle:notags:strip*]">
@@ -45,7 +46,35 @@
 	</head>
 	<body>
 		<div class="body">
-			<header id="masthead" role="banner">Шапка</header>
+			<header id="masthead" role="banner">
+				<div class="headerpage">
+					<div class="header-page container">
+						<div class="header-group">
+							<p class="site-title">
+								<@IF:[*id:is(1)*]>
+								[(site_name)]
+								<@ELSE><a href="[(site_url)]">[(site_name)]</a><@ENDIF>
+							</p>
+							<p class="site-description">Мы рады видеть Вас на официальном сайте государственного бюджетного общеобразовательного учреждения средней общеобразовательной школы с. Бобровка муниципального района Кинельский Самарской области</p>
+						</div>
+					</div>
+					<div class="header-slick">
+						<div id="slick-header">
+							<div class="slick-item"><img src="[(site_url)]assets/templates/projectsoft/images/slider-0001.jpg" alt="[(site_name)]"></div>
+							<div class="slick-item"><img src="[(site_url)]assets/templates/projectsoft/images/slider-0002.jpg" alt="[(site_name)]"></div>
+							<div class="slick-item"><img src="[(site_url)]assets/templates/projectsoft/images/slider-0003.jpg" alt="[(site_name)]"></div>
+						</div>
+					</div>
+					<div class="header-navigation">
+						<nav role="navigation">
+							<ul>
+								<li><span>Home</span></li>
+								<li><a href="/news/">News</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</header>
 			<div class="main">
 				<div class="primary">
 					<div id="content" role="main">
@@ -59,7 +88,45 @@
 				</div>
 				<div class="secondary" id="secondary" role="complementary">
 					<div class="widgets">
-						<div class="widget">Виджеты</div>
+						<div class="widget">
+							<article class="widget_director">
+								<header class="widget_director-header">
+									<h3 class="widget_director-title"><strong>Директор:</strong></h3>
+									<p><strong>Гойколова Марина Валерьевна</strong></p>
+								</header>
+								<div class="widget_director-content">
+									<dl>
+										<dt>
+											<p><strong>Адрес:</strong></p>
+										</dt>
+										<dd>
+											<p><i class="icon-home"></i>446406, Россия, Самарская область, Кинельский район, с. Бобровка, улица Кирова, д. 28-Б</p>
+										</dd>
+										<dt>
+											<p><strong>Телефон:</strong></p>
+										</dt>
+										<dd>
+											<p><i class="icon-phone"></i>8(84663)3-25-18</p>
+										</dd>
+										<dt>
+											<p><strong>Электронный адрес:</strong></p>
+										</dt>
+										<dd>
+											<p><i class="icon-email"></i><a href="mailto:so_knl_koms_sch@samara.edu.ru" target="_blank">so_knl_koms_sch@samara.edu.ru</a></p>
+										</dd>
+										<dt>
+											<p><strong>Сайт:</strong></p>
+										</dt>
+										<dd>
+											<p><i class="icon-home"></i><a href="[(site_url)]" target="_blank">https://bobrovka-shkola.minobr63.ru/
+													<!--|[(site_url)]
+													--></a></p>
+											<p><i class="icon-vk"></i><a href="https://vk.com/club196971711" target="_blank">Группа в ВКонтакте</a></p>
+										</dd>
+									</dl>
+								</div>
+							</article>
+						</div>
 					</div>
 				</div>
 				<div class="main-footer">Ссылки на Сайты </div>
@@ -85,6 +152,6 @@
 					</div>
 				</div>
 			</footer>
-		</div>
+		</div>{{@FILE assets/templates/projectsoft/tpl/site_scripts.html}}
 	</body>
 </html>

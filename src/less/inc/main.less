@@ -3,13 +3,19 @@
 	flex-direction: row;
 	flex-wrap: wrap;
 	.primary {
-		width: ~'calc(100% - 300px)';
+		width: ~'calc(100% - 330px)';
 	}
 	.secondary {
-		width: 300px;
+		width: 330px;
 	}
 	&-footer {
 		flex: 1;
 		width: 100%;
+	}
+	@media screen and (max-width: 910px){
+		.primary,
+		.secondary {
+			width: 100%;
+		}
 	}
 }

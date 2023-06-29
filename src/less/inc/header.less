@@ -1,0 +1,45 @@
+.headerpage {
+	.header {
+		&-page {
+			.site {
+				&-title {
+					font-weight: bold;
+					line-height: 1.4;
+					text-shadow: 2px 2px #e6e6e6;
+					font-size: 3.125em;
+					font-family: sans-serif, Arial;
+					user-select: none;
+					transition: font-size .3s ease;
+				}
+				&-description {
+					font-size: 0.8125em;
+				}
+				&-title,
+				&-description {
+					margin: 0;
+					&,
+					a {
+						color: #dd3333 !important;
+						text-decoration: none !important;
+					}
+				}
+				@media screen and (max-width: 910px) {
+					&-title {
+						font-weight: bold;
+						font-size: 1.625em;
+					}
+				}
+			}
+		}
+		&-group {
+			padding-top: 40px;
+			padding-bottom: 40px;
+		}
+		&-navigation {
+			background-color: #3a3d41;
+			margin-bottom: 0;
+			display: block;
+			.clearfix();
+		}
+	}
+}

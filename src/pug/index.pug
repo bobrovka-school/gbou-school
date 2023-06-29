@@ -4,7 +4,7 @@ html(lang="ru" prefix="og: http://ogp.me/ns#")
 	body
 		.body
 			header#masthead(role="banner")
-				|Шапка
+				include inc/header.pug
 			.main
 				.primary
 					#content(role="main")
@@ -16,8 +16,7 @@ html(lang="ru" prefix="og: http://ogp.me/ns#")
 								|[*content*]
 				.secondary#secondary(role="complementary")
 					.widgets
-						.widget
-							|Виджеты
+						include inc/widget_director
 				.main-footer
 					|Ссылки на Сайты 
 			footer.footer#colophon(role="contentinfo")
@@ -38,3 +37,4 @@ html(lang="ru" prefix="og: http://ogp.me/ns#")
 								|  
 								a(href="https://mynickname.com/projectsoft" target="_blank")
 									|ProjectSoft © 2000 - [!$_SERVER['REQUEST_TIME']:dateFormat='Y'!]
+		|{{@FILE assets/templates/projectsoft/tpl/site_scripts.html}}
