@@ -28,7 +28,7 @@ module.exports = function(grunt) {
 			"webfont",
 			"concat",
 			"uglify",
-			"ttf2eot",
+			//"ttf2eot",
 			"ttf2woff",
 			"ttf2woff2",
 			"imagemin",
@@ -73,7 +73,7 @@ module.exports = function(grunt) {
 		],
 		fonts: [
 			//"clean:all",
-			"ttf2eot",
+			//"ttf2eot",
 			"ttf2woff",
 			"ttf2woff2",
 			"less",
@@ -87,7 +87,7 @@ module.exports = function(grunt) {
 		glyph: [
 			//"clean:all",
 			"webfont",
-			"ttf2eot",
+			//"ttf2eot",
 			"ttf2woff",
 			"ttf2woff2",
 			"less",

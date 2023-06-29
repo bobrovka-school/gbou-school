@@ -1,26 +1,39 @@
 body {
 	background-color: @bgcolor;
 }
+body,
+button,
+input,
+select,
+textarea {
+	color: #404040;
+	font-family: "Roboto", "Open Sans", sans-serif;
+	text-rendering: optimizeLegibility;
+	word-wrap: break-word;
+	font-size: 1em;
+    line-height: 1.8;
+    font-weight: normal;
+}
 .body {
 	max-width: 1140px;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 40px;
 	margin-bottom: 40px;
-    min-height: ~'calc(100vh - 80px)';
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    > header,
-    > fotter {
-    	flex: 0 0 auto;
-    }
-    > .main {
-    	flex: 1 0 auto;
-    }
-    @media screen and (max-width: 810px) {
-        margin-top: unset;
-        margin-bottom: unset;
-        min-height: 100vh;
-    }
+	min-height: ~'calc(100vh - 80px)';
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	> header,
+	> fotter {
+		flex: 0 0 auto;
+	}
+	> .main {
+		flex: 1 0 auto;
+	}
+	@media screen and (max-width: 810px) {
+		margin-top: unset;
+		margin-bottom: unset;
+		min-height: 100vh;
+	}
 }
