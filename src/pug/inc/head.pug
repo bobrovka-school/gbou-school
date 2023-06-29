@@ -36,8 +36,9 @@ head
 	meta(name="keywords" content="[*keyw:notags:strip*]")
 	meta(name="author" content="[(site_name)]")
 	// RSS
-	link(rel="alternate" type="application/rss+xml" title="RSS-лента [(site_name)]" href="[(site_url)]sitemap.xml")
+	link(rel="alternate" type="application/rss+xml" title="RSS-лента [(site_name)]" href="[(site_url)]rss.xml")
 	|<@IF:[*id:is(2)*]>
+	// Canonical
 	link(rel="canonical" href="[(site_url)][~[*id*]~]")
 	|<@ENDIF>
 	// Open Graph

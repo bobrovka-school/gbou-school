@@ -27,8 +27,8 @@
 		<meta name="msapplication-TileColor" content="#ffffff">
 		<meta name="msapplication-TileImage" content="[(site_url)]ms-icon-144x144.png">
 		<meta name="theme-color" content="#ffffff">
-		<link type="text/css" rel="stylesheet" href="[(site_url)]assets/templates/projectsoft/css/main.min.css?661af8329b149be1c730f13a666739df">
-		<link type="text/css" rel="stylesheet" href="[(site_url)]css.css?661af8329b149be1c730f13a666739df">
+		<link type="text/css" rel="stylesheet" href="[(site_url)]assets/templates/projectsoft/css/main.min.css?a4e473344a1f491b1ad64450fad97700">
+		<link type="text/css" rel="stylesheet" href="[(site_url)]css.css?a4e473344a1f491b1ad64450fad97700">
 		<meta name="apple-mobile-web-app-title" content="[(site_name:notags:strip)]">
 		<meta name="application-name" content="[(site_name:notags:strip)]">
 		<meta name="title" content="[*pagetitle:notags:strip*]">
@@ -36,7 +36,8 @@
 		<meta name="keywords" content="[*keyw:notags:strip*]">
 		<meta name="author" content="[(site_name)]">
 		<!-- RSS-->
-		<link rel="alternate" type="application/rss+xml" title="RSS-лента [(site_name)]" href="[(site_url)]sitemap.xml"><@IF:[*id:is(2)*]>
+		<link rel="alternate" type="application/rss+xml" title="RSS-лента [(site_name)]" href="[(site_url)]rss.xml"><@IF:[*id:is(2)*]>
+		<!-- Canonical-->
 		<link rel="canonical" href="[(site_url)][~[*id*]~]"><@ENDIF>
 		<!-- Open Graph-->
 		<meta name="og:title" content="[*pagetitle:notags:strip*]">
@@ -44,9 +45,46 @@
 	</head>
 	<body>
 		<div class="body">
-			<header>header</header>
-			<div class="main">main</div>
-			<footer>footer</footer>
+			<header id="masthead" role="banner">Шапка</header>
+			<div class="main">
+				<div class="primary">
+					<div id="content" role="main">
+						<article class="page page-[*id*] type-page" id="page-[*id*]">
+							<header class="entry-header">
+								<h1 class="entry-title">[*longtitle*]</h1>
+							</header>
+							<div class="entry-content">[*content*]</div>
+						</article>
+					</div>
+				</div>
+				<div class="secondary" id="secondary" role="complementary">
+					<div class="widgets">
+						<div class="widget">Виджеты</div>
+					</div>
+				</div>
+				<div class="main-footer">Ссылки на Сайты </div>
+			</div>
+			<footer class="footer" id="colophon" role="contentinfo">
+				<div class="container">
+					<div class="footer-row">
+						<div class="footer-col-left">
+							<p>
+								Авторские права © [!$_SERVER['REQUEST_TIME']:dateFormat='Y'!]
+								 <a href="[(site_url)]">ГБОУ СОШ с. Бобровка м. р. Кинельский Самарской области</a>
+							</p>
+						</div>
+						<div class="footer-col-center">
+							<p><a class="icon-rss" href="[(site_url)]rss.xml" target="_blank"></a></p>
+						</div>
+						<div class="footer-col-right">
+							<p>
+								Developed by:
+								 <a href="https://mynickname.com/projectsoft" target="_blank">ProjectSoft © 2000 - [!$_SERVER['REQUEST_TIME']:dateFormat='Y'!]</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</footer>
 		</div>
 	</body>
 </html>

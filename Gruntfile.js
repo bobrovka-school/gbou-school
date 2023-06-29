@@ -42,7 +42,7 @@ module.exports = function(grunt) {
 			"pug"
 		],
 		less: [
-			"clean:all",
+			//"clean:all",
 			"less",
 			"autoprefixer",
 			"group_css_media_queries",
@@ -51,14 +51,14 @@ module.exports = function(grunt) {
 			"pug"
 		],
 		js: [
-			"clean:all",
+			//"clean:all",
 			"concat",
 			"uglify",
 			"copy:js",
 			"pug"
 		],
 		pug: [
-			"clean:all",
+			//"clean:all",
 			"pug"
 		],
 		images: [
@@ -72,7 +72,7 @@ module.exports = function(grunt) {
 			"pug"
 		],
 		fonts: [
-			"clean:all",
+			//"clean:all",
 			"ttf2eot",
 			"ttf2woff",
 			"ttf2woff2",
@@ -85,7 +85,7 @@ module.exports = function(grunt) {
 			"pug"
 		],
 		glyph: [
-			"clean:all",
+			//"clean:all",
 			"webfont",
 			"ttf2eot",
 			"ttf2woff",
@@ -99,7 +99,7 @@ module.exports = function(grunt) {
 			"pug"
 		],
 		speed: [
-			"clean:all",
+			//"clean:all",
 			"concat",
 			"uglify",
 			"less",
@@ -226,8 +226,7 @@ module.exports = function(grunt) {
 						'fontpath': '/<%= globalConfig.assets %>/fonts',
 						'imgpath': '/<%= globalConfig.assets %>/images',
 						'white': '#ffffff',
-						'bg-color': '#0098ff',
-						'white': '#ffffff',
+						'bgcolor': '#1e73be',
 						'padding': '15px',
 					}
 				},
@@ -249,8 +248,7 @@ module.exports = function(grunt) {
 						'fontpath': '/<%= globalConfig.assets %>/fonts',
 						'imgpath': '/<%= globalConfig.assets %>/images',
 						'white': '#ffffff',
-						'bg-color': '#0098ff',
-						'white': '#ffffff',
+						'bgcolor': '#0098ff',
 						'padding': '15px',
 					}
 				},

@@ -1024,6 +1024,14 @@ body.compensate-for-scrollbar {
   width: 100% !important;
   height: 100% !important;
 }
+
+.fancybox-content.xlsx_viewer,
+.fancybox-content.docx_viewer {
+  height: 100% !important;
+  overflow: visible;
+  padding: 0;
+  width: 100% !important;
+}
 body {
   background-attachment: fixed;
   font-family: "PT Sans", "Open Sans", "Tahoma", sans-serif;

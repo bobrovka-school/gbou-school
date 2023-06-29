@@ -3,9 +3,38 @@ html(lang="ru" prefix="og: http://ogp.me/ns#")
 	include inc/head.pug
 	body
 		.body
-			header
-				|header
+			header#masthead(role="banner")
+				|Шапка
 			.main
-				|main
-			footer
-				|footer
+				.primary
+					#content(role="main")
+						article(id!="page-[*id*]" class!="page page-[*id*] type-page")
+							header.entry-header
+								h1.entry-title
+									|[*longtitle*]
+							.entry-content
+								|[*content*]
+				.secondary#secondary(role="complementary")
+					.widgets
+						.widget
+							|Виджеты
+				.main-footer
+					|Ссылки на Сайты 
+			footer.footer#colophon(role="contentinfo")
+				.container
+					.footer-row
+						.footer-col-left
+							p
+								|Авторские права © [!$_SERVER['REQUEST_TIME']:dateFormat='Y'!]
+								|  
+								a(href="[(site_url)]")
+									|ГБОУ СОШ с. Бобровка м. р. Кинельский Самарской области
+						.footer-col-center
+							p
+								a.icon-rss(href="[(site_url)]rss.xml" target="_blank")
+						.footer-col-right
+							p
+								|Developed by:
+								|  
+								a(href="https://mynickname.com/projectsoft" target="_blank")
+									|ProjectSoft © 2000 - [!$_SERVER['REQUEST_TIME']:dateFormat='Y'!]
