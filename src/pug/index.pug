@@ -9,33 +9,20 @@ html(lang="ru" prefix="og: http://ogp.me/ns#")
 				.primary
 					#content(role="main")
 						article(id!="page-[*id*]" class!="page page-[*id*] type-page")
+							|<@IF:[*id:neq(1)*]>
 							header.entry-header
 								h1.entry-title
 									|[*longtitle*]
+							|<@ENDIF>
 							.entry-content
+								|<@IF:[*id:is(1)*]>
 								|{{@FILE assets/templates/projectsoft/tpl/gosuslugi.html}}
+								|<@ENDIF>
 								|[*content*]
 				.secondary#secondary(role="complementary")
 					.widgets
 						include inc/widget_director
 				.main-footer
 					|{{@FILE assets/templates/projectsoft/tpl/sites_link.html}} 
-			footer.footer#colophon(role="contentinfo")
-				.container
-					.footer-row
-						.footer-col-left
-							p
-								|Авторские права © [!$_SERVER['REQUEST_TIME']:dateFormat='Y'!]
-								|  
-								a(href="[(site_url)]")
-									|ГБОУ СОШ с. Бобровка м. р. Кинельский Самарской области
-						.footer-col-center
-							p
-								a.icon-rss(href="[(site_url)]rss.xml" target="_blank")
-						.footer-col-right
-							p
-								|Developed by:
-								|  
-								a(href="https://mynickname.com/projectsoft" target="_blank")
-									|ProjectSoft © 2000 - [!$_SERVER['REQUEST_TIME']:dateFormat='Y'!]
+			|{{@FILE assets/templates/projectsoft/tpl/footer.html}}
 		|{{@FILE assets/templates/projectsoft/tpl/site_scripts.html}}

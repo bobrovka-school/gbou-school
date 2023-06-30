@@ -41,4 +41,30 @@
 		dots: false,
 		arrows: true
 	});
+	$(document)
+		.on('click', function(e){
+			$('[role="navigation"]').removeClass('open-menu');
+			$('button i').removeClass('icon-menu-close').addClass('icon-menu-open')
+		})
+		.on('click', '[data-menu-href]', function(e){
+			e.preventDefault();
+			let _this = $(e.target),
+				url = _this.data('menu-href');
+			window.location.href = url;
+			return !1;
+		})
+		.on('click', '[role="navigation"] button', function(e){
+			e.preventDefault();
+			let _this = $(e.target),
+				_i = $('i', _this),
+				parent = _this.parent('[role="navigation"]');
+			parent.hasClass('open-menu') ? (
+				parent.removeClass('open-menu'),
+				_i.removeClass('icon-menu-close').addClass('icon-menu-open')
+			) : (
+				parent.addClass('open-menu'),
+				_i.addClass('icon-menu-close').removeClass('icon-menu-open')
+			);
+			return !1;
+		})
 }(jQuery));

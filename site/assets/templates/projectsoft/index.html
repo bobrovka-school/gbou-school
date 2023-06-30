@@ -28,8 +28,8 @@
 		<meta name="msapplication-TileColor" content="#ffffff">
 		<meta name="msapplication-TileImage" content="[(site_url)]ms-icon-144x144.png">
 		<meta name="theme-color" content="#ffffff">
-		<link type="text/css" rel="stylesheet" href="[(site_url)]assets/templates/projectsoft/css/main.min.css?6e8fb336e26bac3a75871d846ee22f59">
-		<link type="text/css" rel="stylesheet" href="[(site_url)]css.css?6e8fb336e26bac3a75871d846ee22f59">
+		<link type="text/css" rel="stylesheet" href="[(site_url)]assets/templates/projectsoft/css/main.min.css?ec2f43c92d9f4e46b0814b6e5c806b1d">
+		<link type="text/css" rel="stylesheet" href="[(site_url)]css.css?ec2f43c92d9f4e46b0814b6e5c806b1d">
 		<meta name="apple-mobile-web-app-title" content="[(site_name:notags:strip)]">
 		<meta name="application-name" content="[(site_name:notags:strip)]">
 		<meta name="title" content="[*pagetitle:notags:strip*]">
@@ -64,26 +64,20 @@
 							<div class="slick-item"><img src="[(site_url)]assets/templates/projectsoft/images/slider-0002.jpg" alt="[(site_name)]"></div>
 							<div class="slick-item"><img src="[(site_url)]assets/templates/projectsoft/images/slider-0003.jpg" alt="[(site_name)]"></div>
 						</div>
-					</div>
-					<div class="header-navigation">
-						<nav role="navigation">
-							<ul>
-								<li><span>Home</span></li>
-								<li><a href="/news/">News</a></li>
-							</ul>
-						</nav>
-					</div>
+					</div>{{@FILE assets/templates/projectsoft/tpl/menu.html}}
 				</div>
 			</header>
 			<div class="main">
 				<div class="primary">
 					<div id="content" role="main">
-						<article class="page page-[*id*] type-page" id="page-[*id*]">
+						<article class="page page-[*id*] type-page" id="page-[*id*]"><@IF:[*id:neq(1)*]>
 							<header class="entry-header">
 								<h1 class="entry-title">[*longtitle*]</h1>
-							</header>
+							</header><@ENDIF>
 							<div class="entry-content">
+								<@IF:[*id:is(1)*]>
 								{{@FILE assets/templates/projectsoft/tpl/gosuslugi.html}}
+								<@ENDIF>
 								[*content*]
 							</div>
 						</article>
@@ -133,28 +127,7 @@
 					</div>
 				</div>
 				<div class="main-footer">{{@FILE assets/templates/projectsoft/tpl/sites_link.html}} </div>
-			</div>
-			<footer class="footer" id="colophon" role="contentinfo">
-				<div class="container">
-					<div class="footer-row">
-						<div class="footer-col-left">
-							<p>
-								Авторские права © [!$_SERVER['REQUEST_TIME']:dateFormat='Y'!]
-								 <a href="[(site_url)]">ГБОУ СОШ с. Бобровка м. р. Кинельский Самарской области</a>
-							</p>
-						</div>
-						<div class="footer-col-center">
-							<p><a class="icon-rss" href="[(site_url)]rss.xml" target="_blank"></a></p>
-						</div>
-						<div class="footer-col-right">
-							<p>
-								Developed by:
-								 <a href="https://mynickname.com/projectsoft" target="_blank">ProjectSoft © 2000 - [!$_SERVER['REQUEST_TIME']:dateFormat='Y'!]</a>
-							</p>
-						</div>
-					</div>
-				</div>
-			</footer>
+			</div>{{@FILE assets/templates/projectsoft/tpl/footer.html}}
 		</div>{{@FILE assets/templates/projectsoft/tpl/site_scripts.html}}
 	</body>
 </html>

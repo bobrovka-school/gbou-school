@@ -1,42 +1,242 @@
 .header {
 	&-navigation {
-		background-color: #3a3d41;
 		margin-bottom: 0;
 		display: block;
 		.clearfix();
 		text-align: center;
+		button {
+			display: none;
+			margin-left: 5px;
+			line-height: 1;
+			background-color: #000;
+			color: white;
+			border: unset;
+			padding: 0.6em;
+			width: 2.2em;
+			height: 2.2em;
+			i {
+				pointer-events: none;
+			}
+		}
+		&,
+		ul {
+			background-color: #3a3d41;
+		}
 		nav {
-			> ul {
+			ul {
+				list-style: none;
 				margin: 0;
 				padding: 0;
-				display: flex;
-				justify-content: center;
-				list-style: none;
-				flex-wrap: wrap;
+				text-align: left;
 			}
 			li {
 				display: block;
 				list-style: none;
+				position: relative;
+				> ul {
+					//display: none;
+					top: 0;
+					left: 100%;
+					position: absolute;
+					visibility: hidden;
+					opacity: 0;
+					min-width: 100%;
+					z-index: -100;
+					transition: opacity .3s ease;
+				}
+				i,
 				a,
 				span {
-					display: block;
 					text-decoration: none !important;
 					line-height: 2.7;
 					outline: none !important;
+					text-transform: uppercase;
+    				white-space: nowrap;
+    				user-select: none;
+    				font-weight: 300;
+    				cursor: pointer;
+				}
+				a,
+				span {
+					display: block;
+					font-size: 0.95em;
 					padding-left: 15px;
 					padding-right: 15px;
 				}
+				i {
+					font-size: .5em;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					padding-right: 15px;
+					padding-left: 15px;
+					margin-left: -15px;
+					position: relative;
+					z-index: 2;
+				}
 				a {
-					color: #eee;
+					&,
+					+ i {
+						color: #eee;
+					}
 				}
 				span {
-					color: #fff;
+					&,
+					+ i {
+						color: #fff;
+					}
 					background-color: #000;
 				}
+				&.here,
+				&.active,
 				&:hover {
+					&,
+					> i,
+					> span,
 					> a {
 						color: #fff;
 						background-color: #000;
+					}
+				}
+				&:focus,
+				&:hover {
+					> ul {
+						display: block;
+						z-index: 1000;
+						visibility: visible;
+						opacity: 1;
+					}
+				}
+			}
+			> ul {
+				display: flex;
+				justify-content: center;
+				flex-wrap: wrap;
+				position: relative;
+				> li {
+					display: flex;
+					> ul {
+						left: 0;
+						top: 100%;
+					}
+					&:hover {
+						> ul {
+							position: absolute;
+							display: block;
+							visibility: visible;
+							opacity: 1;
+							z-index: 1000;
+						}
+					}
+				}
+			}
+		}
+		@media screen and (max-width: 910px) {
+			button {
+				display: flex;
+				&::after {
+					content: "МЕНЮ";
+					margin-left: 1em;
+				}
+			}
+			nav {
+				> ul {
+					display: none;
+					ul {
+						background-color: #3a3d41;
+					}
+					li {
+						background-color: unset!important;
+						> a,
+						> span {
+							background-color: #3a3d41;
+							color: #eee;
+							overflow: hidden;
+							text-overflow: ellipsis;
+						}
+						&.active {
+							> a,
+							> span {
+								background-color: #3a3d41;
+								color: #eee;
+							}
+						}
+						&.here,
+						& {
+							> a,
+							> span {
+								&:hover,
+								&:focus {
+									background-color: #000;
+									color: #fff;
+								}
+								
+							}
+						}
+					}
+					> li {
+						> ul {
+							> li {
+								> a,
+								> span {
+									padding-left: 30px;
+								}
+								> ul {
+									> li {
+										> a,
+										> span {
+											padding-left: 45px;
+										}
+										
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			.open-menu {
+				position: relative;
+				li {
+					> ul {
+						z-index: unset !important;
+						top: unset !important;
+						left: unset !important;
+						position: relative !important;
+						display: block !important;
+						visibility: visible !important;
+						opacity: 1 !important;
+					}
+				}
+				> ul {
+					display: block !important;
+					position: absolute;
+					top: 100%;
+					left: 0;
+					z-index: 1000;
+					width: 100%;
+					overflow: hidden;
+					li {
+						&,
+						&:hover,
+						&:focus {
+							i {
+								display: none;
+							}
+						}
+					}
+				}
+				ul {
+					> li {
+						&,
+						> ul,
+						a,
+						span {
+							display:block !important;
+							position: relative !important;
+							visibility: visible !important;
+							opacity: 1 !important;
+						}
 					}
 				}
 			}

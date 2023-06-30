@@ -1,0 +1,31 @@
+.header-navigation
+	nav(role="navigation")
+		button(type="button")
+			i.icon-menu-open
+		|[!DLMenu?
+		|	&outerTpl=`@CODE: <ul[+classes+]>[+wrap+]</ul>`
+		|	&rowTpl=`@CODE:<li[+classes+]><a href="[+url+]">[+title+]</a></li>`
+		|	&rowHereTpl=`@CODE:<li[+classes+]><span data-menu-href="[+url+]">[+title+]</span></li>`
+		|	&parentRowTpl=`@CODE:<li[+classes+]><a href="[+url+]">[+title+]</a><i class="icon-down"></i>[+wrap+]</li>`
+		|	&parentRowHereTpl=`@CODE:<li[+classes+]><span data-menu-href="[+url+]">[+title+]</span><i class="icon-down"></i>[+wrap+]</li>`
+		|	&parentRowActiveTpl=`@CODE:<li[+classes+]><a href="[+url+]">[+title+]</a><i class="icon-down"></i>[+wrap+]</li>`
+		|	&innerTpl=`@CODE: <ul[+classes+]>[+wrap+]</ul>`
+		|	&innerRowTpl=`@CODE:<li[+classes+]><a href="[+url+]">[+title+]</a></li>`
+		|	&innerRowHereTpl=`@CODE:<li[+classes+]><span data-menu-href="[+url+]">[+title+]</span></li>`
+		|	&parents=`0`
+		|	&showParent=`1`
+		|	&innerClass=`inner`
+		|	&outerClass=`outer`
+		|	&rowClass=``
+		|	&firstClass=``
+		|	&lastClass=``
+		|	&levelClass=``
+		|	&webLinkClass=`web-link`
+		|	&parentClass=`parent`
+		|	&hereClass=`here`
+		|	&activeClass=`active`
+		|	&oddClass=``
+		|	&evenClass=``
+		|	&stateClass=`stateClass`
+		|	&&urlScheme=`full`
+		|!]

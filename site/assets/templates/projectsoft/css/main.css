@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @font-face {
   font-family: "IconsSite";
-  src: url("/assets/templates/projectsoft/fonts/iconssite.woff2?481405dd6ffe07305fdf8164b42504a6") format("woff2"), url("/assets/templates/projectsoft/fonts/iconssite.woff?481405dd6ffe07305fdf8164b42504a6") format("woff"), url("/assets/templates/projectsoft/fonts/iconssite.ttf?481405dd6ffe07305fdf8164b42504a6") format("truetype");
+  src: url("/assets/templates/projectsoft/fonts/iconssite.woff2?37a8b7b7ed6a50ac522908167b4387a6") format("woff2"), url("/assets/templates/projectsoft/fonts/iconssite.woff?37a8b7b7ed6a50ac522908167b4387a6") format("woff"), url("/assets/templates/projectsoft/fonts/iconssite.ttf?37a8b7b7ed6a50ac522908167b4387a6") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -173,188 +173,196 @@
   content: "\e925";
 }
 
-.icon-modx:before {
+.icon-menu-close:before {
   content: "\e926";
 }
 
-.icon-next:before {
+.icon-menu-open:before {
   content: "\e927";
 }
 
-.icon-ok:before {
+.icon-modx:before {
   content: "\e928";
 }
 
-.icon-oks:before {
+.icon-next:before {
   content: "\e929";
 }
 
-.icon-opera:before {
+.icon-ok:before {
   content: "\e92a";
 }
 
-.icon-phone:before {
+.icon-oks:before {
   content: "\e92b";
 }
 
-.icon-photo:before {
+.icon-opera:before {
   content: "\e92c";
 }
 
-.icon-prev:before {
+.icon-phone:before {
   content: "\e92d";
 }
 
-.icon-print-ic:before {
+.icon-photo:before {
   content: "\e92e";
 }
 
-.icon-print:before {
+.icon-prev:before {
   content: "\e92f";
 }
 
-.icon-required:before {
+.icon-print-ic:before {
   content: "\e930";
 }
 
-.icon-reset:before {
+.icon-print:before {
   content: "\e931";
 }
 
-.icon-rss-logo:before {
+.icon-required:before {
   content: "\e932";
 }
 
-.icon-rss:before {
+.icon-reset:before {
   content: "\e933";
 }
 
-.icon-search:before {
+.icon-rss-logo:before {
   content: "\e934";
 }
 
-.icon-share:before {
+.icon-rss:before {
   content: "\e935";
 }
 
-.icon-success:before {
+.icon-search:before {
   content: "\e936";
 }
 
-.icon-telegram:before {
+.icon-share:before {
   content: "\e937";
 }
 
-.icon-twitter:before {
+.icon-success:before {
   content: "\e938";
 }
 
-.icon-tws:before {
+.icon-telegram:before {
   content: "\e939";
 }
 
-.icon-up:before {
+.icon-twitter:before {
   content: "\e93a";
 }
 
-.icon-vk:before {
+.icon-tws:before {
   content: "\e93b";
 }
 
-.icon-vks:before {
+.icon-up:before {
   content: "\e93c";
 }
 
-.icon-zoom-in:before {
+.icon-vk:before {
   content: "\e93d";
 }
 
-.icon-zoom-out:before {
+.icon-vks:before {
   content: "\e93e";
 }
 
+.icon-zoom-in:before {
+  content: "\e93f";
+}
+
+.icon-zoom-out:before {
+  content: "\e940";
+}
+
 @font-face {
   font-family: 'Roboto';
   font-style: italic;
   font-weight: 100;
-  src: url("/assets/templates/projectsoft/fonts/Roboto-ThinItalic.woff2?481405dd6ffe07305fdf8164b42504a6") format("woff2"), url("/assets/templates/projectsoft/fonts/Roboto-ThinItalic.woff?481405dd6ffe07305fdf8164b42504a6") format("woff"), url("/assets/templates/projectsoft/fonts/Roboto-ThinItalic.ttf?481405dd6ffe07305fdf8164b42504a6") format("truetype");
+  src: url("/assets/templates/projectsoft/fonts/Roboto-ThinItalic.woff2?37a8b7b7ed6a50ac522908167b4387a6") format("woff2"), url("/assets/templates/projectsoft/fonts/Roboto-ThinItalic.woff?37a8b7b7ed6a50ac522908167b4387a6") format("woff"), url("/assets/templates/projectsoft/fonts/Roboto-ThinItalic.ttf?37a8b7b7ed6a50ac522908167b4387a6") format("truetype");
 }
 
 @font-face {
   font-family: 'Roboto';
   font-style: italic;
   font-weight: 300;
-  src: url("/assets/templates/projectsoft/fonts/Roboto-LightItalic.woff2?481405dd6ffe07305fdf8164b42504a6") format("woff2"), url("/assets/templates/projectsoft/fonts/Roboto-LightItalic.woff?481405dd6ffe07305fdf8164b42504a6") format("woff"), url("/assets/templates/projectsoft/fonts/Roboto-LightItalic.ttf?481405dd6ffe07305fdf8164b42504a6") format("truetype");
+  src: url("/assets/templates/projectsoft/fonts/Roboto-LightItalic.woff2?37a8b7b7ed6a50ac522908167b4387a6") format("woff2"), url("/assets/templates/projectsoft/fonts/Roboto-LightItalic.woff?37a8b7b7ed6a50ac522908167b4387a6") format("woff"), url("/assets/templates/projectsoft/fonts/Roboto-LightItalic.ttf?37a8b7b7ed6a50ac522908167b4387a6") format("truetype");
 }
 
 @font-face {
   font-family: 'Roboto';
   font-style: italic;
   font-weight: 400;
-  src: url("/assets/templates/projectsoft/fonts/Roboto-Italic.woff2?481405dd6ffe07305fdf8164b42504a6") format("woff2"), url("/assets/templates/projectsoft/fonts/Roboto-Italic.woff?481405dd6ffe07305fdf8164b42504a6") format("woff"), url("/assets/templates/projectsoft/fonts/Roboto-Italic.ttf?481405dd6ffe07305fdf8164b42504a6") format("truetype");
+  src: url("/assets/templates/projectsoft/fonts/Roboto-Italic.woff2?37a8b7b7ed6a50ac522908167b4387a6") format("woff2"), url("/assets/templates/projectsoft/fonts/Roboto-Italic.woff?37a8b7b7ed6a50ac522908167b4387a6") format("woff"), url("/assets/templates/projectsoft/fonts/Roboto-Italic.ttf?37a8b7b7ed6a50ac522908167b4387a6") format("truetype");
 }
 
 @font-face {
   font-family: 'Roboto';
   font-style: italic;
   font-weight: 500;
-  src: url("/assets/templates/projectsoft/fonts/Roboto-MediumItalic.woff2?481405dd6ffe07305fdf8164b42504a6") format("woff2"), url("/assets/templates/projectsoft/fonts/Roboto-MediumItalic.woff?481405dd6ffe07305fdf8164b42504a6") format("woff"), url("/assets/templates/projectsoft/fonts/Roboto-MediumItalic.ttf?481405dd6ffe07305fdf8164b42504a6") format("truetype");
+  src: url("/assets/templates/projectsoft/fonts/Roboto-MediumItalic.woff2?37a8b7b7ed6a50ac522908167b4387a6") format("woff2"), url("/assets/templates/projectsoft/fonts/Roboto-MediumItalic.woff?37a8b7b7ed6a50ac522908167b4387a6") format("woff"), url("/assets/templates/projectsoft/fonts/Roboto-MediumItalic.ttf?37a8b7b7ed6a50ac522908167b4387a6") format("truetype");
 }
 
 @font-face {
   font-family: 'Roboto';
   font-style: italic;
   font-weight: 700;
-  src: url("/assets/templates/projectsoft/fonts/Roboto-BoldItalic.woff2?481405dd6ffe07305fdf8164b42504a6") format("woff2"), url("/assets/templates/projectsoft/fonts/Roboto-BoldItalic.woff?481405dd6ffe07305fdf8164b42504a6") format("woff"), url("/assets/templates/projectsoft/fonts/Roboto-BoldItalic.ttf?481405dd6ffe07305fdf8164b42504a6") format("truetype");
+  src: url("/assets/templates/projectsoft/fonts/Roboto-BoldItalic.woff2?37a8b7b7ed6a50ac522908167b4387a6") format("woff2"), url("/assets/templates/projectsoft/fonts/Roboto-BoldItalic.woff?37a8b7b7ed6a50ac522908167b4387a6") format("woff"), url("/assets/templates/projectsoft/fonts/Roboto-BoldItalic.ttf?37a8b7b7ed6a50ac522908167b4387a6") format("truetype");
 }
 
 @font-face {
   font-family: 'Roboto';
   font-style: italic;
   font-weight: 900;
-  src: url("/assets/templates/projectsoft/fonts/Roboto-BlackItalic.woff2?481405dd6ffe07305fdf8164b42504a6") format("woff2"), url("/assets/templates/projectsoft/fonts/Roboto-BlackItalic.woff?481405dd6ffe07305fdf8164b42504a6") format("woff"), url("/assets/templates/projectsoft/fonts/Roboto-BlackItalic.ttf?481405dd6ffe07305fdf8164b42504a6") format("truetype");
+  src: url("/assets/templates/projectsoft/fonts/Roboto-BlackItalic.woff2?37a8b7b7ed6a50ac522908167b4387a6") format("woff2"), url("/assets/templates/projectsoft/fonts/Roboto-BlackItalic.woff?37a8b7b7ed6a50ac522908167b4387a6") format("woff"), url("/assets/templates/projectsoft/fonts/Roboto-BlackItalic.ttf?37a8b7b7ed6a50ac522908167b4387a6") format("truetype");
 }
 
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 100;
-  src: url("/assets/templates/projectsoft/fonts/Roboto-Thin.woff2?481405dd6ffe07305fdf8164b42504a6") format("woff2"), url("/assets/templates/projectsoft/fonts/Roboto-Thin.woff?481405dd6ffe07305fdf8164b42504a6") format("woff"), url("/assets/templates/projectsoft/fonts/Roboto-Thin.ttf?481405dd6ffe07305fdf8164b42504a6") format("truetype");
+  src: url("/assets/templates/projectsoft/fonts/Roboto-Thin.woff2?37a8b7b7ed6a50ac522908167b4387a6") format("woff2"), url("/assets/templates/projectsoft/fonts/Roboto-Thin.woff?37a8b7b7ed6a50ac522908167b4387a6") format("woff"), url("/assets/templates/projectsoft/fonts/Roboto-Thin.ttf?37a8b7b7ed6a50ac522908167b4387a6") format("truetype");
 }
 
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 300;
-  src: url("/assets/templates/projectsoft/fonts/Roboto-Light.woff2?481405dd6ffe07305fdf8164b42504a6") format("woff2"), url("/assets/templates/projectsoft/fonts/Roboto-Light.woff?481405dd6ffe07305fdf8164b42504a6") format("woff"), url("/assets/templates/projectsoft/fonts/Roboto-Light.ttf?481405dd6ffe07305fdf8164b42504a6") format("truetype");
+  src: url("/assets/templates/projectsoft/fonts/Roboto-Light.woff2?37a8b7b7ed6a50ac522908167b4387a6") format("woff2"), url("/assets/templates/projectsoft/fonts/Roboto-Light.woff?37a8b7b7ed6a50ac522908167b4387a6") format("woff"), url("/assets/templates/projectsoft/fonts/Roboto-Light.ttf?37a8b7b7ed6a50ac522908167b4387a6") format("truetype");
 }
 
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
-  src: url("/assets/templates/projectsoft/fonts/Roboto-Regular.woff2?481405dd6ffe07305fdf8164b42504a6") format("woff2"), url("/assets/templates/projectsoft/fonts/Roboto-Regular.woff?481405dd6ffe07305fdf8164b42504a6") format("woff"), url("/assets/templates/projectsoft/fonts/Roboto-Regular.ttf?481405dd6ffe07305fdf8164b42504a6") format("truetype");
+  src: url("/assets/templates/projectsoft/fonts/Roboto-Regular.woff2?37a8b7b7ed6a50ac522908167b4387a6") format("woff2"), url("/assets/templates/projectsoft/fonts/Roboto-Regular.woff?37a8b7b7ed6a50ac522908167b4387a6") format("woff"), url("/assets/templates/projectsoft/fonts/Roboto-Regular.ttf?37a8b7b7ed6a50ac522908167b4387a6") format("truetype");
 }
 
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
-  src: url("/assets/templates/projectsoft/fonts/Roboto-Medium.woff2?481405dd6ffe07305fdf8164b42504a6") format("woff2"), url("/assets/templates/projectsoft/fonts/Roboto-Medium.woff?481405dd6ffe07305fdf8164b42504a6") format("woff"), url("/assets/templates/projectsoft/fonts/Roboto-Medium.ttf?481405dd6ffe07305fdf8164b42504a6") format("truetype");
+  src: url("/assets/templates/projectsoft/fonts/Roboto-Medium.woff2?37a8b7b7ed6a50ac522908167b4387a6") format("woff2"), url("/assets/templates/projectsoft/fonts/Roboto-Medium.woff?37a8b7b7ed6a50ac522908167b4387a6") format("woff"), url("/assets/templates/projectsoft/fonts/Roboto-Medium.ttf?37a8b7b7ed6a50ac522908167b4387a6") format("truetype");
 }
 
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
-  src: url("/assets/templates/projectsoft/fonts/Roboto-Bold.woff2?481405dd6ffe07305fdf8164b42504a6") format("woff2"), url("/assets/templates/projectsoft/fonts/Roboto-Bold.woff?481405dd6ffe07305fdf8164b42504a6") format("woff"), url("/assets/templates/projectsoft/fonts/Roboto-Bold.ttf?481405dd6ffe07305fdf8164b42504a6") format("truetype");
+  src: url("/assets/templates/projectsoft/fonts/Roboto-Bold.woff2?37a8b7b7ed6a50ac522908167b4387a6") format("woff2"), url("/assets/templates/projectsoft/fonts/Roboto-Bold.woff?37a8b7b7ed6a50ac522908167b4387a6") format("woff"), url("/assets/templates/projectsoft/fonts/Roboto-Bold.ttf?37a8b7b7ed6a50ac522908167b4387a6") format("truetype");
 }
 
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 900;
-  src: url("/assets/templates/projectsoft/fonts/Roboto-Black.woff2?481405dd6ffe07305fdf8164b42504a6") format("woff2"), url("/assets/templates/projectsoft/fonts/Roboto-Black.woff?481405dd6ffe07305fdf8164b42504a6") format("woff"), url("/assets/templates/projectsoft/fonts/Roboto-Black.ttf?481405dd6ffe07305fdf8164b42504a6") format("truetype");
+  src: url("/assets/templates/projectsoft/fonts/Roboto-Black.woff2?37a8b7b7ed6a50ac522908167b4387a6") format("woff2"), url("/assets/templates/projectsoft/fonts/Roboto-Black.woff?37a8b7b7ed6a50ac522908167b4387a6") format("woff"), url("/assets/templates/projectsoft/fonts/Roboto-Black.ttf?37a8b7b7ed6a50ac522908167b4387a6") format("truetype");
 }
 body,
 button,
@@ -1426,7 +1434,7 @@ body.compensate-for-scrollbar {
 }
 
 .slick-prev::before {
-  content: "\e92d";
+  content: "\e92f";
 }
 
 .slick-next {
@@ -1434,7 +1442,7 @@ body.compensate-for-scrollbar {
 }
 
 .slick-next::before {
-  content: "\e927";
+  content: "\e929";
 }
 .slick-dotted .slick-slider {
   margin-bottom: 30px;
@@ -3549,7 +3557,6 @@ ymaps[class*="copyrights-promo"] {
 }
 
 .header-navigation {
-  background-color: #3a3d41;
   margin-bottom: 0;
   display: block;
   text-align: center;
@@ -3572,45 +3579,153 @@ ymaps[class*="copyrights-promo"] {
   clear: both;
 }
 
-.header-navigation nav > ul {
+.header-navigation button {
+  display: none;
+  margin-left: 5px;
+  line-height: 1;
+  background-color: #000;
+  color: white;
+  border: unset;
+  padding: 0.6em;
+  width: 2.2em;
+  height: 2.2em;
+}
+
+.header-navigation button i {
+  pointer-events: none;
+}
+
+.header-navigation,
+.header-navigation ul {
+  background-color: #3a3d41;
+}
+
+.header-navigation nav ul {
+  list-style: none;
   margin: 0;
   padding: 0;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-  justify-content: center;
-  list-style: none;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+  text-align: left;
 }
 
 .header-navigation nav li {
   display: block;
   list-style: none;
+  position: relative;
+}
+
+.header-navigation nav li > ul {
+  top: 0;
+  left: 100%;
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  min-width: 100%;
+  z-index: -100;
+  transition: opacity 0.3s ease;
+}
+
+.header-navigation nav li i,
+.header-navigation nav li a,
+.header-navigation nav li span {
+  text-decoration: none !important;
+  line-height: 2.7;
+  outline: none !important;
+  text-transform: uppercase;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-weight: 300;
+  cursor: pointer;
 }
 
 .header-navigation nav li a,
 .header-navigation nav li span {
   display: block;
-  text-decoration: none !important;
-  line-height: 2.7;
-  outline: none !important;
+  font-size: 0.95em;
   padding-left: 15px;
   padding-right: 15px;
 }
 
-.header-navigation nav li a {
+.header-navigation nav li i {
+  font-size: 0.5em;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-left: -15px;
+  position: relative;
+  z-index: 2;
+}
+
+.header-navigation nav li a,
+.header-navigation nav li a + i {
   color: #eee;
 }
 
 .header-navigation nav li span {
+  background-color: #000;
+}
+
+.header-navigation nav li span,
+.header-navigation nav li span + i {
+  color: #fff;
+}
+
+.header-navigation nav li.here,
+.header-navigation nav li.active,
+.header-navigation nav li:hover,
+.header-navigation nav li.here > i,
+.header-navigation nav li.active > i,
+.header-navigation nav li:hover > i,
+.header-navigation nav li.here > span,
+.header-navigation nav li.active > span,
+.header-navigation nav li:hover > span,
+.header-navigation nav li.here > a,
+.header-navigation nav li.active > a,
+.header-navigation nav li:hover > a {
   color: #fff;
   background-color: #000;
 }
 
-.header-navigation nav li:hover > a {
-  color: #fff;
-  background-color: #000;
+.header-navigation nav li:focus > ul,
+.header-navigation nav li:hover > ul {
+  display: block;
+  z-index: 1000;
+  visibility: visible;
+  opacity: 1;
+}
+
+.header-navigation nav > ul {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.header-navigation nav > ul > li {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header-navigation nav > ul > li > ul {
+  left: 0;
+  top: 100%;
+}
+
+.header-navigation nav > ul > li:hover > ul {
+  position: absolute;
+  display: block;
+  visibility: visible;
+  opacity: 1;
+  z-index: 1000;
 }
 
 body {
@@ -4135,6 +4250,104 @@ footer#colophon a:hover {
 }
 
 @media screen and (max-width: 910px) {
+  .header-navigation button {
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .header-navigation button::after {
+    content: "МЕНЮ";
+    margin-left: 1em;
+  }
+
+  .header-navigation nav > ul {
+    display: none;
+  }
+
+  .header-navigation nav > ul ul {
+    background-color: #3a3d41;
+  }
+
+  .header-navigation nav > ul li {
+    background-color: unset!important;
+  }
+
+  .header-navigation nav > ul li > a,
+  .header-navigation nav > ul li > span {
+    background-color: #3a3d41;
+    color: #eee;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .header-navigation nav > ul li.active > a,
+  .header-navigation nav > ul li.active > span {
+    background-color: #3a3d41;
+    color: #eee;
+  }
+
+  .header-navigation nav > ul li.here > a:hover,
+  .header-navigation nav > ul li > a:hover,
+  .header-navigation nav > ul li.here > span:hover,
+  .header-navigation nav > ul li > span:hover,
+  .header-navigation nav > ul li.here > a:focus,
+  .header-navigation nav > ul li > a:focus,
+  .header-navigation nav > ul li.here > span:focus,
+  .header-navigation nav > ul li > span:focus {
+    background-color: #000;
+    color: #fff;
+  }
+
+  .header-navigation nav > ul > li > ul > li > a,
+  .header-navigation nav > ul > li > ul > li > span {
+    padding-left: 30px;
+  }
+
+  .header-navigation nav > ul > li > ul > li > ul > li > a,
+  .header-navigation nav > ul > li > ul > li > ul > li > span {
+    padding-left: 45px;
+  }
+
+  .header-navigation .open-menu {
+    position: relative;
+  }
+
+  .header-navigation .open-menu li > ul {
+    z-index: unset !important;
+    top: unset !important;
+    left: unset !important;
+    position: relative !important;
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+
+  .header-navigation .open-menu > ul {
+    display: block !important;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .header-navigation .open-menu > ul li i,
+  .header-navigation .open-menu > ul li:hover i,
+  .header-navigation .open-menu > ul li:focus i {
+    display: none;
+  }
+
+  .header-navigation .open-menu ul > li,
+  .header-navigation .open-menu ul > li > ul,
+  .header-navigation .open-menu ul > li a,
+  .header-navigation .open-menu ul > li span {
+    display: block !important;
+    position: relative !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+
   .headerpage .header-page .site-title {
     font-weight: bold;
     font-size: 1.625em;
