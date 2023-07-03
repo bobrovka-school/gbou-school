@@ -37,3 +37,51 @@
 		}
 	}
 }
+body .bvi-body {
+	.headerpage {
+		.header {
+			&-page {
+				.site {
+					&-title {
+						font-size: 3.125em !important;
+						&,
+						a {
+							font-weight: bold !important;
+							line-height: 1.4 !important;
+							font-family: sans-serif, Arial !important;
+							user-select: none !important;
+							transition: font-size .3s ease !important;
+						}
+						a {
+							font-size: 1em !important;
+						}
+					}
+					&-description {
+						font-size: 0.8125em !important;
+					}
+					&-title,
+					&-description {
+						margin: 0;
+						&,
+						a {
+							text-decoration: none !important;
+						}
+					}
+					@media screen and (max-width: 910px) {
+						&-title {
+							font-weight: bold !important;
+							font-size: 1.625em !important;
+							a {
+								font-size: 1em !important;
+							}
+						}
+					}
+				}
+			}
+			&-group {
+				padding-top: 40px !important;
+				padding-bottom: 40px !important;
+			}
+		}
+	}
+}

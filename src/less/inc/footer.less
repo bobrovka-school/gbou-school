@@ -33,7 +33,9 @@ footer {
 		flex-direction: row;
 		justify-content: space-between;
 		.icon-rss {
-			font-size: 2em;
+			&::before {
+				font-size: 32px !important;
+			}
 		}
 	}
 	&-col {
@@ -46,6 +48,10 @@ footer {
 		&-left,
 		&-right {
 			width: 80%;
+			&,
+			a {
+				font-size: 16px !important;
+			}
 		}
 		&-center {
 			width: 20%;
@@ -75,6 +81,18 @@ footer {
 			&-center,
 			&-right {
 				text-align: center;
+			}
+		}
+	}
+}
+body .bvi-body {
+	.footer {
+		&-col {
+			&-left,
+			&-right {
+				.bvi-no-styles {
+					font-size: 16px !important;
+				}
 			}
 		}
 	}
