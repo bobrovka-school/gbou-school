@@ -54,6 +54,8 @@ site/assets/plugins/pagebuilder/*
 site/assets/plugins/pagebuilder/config/*
 !site/assets/plugins/pagebuilder/config/container.programms.php
 !site/assets/plugins/pagebuilder/config/documents.php
+!site/assets/plugins/pagebuilder/config/files.php
+!site/assets/plugins/pagebuilder/config/gallery.php
 
 # Plugin TinyMCE4
 !site/assets/plugins/tinymce4

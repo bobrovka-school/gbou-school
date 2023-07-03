@@ -1,7 +1,7 @@
 <?php
 
 	return [
-		'title' => 'Page Documents',
+		'title' => 'Page Gallery',
 
 		'show_in_templates' => [5],
 
@@ -15,9 +15,9 @@
 
 		'templates' => [
 			'owner' => '
-				<div class="documents">
+				<div class="gallery">
 					<h3 class="text-center news-title">[+text+]</h3>
-					<ul class="documents--list">
+					<ul class="gallery--list">
 						[+documents+]
 					</ul>
 				</div>
@@ -32,11 +32,11 @@
 		],
 		'fields' => [
 			'text' => [
-				'caption' => 'Название блока',
+				'caption' => 'Название галереи',
 				'type'    => 'text',
 			],
 			'documents' => [
-				'caption' => 'Документы',
+				'caption' => 'Изображения',
 				'type'    => 'group',
 				'fields'  => [
 					'text' => [
@@ -44,8 +44,8 @@
 						'type'    => 'text',
 					],
 					'file' => [
-						'caption' => 'Файл',
-						'type'    => 'file',
+						'caption' => 'Изображение',
+						'type'    => 'image',
 					]
 				]
 			]

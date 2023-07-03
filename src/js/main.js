@@ -66,5 +66,8 @@
 				_i.addClass('icon-menu-close').removeClass('icon-menu-open')
 			);
 			return !1;
-		})
+		});
+	new isvek.Bvi({
+		target: '.eya-panel'
+	});
 }(jQuery));

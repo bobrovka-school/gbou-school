@@ -69,6 +69,7 @@ module.exports = function(grunt) {
 			"group_css_media_queries",
 			"replace",
 			"cssmin",
+			"copy",
 			"pug"
 		],
 		fonts: [
@@ -145,13 +146,14 @@ module.exports = function(grunt) {
 					'bower_components/js-cookie/src/js.cookie.js',
 					'bower_components/jquery.cookie/jquery.cookie.js',
 					'bower_components/inputmask/dist/jquery.inputmask.js',
+					'bower_components/button-visually-impaired-javascript/dist/js/bvi.js'
 				],
 				dest: 'test/js/appjs.js'
 			},
 			main: {
 				src: [
 					//'src/js/jquery.btn.js',
-					//'src/js/bvi.js',
+					'bower_components/button-visually-impaired-javascript/dist/js/bvi.js',
 					'src/js/main.js'
 				],
 				dest: 'test/js/main.js'
@@ -464,6 +466,14 @@ module.exports = function(grunt) {
 					'**'
 				],
 				dest: __dirname + "/site/",
+			},
+			bvi: {
+				expand: true,
+				cwd: 'src/img',
+				src: [
+					'**'
+				],
+				dest: '<%= globalConfig.gosave %>/img/',
 			},
 			fonts: {
 				expand: true,

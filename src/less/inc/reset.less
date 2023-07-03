@@ -21,6 +21,38 @@ textarea {
 p,
 dl {
 	margin-top: unset;
+	&.dl-horizontal {
+		display: -ms-flexbox;
+		display: flex;
+		-ms-flex-direction: row;
+		flex-direction: row;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+		dt {
+			text-align: right;
+			width: 170px;
+			font-weight: 600;
+			white-space: normal;
+		}
+		dd {
+			width: ~'calc(100% - 170px)';
+			padding-left: 15px;
+			margin-left: unset;
+			margin-right: unset;
+		}
+		@media (max-width: 767px) {
+			display: block;
+			dt {
+				text-align: left;
+				width: unset;
+			}
+			dd {
+				padding-left: unset;
+				width: unset;
+				margin-left: 40px;
+			}
+		}
+	}
 }
 img {
 	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);

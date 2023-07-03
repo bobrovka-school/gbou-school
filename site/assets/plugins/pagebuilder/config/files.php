@@ -1,7 +1,7 @@
 <?php
 
 	return [
-		'title' => 'Page Documents',
+		'title' => 'Page Files',
 
 		'show_in_templates' => [5],
 
@@ -9,14 +9,13 @@
 
 //		'hide_in_docs' => [ 10, 63 ],
 
-		'order' => 2,
+		'order' => 1,
 
 		'container' => ['programms'],
 
 		'templates' => [
 			'owner' => '
 				<div class="documents">
-					<h3 class="text-center news-title">[+text+]</h3>
 					<ul class="documents--list">
 						[+documents+]
 					</ul>
@@ -31,10 +30,6 @@
 			',
 		],
 		'fields' => [
-			'text' => [
-				'caption' => 'Название блока',
-				'type'    => 'text',
-			],
 			'documents' => [
 				'caption' => 'Документы',
 				'type'    => 'group',

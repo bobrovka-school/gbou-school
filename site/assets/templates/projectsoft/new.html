@@ -12,10 +12,10 @@
 								<h1 class="entry-title">[*longtitle*]</h1>
 							</header><@ENDIF>
 							<div class="entry-content">
-								<@IF:[*id:is(1)*]>
-								{{@FILE assets/templates/projectsoft/tpl/gosuslugi.html}}
-								<@ENDIF>
-								[*content*]
+								<p class="entry-content-time"><strong><em>[!dateRus? &time=`[*news_date*]`!]</em></strong></p>[*content*]
+								[*EvoVideo:is=``:then=` `:else=`{{@FILE assets/templates/projectsoft/tpl/get_evo_video.html}}`*]
+								[[PageBuilder]]
+								<p class="entry-content-author"><strong><em>[*news_person*]</em></strong></p>
 							</div>
 						</article>
 					</div>

@@ -18,15 +18,22 @@ $month_arr = array(
 	'12' => 'декабря'
 );
 if(($data = strtotime($time))):
-	$data = date("j.n.Y", $data);
+	/* time */
+	$datetime = date("Y-m-d H:i:s", $data);
+	$temp = explode(" ", $datetime);
+	$datetime = implode('T', $temp);
+	$date = date("j.n.Y", $data);
 else:
-	$data = date("j.n.Y", intval($data));
+	$datetime = date("Y-m-d H:i:s", intval($data));
+	$temp = explode(" ", $datetime);
+	$datetime = implode('T', $temp);
+	$date = date("j.n.Y", intval($data));
 endif;
-$list = explode(".", $data);
-$data = implode(' ', array(
+$list = explode(".", $date);
+$out = implode(' ', array(
 	$list[0],
 	$month_arr[$list[1]],
 	$list[2],
 	"года"
 ));
-return $data;
+return '<time datetime="' . $datetime . '">' . $out . '</time>';
