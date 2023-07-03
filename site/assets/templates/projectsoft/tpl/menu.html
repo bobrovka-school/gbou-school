@@ -1,32 +1,35 @@
 
-<div class="header-navigation">
-	<nav role="navigation">
-		<button type="button"><i class="icon-menu-open"></i></button>[!DLMenu?
-			&outerTpl=`@CODE: <ul[+classes+]>[+wrap+]</ul>`
-			&rowTpl=`@CODE:<li[+classes+]><a href="[+url+]">[+title+]</a></li>`
-			&rowHereTpl=`@CODE:<li[+classes+]><span data-menu-href="[+url+]">[+title+]</span></li>`
-			&parentRowTpl=`@CODE:<li[+classes+]><a href="[+url+]">[+title+]</a><i class="icon-down"></i>[+wrap+]</li>`
-			&parentRowHereTpl=`@CODE:<li[+classes+]><span data-menu-href="[+url+]">[+title+]</span><i class="icon-down"></i>[+wrap+]</li>`
-			&parentRowActiveTpl=`@CODE:<li[+classes+]><a href="[+url+]">[+title+]</a><i class="icon-down"></i>[+wrap+]</li>`
-			&innerTpl=`@CODE: <ul[+classes+]>[+wrap+]</ul>`
-			&innerRowTpl=`@CODE:<li[+classes+]><a href="[+url+]">[+title+]</a></li>`
-			&innerRowHereTpl=`@CODE:<li[+classes+]><span data-menu-href="[+url+]">[+title+]</span></li>`
-			&parents=`0`
-			&showParent=`1`
-			&innerClass=`inner`
-			&outerClass=`outer`
-			&rowClass=``
-			&firstClass=``
-			&lastClass=``
-			&levelClass=``
-			&webLinkClass=`web-link`
-			&parentClass=`parent`
-			&hereClass=`here`
-			&activeClass=`active`
-			&oddClass=``
-			&evenClass=``
-			&stateClass=`stateClass`
-			&&urlScheme=`full`
-		!]
-	</nav>
-</div>
+[!DLMenu?
+	&outerTpl=`@CODE: <div class="header-navigation"><nav role="navigation" itemscope itemtype="http://www.schema.org/SiteNavigationElement"><button type="button"><i class="icon-menu-open"></i></button><ul[+classes+] itemprop="about" itemscope itemtype="http://schema.org/ItemList">[+wrap+]</ul></nav></div>`
+	&rowTpl=`@CODE:<li[+classes+] itemprop="itemListElement" itemscope itemtype="http://schema.org/ItemList"><a itemprop="url" href="[+url+]">[+title+]</a><meta itemprop="name" content="[+title:notags:strip+]"></li>`
+	&rowHereTpl=`@CODE:<li[+classes+] itemprop="itemListElement" itemscope itemtype="http://schema.org/ItemList"><a itemprop="url" href="[+url+]">[+title+]</a><meta itemprop="name" content="[+title:notags:strip+]"></li>`
+	&parentRowTpl=`@CODE:<li[+classes+] itemprop="itemListElement" itemscope itemtype="http://schema.org/ItemList"><a itemprop="url" href="[+url+]">[+title+]</a><meta itemprop="name" content="[+title:notags:strip+]"><i class="icon-down"></i>[+wrap+]</li>`
+	&parentRowHereTpl=`@CODE:<li[+classes+] itemprop="itemListElement" itemscope itemtype="http://schema.org/ItemList"><a itemprop="url" href="[+url+]">[+title+]</a><meta itemprop="name" content="[+title:notags:strip+]"><i class="icon-down"></i>[+wrap+]</li>`
+	&parentRowActiveTpl=`@CODE:<li[+classes+] itemprop="itemListElement" itemscope itemtype="http://schema.org/ItemList"><a itemprop="url" href="[+url+]">[+title+]</a><meta itemprop="name" content="[+title:notags:strip+]"><i class="icon-down"></i>[+wrap+]</li>`
+	&innerTpl=`@CODE: <ul[+classes+]>[+wrap+]</ul>`
+	&innerRowTpl=`@CODE:<li[+classes+] itemprop="itemListElement" itemscope itemtype="http://schema.org/ItemList"><a itemprop="url" href="[+url+]">[+title+]</a><meta itemprop="name" content="[+title:notags:strip+]"></li>`
+	&innerRowHereTpl=`@CODE:<li[+classes+] itemprop="itemListElement" itemscope itemtype="http://schema.org/ItemList"><a itemprop="url" href="[+url+]">[+title+]</a><meta itemprop="name" content="[+title:notags:strip+]"></li>`
+	&parents=`0`
+	&&addWhereList=`hidemenu = 0 AND parent NOT IN(2)`
+	&showParent=`1`
+	&innerClass=`inner`
+	&outerClass=`outer`
+	&rowClass=``
+	&firstClass=``
+	&lastClass=``
+	&levelClass=``
+	&webLinkClass=`web-link`
+	&parentClass=`parent`
+	&hereClass=`here`
+	&activeClass=`active`
+	&oddClass=``
+	&evenClass=``
+	&stateClass=`stateClass`
+	&&urlScheme=`full`
+!]
+<@IF:[*id:neq(1)*]>
+[!DLCrumbs
+	&showCurrent=`1`
+	&ownerTPL=`@CODE:<nav><ul class="breadcrumb" aria-label="Breadcrumb" itemscope itemtype="http://schema.org/BreadcrumbList">[+crumbs.wrap+]</ul></nav>`
+!]
+<@ENDIF>

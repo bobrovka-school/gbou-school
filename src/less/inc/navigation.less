@@ -40,7 +40,8 @@
 					position: absolute;
 					visibility: hidden;
 					opacity: 0;
-					min-width: 100%;
+					max-width: 100%;
+					box-shadow: 0 0 1px #000;
 					z-index: -100;
 					transition: opacity .3s ease;
 				}
@@ -51,7 +52,7 @@
 					line-height: 2.7;
 					outline: none !important;
 					text-transform: uppercase;
-    				white-space: nowrap;
+    				white-space: wrap;
     				user-select: none;
     				font-weight: 300;
     				cursor: pointer;
@@ -62,6 +63,9 @@
 					font-size: 0.95em;
 					padding-left: 15px;
 					padding-right: 15px;
+					line-height: 1.5;
+					padding-top: .5em;
+					padding-bottom: .5em;
 				}
 				i {
 					font-size: .5em;
@@ -140,6 +144,12 @@
 				}
 			}
 			nav {
+				li {
+					> ul {
+						max-width: unset;
+						box-shadow: unset;
+					}
+				}
 				> ul {
 					display: none;
 					ul {

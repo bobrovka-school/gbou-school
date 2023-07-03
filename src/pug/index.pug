@@ -1,10 +1,10 @@
 doctype html
 html(lang="ru" prefix="og: http://ogp.me/ns#")
-	include inc/head.pug
+	|{{@FILE assets/templates/projectsoft/tpl/head.html}}
 	body
 		.body
 			header#masthead(role="banner")
-				include inc/header.pug
+				|{{@FILE assets/templates/projectsoft/tpl/header.html}}
 			.main
 				.primary
 					#content(role="main")
@@ -21,7 +21,7 @@ html(lang="ru" prefix="og: http://ogp.me/ns#")
 								|[*content*]
 				.secondary#secondary(role="complementary")
 					.widgets
-						include inc/widget_director
+						|{{@FILE assets/templates/projectsoft/tpl/widget_director.html}}
 				.main-footer
 					|{{@FILE assets/templates/projectsoft/tpl/sites_link.html}} 
 			|{{@FILE assets/templates/projectsoft/tpl/footer.html}}
