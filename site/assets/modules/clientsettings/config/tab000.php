@@ -61,7 +61,7 @@ return array (
 			'default_text' => 'Гойколова Марина Валерьевна',
 		),
 		'director_photo' => array (
-			'caption' => 'Фотография<br><span style="color: red;">К размеру 480x500</span>',
+			'caption' => 'Фотография<br><span style="color: red;">К размеру 300x300</span>',
 			'type' => 'image',
 			'note' => 'Фотография Директора',
 			'default_text' => '',

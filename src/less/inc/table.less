@@ -8,6 +8,12 @@ table {
 		max-width: 100% !important;
 		width: 100% !important;
 	}
+	thead {
+		td,
+		th {
+			font-weight: 600;
+		}
+	}
 }
 table,
 .table {
@@ -50,7 +56,86 @@ table,
 	}
 
 	// Nesting
-	.table {
+	/*.table {
 		background-color: @body-bg;
+	}*/
+	p {
+		&:last-child {
+			margin-bottom: unset;
+		}
+	}
+}
+
+.table-condensed {
+	> thead,
+	> tbody,
+	> tfoot {
+		> tr {
+			> th,
+			> td {
+				padding: @table-condensed-cell-padding;
+			}
+		}
+	}
+}
+
+// Mixins
+.tbl-bordered() {
+	border: 1px solid @table-border-color;
+	> thead,
+	> tbody,
+	> tfoot {
+		> tr {
+			> th,
+			> td {
+				border: 1px solid @table-border-color;
+			}
+		}
+	}
+	> thead > tr {
+		> th,
+		> td {
+			border-bottom-width: 2px;
+		}
+	}
+}
+.tbl-striped() {
+	> tbody > tr:nth-of-type(odd) {
+		background-color: @table-bg-accent;
+	}
+}
+.tbl-hover() {
+	> tbody > tr:hover {
+		background-color: @table-bg-hover;
+	}
+}
+
+// Bordered version
+//
+// Add borders all around the table and between all the columns.
+.table-bordered {
+	.tbl-bordered();
+	&-striped {
+		.tbl-bordered();
+		.tbl-striped();
+		> tbody > tr:nth-of-type(odd) {
+			background-color: @table-bg-accent;
+		}
+		&-hover {
+			.tbl-hover();
+		}
+	}
+	// Table Bordered Hover
+	&-hover {
+		.tbl-bordered();
+		.tbl-hover();
+	}
+}
+.table-responsive {
+	margin-bottom: 20px;
+	table {
+		&:last-child{
+			margin-bottom: unset;
+		}
 	}
 }

@@ -2,6 +2,10 @@
 	&_director {
 		&-header {
 			font-size: 1.2em;
+			&-img {
+				aspect-ratio: ~'1 / 1';
+				position: relative;
+			}
 		}
 		&-title {
 
@@ -30,6 +34,19 @@
 							text-align: center;
 						}
 					}
+				}
+			}
+		}
+	}
+}
+body .bvi-body[data-bvi-images=false] {
+	.widget {
+		&_director {
+			&-header {
+				font-size: 1.2em;
+				.bvi-caption-alt {
+					display: block;
+					min-height: 100%;
 				}
 			}
 		}

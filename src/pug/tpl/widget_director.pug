@@ -7,8 +7,10 @@
 			p
 				strong
 					|[(director)]
-			p
-				img(src="[(director_photo)]" alt="[(director)]")
+			p.widget_director-header-img
+				img(src!="[[thumb? &input=`[(director_photo)]` &options=`w=270,h=270,zc=C`]]" alt="[(director)]")
+				span.bvi-caption-alt
+					|[(director)]
 		.widget_director-content
 			dl
 				dt

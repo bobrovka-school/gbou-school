@@ -39,6 +39,16 @@
 							display:block;
 							aspect-ratio: ~'195 / 88';
 						}
+						img {
+							transition: transform .3s ease;
+							transform: scale(1.0);
+							transform-origin: center center;
+						}
+						&:hover {
+							img {
+								transform: scale(1.1);
+							}
+						}
 					}
 				}
 			}
