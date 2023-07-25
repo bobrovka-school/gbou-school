@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @font-face {
   font-family: "IconsSite";
-  src: url("/assets/templates/projectsoft/fonts/iconssite.woff2?24cf47d3b68b1af29c33cd5a27e98b8d") format("woff2"), url("/assets/templates/projectsoft/fonts/iconssite.woff?24cf47d3b68b1af29c33cd5a27e98b8d") format("woff"), url("/assets/templates/projectsoft/fonts/iconssite.ttf?24cf47d3b68b1af29c33cd5a27e98b8d") format("truetype");
+  src: url("/assets/templates/projectsoft/fonts/iconssite.woff2?8308ad1e36c96be3c0ba395d8a4d21c1") format("woff2"), url("/assets/templates/projectsoft/fonts/iconssite.woff?8308ad1e36c96be3c0ba395d8a4d21c1") format("woff"), url("/assets/templates/projectsoft/fonts/iconssite.ttf?8308ad1e36c96be3c0ba395d8a4d21c1") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -185,184 +185,188 @@
   content: "\e928";
 }
 
-.icon-next:before {
+.icon-more:before {
   content: "\e929";
 }
 
-.icon-ok:before {
+.icon-next:before {
   content: "\e92a";
 }
 
-.icon-oks:before {
+.icon-ok:before {
   content: "\e92b";
 }
 
-.icon-opera:before {
+.icon-oks:before {
   content: "\e92c";
 }
 
-.icon-phone:before {
+.icon-opera:before {
   content: "\e92d";
 }
 
-.icon-photo:before {
+.icon-phone:before {
   content: "\e92e";
 }
 
-.icon-prev:before {
+.icon-photo:before {
   content: "\e92f";
 }
 
-.icon-print-ic:before {
+.icon-prev:before {
   content: "\e930";
 }
 
-.icon-print:before {
+.icon-print-ic:before {
   content: "\e931";
 }
 
-.icon-required:before {
+.icon-print:before {
   content: "\e932";
 }
 
-.icon-reset:before {
+.icon-required:before {
   content: "\e933";
 }
 
-.icon-rss-logo:before {
+.icon-reset:before {
   content: "\e934";
 }
 
-.icon-rss:before {
+.icon-rss-logo:before {
   content: "\e935";
 }
 
-.icon-search:before {
+.icon-rss:before {
   content: "\e936";
 }
 
-.icon-share:before {
+.icon-search:before {
   content: "\e937";
 }
 
-.icon-success:before {
+.icon-share:before {
   content: "\e938";
 }
 
-.icon-telegram:before {
+.icon-success:before {
   content: "\e939";
 }
 
-.icon-twitter:before {
+.icon-telegram:before {
   content: "\e93a";
 }
 
-.icon-tws:before {
+.icon-twitter:before {
   content: "\e93b";
 }
 
-.icon-up:before {
+.icon-tws:before {
   content: "\e93c";
 }
 
-.icon-vk:before {
+.icon-up:before {
   content: "\e93d";
 }
 
-.icon-vks:before {
+.icon-vk:before {
   content: "\e93e";
 }
 
-.icon-zoom-in:before {
+.icon-vks:before {
   content: "\e93f";
 }
 
-.icon-zoom-out:before {
+.icon-zoom-in:before {
   content: "\e940";
 }
 
+.icon-zoom-out:before {
+  content: "\e941";
+}
+
 @font-face {
   font-family: 'Roboto';
   font-style: italic;
   font-weight: 100;
-  src: url("/assets/templates/projectsoft/fonts/Roboto-ThinItalic.woff2?24cf47d3b68b1af29c33cd5a27e98b8d") format("woff2"), url("/assets/templates/projectsoft/fonts/Roboto-ThinItalic.woff?24cf47d3b68b1af29c33cd5a27e98b8d") format("woff"), url("/assets/templates/projectsoft/fonts/Roboto-ThinItalic.ttf?24cf47d3b68b1af29c33cd5a27e98b8d") format("truetype");
+  src: url("/assets/templates/projectsoft/fonts/Roboto-ThinItalic.woff2?8308ad1e36c96be3c0ba395d8a4d21c1") format("woff2"), url("/assets/templates/projectsoft/fonts/Roboto-ThinItalic.woff?8308ad1e36c96be3c0ba395d8a4d21c1") format("woff"), url("/assets/templates/projectsoft/fonts/Roboto-ThinItalic.ttf?8308ad1e36c96be3c0ba395d8a4d21c1") format("truetype");
 }
 
 @font-face {
   font-family: 'Roboto';
   font-style: italic;
   font-weight: 300;
-  src: url("/assets/templates/projectsoft/fonts/Roboto-LightItalic.woff2?24cf47d3b68b1af29c33cd5a27e98b8d") format("woff2"), url("/assets/templates/projectsoft/fonts/Roboto-LightItalic.woff?24cf47d3b68b1af29c33cd5a27e98b8d") format("woff"), url("/assets/templates/projectsoft/fonts/Roboto-LightItalic.ttf?24cf47d3b68b1af29c33cd5a27e98b8d") format("truetype");
+  src: url("/assets/templates/projectsoft/fonts/Roboto-LightItalic.woff2?8308ad1e36c96be3c0ba395d8a4d21c1") format("woff2"), url("/assets/templates/projectsoft/fonts/Roboto-LightItalic.woff?8308ad1e36c96be3c0ba395d8a4d21c1") format("woff"), url("/assets/templates/projectsoft/fonts/Roboto-LightItalic.ttf?8308ad1e36c96be3c0ba395d8a4d21c1") format("truetype");
 }
 
 @font-face {
   font-family: 'Roboto';
   font-style: italic;
   font-weight: 400;
-  src: url("/assets/templates/projectsoft/fonts/Roboto-Italic.woff2?24cf47d3b68b1af29c33cd5a27e98b8d") format("woff2"), url("/assets/templates/projectsoft/fonts/Roboto-Italic.woff?24cf47d3b68b1af29c33cd5a27e98b8d") format("woff"), url("/assets/templates/projectsoft/fonts/Roboto-Italic.ttf?24cf47d3b68b1af29c33cd5a27e98b8d") format("truetype");
+  src: url("/assets/templates/projectsoft/fonts/Roboto-Italic.woff2?8308ad1e36c96be3c0ba395d8a4d21c1") format("woff2"), url("/assets/templates/projectsoft/fonts/Roboto-Italic.woff?8308ad1e36c96be3c0ba395d8a4d21c1") format("woff"), url("/assets/templates/projectsoft/fonts/Roboto-Italic.ttf?8308ad1e36c96be3c0ba395d8a4d21c1") format("truetype");
 }
 
 @font-face {
   font-family: 'Roboto';
   font-style: italic;
   font-weight: 500;
-  src: url("/assets/templates/projectsoft/fonts/Roboto-MediumItalic.woff2?24cf47d3b68b1af29c33cd5a27e98b8d") format("woff2"), url("/assets/templates/projectsoft/fonts/Roboto-MediumItalic.woff?24cf47d3b68b1af29c33cd5a27e98b8d") format("woff"), url("/assets/templates/projectsoft/fonts/Roboto-MediumItalic.ttf?24cf47d3b68b1af29c33cd5a27e98b8d") format("truetype");
+  src: url("/assets/templates/projectsoft/fonts/Roboto-MediumItalic.woff2?8308ad1e36c96be3c0ba395d8a4d21c1") format("woff2"), url("/assets/templates/projectsoft/fonts/Roboto-MediumItalic.woff?8308ad1e36c96be3c0ba395d8a4d21c1") format("woff"), url("/assets/templates/projectsoft/fonts/Roboto-MediumItalic.ttf?8308ad1e36c96be3c0ba395d8a4d21c1") format("truetype");
 }
 
 @font-face {
   font-family: 'Roboto';
   font-style: italic;
   font-weight: 700;
-  src: url("/assets/templates/projectsoft/fonts/Roboto-BoldItalic.woff2?24cf47d3b68b1af29c33cd5a27e98b8d") format("woff2"), url("/assets/templates/projectsoft/fonts/Roboto-BoldItalic.woff?24cf47d3b68b1af29c33cd5a27e98b8d") format("woff"), url("/assets/templates/projectsoft/fonts/Roboto-BoldItalic.ttf?24cf47d3b68b1af29c33cd5a27e98b8d") format("truetype");
+  src: url("/assets/templates/projectsoft/fonts/Roboto-BoldItalic.woff2?8308ad1e36c96be3c0ba395d8a4d21c1") format("woff2"), url("/assets/templates/projectsoft/fonts/Roboto-BoldItalic.woff?8308ad1e36c96be3c0ba395d8a4d21c1") format("woff"), url("/assets/templates/projectsoft/fonts/Roboto-BoldItalic.ttf?8308ad1e36c96be3c0ba395d8a4d21c1") format("truetype");
 }
 
 @font-face {
   font-family: 'Roboto';
   font-style: italic;
   font-weight: 900;
-  src: url("/assets/templates/projectsoft/fonts/Roboto-BlackItalic.woff2?24cf47d3b68b1af29c33cd5a27e98b8d") format("woff2"), url("/assets/templates/projectsoft/fonts/Roboto-BlackItalic.woff?24cf47d3b68b1af29c33cd5a27e98b8d") format("woff"), url("/assets/templates/projectsoft/fonts/Roboto-BlackItalic.ttf?24cf47d3b68b1af29c33cd5a27e98b8d") format("truetype");
+  src: url("/assets/templates/projectsoft/fonts/Roboto-BlackItalic.woff2?8308ad1e36c96be3c0ba395d8a4d21c1") format("woff2"), url("/assets/templates/projectsoft/fonts/Roboto-BlackItalic.woff?8308ad1e36c96be3c0ba395d8a4d21c1") format("woff"), url("/assets/templates/projectsoft/fonts/Roboto-BlackItalic.ttf?8308ad1e36c96be3c0ba395d8a4d21c1") format("truetype");
 }
 
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 100;
-  src: url("/assets/templates/projectsoft/fonts/Roboto-Thin.woff2?24cf47d3b68b1af29c33cd5a27e98b8d") format("woff2"), url("/assets/templates/projectsoft/fonts/Roboto-Thin.woff?24cf47d3b68b1af29c33cd5a27e98b8d") format("woff"), url("/assets/templates/projectsoft/fonts/Roboto-Thin.ttf?24cf47d3b68b1af29c33cd5a27e98b8d") format("truetype");
+  src: url("/assets/templates/projectsoft/fonts/Roboto-Thin.woff2?8308ad1e36c96be3c0ba395d8a4d21c1") format("woff2"), url("/assets/templates/projectsoft/fonts/Roboto-Thin.woff?8308ad1e36c96be3c0ba395d8a4d21c1") format("woff"), url("/assets/templates/projectsoft/fonts/Roboto-Thin.ttf?8308ad1e36c96be3c0ba395d8a4d21c1") format("truetype");
 }
 
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 300;
-  src: url("/assets/templates/projectsoft/fonts/Roboto-Light.woff2?24cf47d3b68b1af29c33cd5a27e98b8d") format("woff2"), url("/assets/templates/projectsoft/fonts/Roboto-Light.woff?24cf47d3b68b1af29c33cd5a27e98b8d") format("woff"), url("/assets/templates/projectsoft/fonts/Roboto-Light.ttf?24cf47d3b68b1af29c33cd5a27e98b8d") format("truetype");
+  src: url("/assets/templates/projectsoft/fonts/Roboto-Light.woff2?8308ad1e36c96be3c0ba395d8a4d21c1") format("woff2"), url("/assets/templates/projectsoft/fonts/Roboto-Light.woff?8308ad1e36c96be3c0ba395d8a4d21c1") format("woff"), url("/assets/templates/projectsoft/fonts/Roboto-Light.ttf?8308ad1e36c96be3c0ba395d8a4d21c1") format("truetype");
 }
 
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
-  src: url("/assets/templates/projectsoft/fonts/Roboto-Regular.woff2?24cf47d3b68b1af29c33cd5a27e98b8d") format("woff2"), url("/assets/templates/projectsoft/fonts/Roboto-Regular.woff?24cf47d3b68b1af29c33cd5a27e98b8d") format("woff"), url("/assets/templates/projectsoft/fonts/Roboto-Regular.ttf?24cf47d3b68b1af29c33cd5a27e98b8d") format("truetype");
+  src: url("/assets/templates/projectsoft/fonts/Roboto-Regular.woff2?8308ad1e36c96be3c0ba395d8a4d21c1") format("woff2"), url("/assets/templates/projectsoft/fonts/Roboto-Regular.woff?8308ad1e36c96be3c0ba395d8a4d21c1") format("woff"), url("/assets/templates/projectsoft/fonts/Roboto-Regular.ttf?8308ad1e36c96be3c0ba395d8a4d21c1") format("truetype");
 }
 
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
-  src: url("/assets/templates/projectsoft/fonts/Roboto-Medium.woff2?24cf47d3b68b1af29c33cd5a27e98b8d") format("woff2"), url("/assets/templates/projectsoft/fonts/Roboto-Medium.woff?24cf47d3b68b1af29c33cd5a27e98b8d") format("woff"), url("/assets/templates/projectsoft/fonts/Roboto-Medium.ttf?24cf47d3b68b1af29c33cd5a27e98b8d") format("truetype");
+  src: url("/assets/templates/projectsoft/fonts/Roboto-Medium.woff2?8308ad1e36c96be3c0ba395d8a4d21c1") format("woff2"), url("/assets/templates/projectsoft/fonts/Roboto-Medium.woff?8308ad1e36c96be3c0ba395d8a4d21c1") format("woff"), url("/assets/templates/projectsoft/fonts/Roboto-Medium.ttf?8308ad1e36c96be3c0ba395d8a4d21c1") format("truetype");
 }
 
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
-  src: url("/assets/templates/projectsoft/fonts/Roboto-Bold.woff2?24cf47d3b68b1af29c33cd5a27e98b8d") format("woff2"), url("/assets/templates/projectsoft/fonts/Roboto-Bold.woff?24cf47d3b68b1af29c33cd5a27e98b8d") format("woff"), url("/assets/templates/projectsoft/fonts/Roboto-Bold.ttf?24cf47d3b68b1af29c33cd5a27e98b8d") format("truetype");
+  src: url("/assets/templates/projectsoft/fonts/Roboto-Bold.woff2?8308ad1e36c96be3c0ba395d8a4d21c1") format("woff2"), url("/assets/templates/projectsoft/fonts/Roboto-Bold.woff?8308ad1e36c96be3c0ba395d8a4d21c1") format("woff"), url("/assets/templates/projectsoft/fonts/Roboto-Bold.ttf?8308ad1e36c96be3c0ba395d8a4d21c1") format("truetype");
 }
 
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 900;
-  src: url("/assets/templates/projectsoft/fonts/Roboto-Black.woff2?24cf47d3b68b1af29c33cd5a27e98b8d") format("woff2"), url("/assets/templates/projectsoft/fonts/Roboto-Black.woff?24cf47d3b68b1af29c33cd5a27e98b8d") format("woff"), url("/assets/templates/projectsoft/fonts/Roboto-Black.ttf?24cf47d3b68b1af29c33cd5a27e98b8d") format("truetype");
+  src: url("/assets/templates/projectsoft/fonts/Roboto-Black.woff2?8308ad1e36c96be3c0ba395d8a4d21c1") format("woff2"), url("/assets/templates/projectsoft/fonts/Roboto-Black.woff?8308ad1e36c96be3c0ba395d8a4d21c1") format("woff"), url("/assets/templates/projectsoft/fonts/Roboto-Black.ttf?8308ad1e36c96be3c0ba395d8a4d21c1") format("truetype");
 }
 body,
 button,
@@ -430,7 +434,20 @@ a:focus {
 }
 
 a:hover {
-  color: #f00;
+  color: #a81c1c;
+}
+
+.site-title a {
+  word-break: normal;
+}
+
+table,
+table.table,
+table.table-bordered,
+table.table-condensed,
+table.table-hover,
+table.table-striped {
+  max-width: 780px !important;
 }
 
 .text-left {
@@ -447,47 +464,6 @@ a:hover {
 
 .text-justify {
   text-align: justify;
-}
-
-blockquote {
-  margin-left: 0;
-  margin-right: 0;
-  padding-left: 3em;
-  padding-top: 0.7em;
-  padding-bottom: 1em;
-  padding-right: 1em;
-  position: relative;
-  min-height: 57px;
-  background-color: #f3f3f3;
-  box-shadow: 0 0 1px #2d2d2d;
-}
-
-blockquote::before {
-  font-family: "IconsSite" !important;
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  content: "\e904";
-  position: absolute;
-  color: #bbb;
-  left: 0.3em;
-  top: 0.5em;
-  font-size: 1.9em;
-  text-shadow: 0 0 1px #000;
-}
-
-blockquote p {
-  margin-left: 2em;
-}
-
-blockquote > p:last-child {
-  margin-bottom: unset;
 }
 
 .mce-visualblocks blockquote {
@@ -2259,7 +2235,7 @@ fieldset[disabled] .btn-danger.focus {
 
 .btn-link {
   font-weight: 400;
-  color: #337ab7;
+  color: #d33;
   border-radius: 0;
 }
 
@@ -2281,7 +2257,7 @@ fieldset[disabled] .btn-link {
 
 .btn-link:hover,
 .btn-link:focus {
-  color: #23527c;
+  color: #a81c1c;
   text-decoration: underline;
   background-color: transparent;
 }
@@ -2368,10 +2344,10 @@ input[type="button"].btn-block {
   padding: 6px 12px;
   margin-left: -1px;
   line-height: 1.42857143;
-  color: #337ab7;
+  color: #3a3d41;
   text-decoration: none;
   background-color: #fff;
-  border: 1px solid #ddd;
+  border: 1px solid #3a3d41;
 }
 
 .pagination > li > a:hover,
@@ -2379,9 +2355,9 @@ input[type="button"].btn-block {
 .pagination > li > a:focus,
 .pagination > li > span:focus {
   z-index: 2;
-  color: #23527c;
-  background-color: #eeeeee;
-  border-color: #ddd;
+  color: #fff;
+  background-color: #000;
+  border-color: #3a3d41;
 }
 
 .pagination > li:first-child > a,
@@ -2406,8 +2382,8 @@ input[type="button"].btn-block {
   z-index: 3;
   color: #fff;
   cursor: default;
-  background-color: #337ab7;
-  border-color: #337ab7;
+  background-color: #3a3d41;
+  border-color: #3a3d41;
 }
 
 .pagination > .disabled > span,
@@ -2416,10 +2392,10 @@ input[type="button"].btn-block {
 .pagination > .disabled > a,
 .pagination > .disabled > a:hover,
 .pagination > .disabled > a:focus {
-  color: #777777;
+  color: #3a3d41;
   cursor: not-allowed;
   background-color: #fff;
-  border-color: #ddd;
+  border-color: #3a3d41;
 }
 
 .pagination-lg > li > a,
@@ -2458,6 +2434,133 @@ input[type="button"].btn-block {
 .pagination-sm > li:last-child > span {
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
+}
+.clearfix:before,
+.clearfix:after,
+.dl-horizontal dd:before,
+.dl-horizontal dd:after,
+.form-horizontal .form-group:before,
+.form-horizontal .form-group:after {
+  display: table;
+  content: " ";
+}
+
+.clearfix:after,
+.dl-horizontal dd:after,
+.form-horizontal .form-group:after {
+  clear: both;
+}
+
+.clearfix::before,
+.clearfix::after,
+.dl-horizontal dd::before,
+.dl-horizontal dd::after,
+.form-horizontal .form-group::before,
+.form-horizontal .form-group::after {
+  display: table;
+  content: "";
+  clear: both;
+}
+table,
+table.table,
+table.table-hover,
+table.table-striped,
+table.table-bordered,
+table.table-condensed {
+  max-width: 100% !important;
+  width: 100% !important;
+}
+
+table,
+.table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+table > thead > tr > th,
+.table > thead > tr > th,
+table > tbody > tr > th,
+.table > tbody > tr > th,
+table > tfoot > tr > th,
+.table > tfoot > tr > th,
+table > thead > tr > td,
+.table > thead > tr > td,
+table > tbody > tr > td,
+.table > tbody > tr > td,
+table > tfoot > tr > td,
+.table > tfoot > tr > td {
+  padding: 8px;
+  line-height: 1.42857143;
+  vertical-align: top;
+  border-top: 1px solid #ddd;
+}
+
+table > thead > tr > th,
+.table > thead > tr > th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #ddd;
+}
+
+table > caption + thead > tr:first-child > th,
+.table > caption + thead > tr:first-child > th,
+table > colgroup + thead > tr:first-child > th,
+.table > colgroup + thead > tr:first-child > th,
+table > thead:first-child > tr:first-child > th,
+.table > thead:first-child > tr:first-child > th,
+table > caption + thead > tr:first-child > td,
+.table > caption + thead > tr:first-child > td,
+table > colgroup + thead > tr:first-child > td,
+.table > colgroup + thead > tr:first-child > td,
+table > thead:first-child > tr:first-child > td,
+.table > thead:first-child > tr:first-child > td {
+  border-top: 0;
+}
+
+table > tbody + tbody,
+.table > tbody + tbody {
+  border-top: 2px solid #ddd;
+}
+
+table .table,
+.table .table {
+  background-color: #fff;
+}
+blockquote {
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 3em;
+  padding-top: 0.7em;
+  padding-bottom: 1em;
+  padding-right: 1em;
+  position: relative;
+  min-height: 57px;
+  background-color: #f3f3f3;
+  box-shadow: 0 0 1px #2d2d2d;
+}
+
+blockquote::before {
+  font-family: "IconsSite" !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\e904";
+  position: absolute;
+  color: #bbb;
+  left: 0.3em;
+  top: 0.5em;
+  font-size: 1.9em;
+  text-shadow: 0 0 1px #000;
+}
+
+blockquote > p:last-child {
+  margin-bottom: unset;
 }
 .btn-any {
   position: relative;
@@ -2870,19 +2973,22 @@ h4,
 h5,
 h6 {
   clear: both;
-  margin: 0;
 }
 
 h1,
 h2,
 h3 {
   font-weight: 500;
+  margin-top: 20px;
+  margin-bottom: 15px;
 }
 
 h4,
 h5,
 h6 {
   font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 15px;
 }
 
 @media (max-width: 767px) {

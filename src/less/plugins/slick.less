@@ -143,3 +143,27 @@
 		}
 	}
 }
+body {
+	.bvi-body {
+		&[data-bvi-fontsize] {
+			* {
+				.slick-prev,
+				.slick-next {
+					font-size: 0px !important;
+					&::before {
+						font-size: 30px !important;
+					}
+				}
+			}
+		}
+		&[data-bvi-images="false"] {
+			#slick-header {
+				.slick-item {
+					img {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+}

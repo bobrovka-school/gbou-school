@@ -9,7 +9,7 @@ html(lang="ru" prefix="og: http://ogp.me/ns#")
 			.main
 				.primary
 					#content(role="main")
-						article(id!="page-[*id*]" class!="page page-[*id*] type-page")
+						article(id!="page-[*id*]" class!="page page-[*id*] type-page clearfix")
 							|<@IF:[*id:neq(1)*]>
 							header.entry-header
 								h1.entry-title
@@ -20,6 +20,28 @@ html(lang="ru" prefix="og: http://ogp.me/ns#")
 								|{{@FILE assets/templates/projectsoft/tpl/gosuslugi.html}}
 								|<@ENDIF>
 								|[*content*]
+								p.clearfix
+						article(class!="page page-home-news type-page")
+							header.entry-header
+								h2.text-center.entry-title.page-h2-title
+									|Новости школы
+							|[[DocLister?
+							|   &parents=`2`
+							|   &display=`3`
+							|   &tvList=`imageSoc, news_date`
+							|   &tvPrefix=``
+							|   &orderBy=`news_date DESC`
+							|   &sortBy=`news_date`
+							|   &sortDir=`DESC`
+							|   &tvSortType=`TVDATETIME`
+							|   &prepare=`\ProjectSoft\PrepareDL::prepareItem`
+							|   &noneTPL=``
+							|   &ownerTPL=`@FILE:projectsoft/tpl/news_owner`
+							|   &tpl=`@FILE:projectsoft/tpl/news_tpl`
+							|   &showParent=`0`
+							|   &urlScheme=`full`
+							|   &noneWrapOuter=`0`
+							|]]
 				.secondary#secondary(role="complementary")
 					.widgets
 						|<@IF:[*id:is(1)*]>

@@ -3,7 +3,7 @@
 	return [
 		'title' => 'Page Files',
 
-		'show_in_templates' => [5],
+		'show_in_templates' => [105],
 
 //		'show_in_docs' => [ 82 ],
 
@@ -11,7 +11,7 @@
 
 		'order' => 1,
 
-		'container' => ['programms'],
+//		'container' => ['programms'],
 
 		'templates' => [
 			'owner' => '

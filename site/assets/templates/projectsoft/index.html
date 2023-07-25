@@ -7,7 +7,7 @@
 			<div class="main">
 				<div class="primary">
 					<div id="content" role="main">
-						<article class="page page-[*id*] type-page" id="page-[*id*]"><@IF:[*id:neq(1)*]>
+						<article class="page page-[*id*] type-page clearfix" id="page-[*id*]"><@IF:[*id:neq(1)*]>
 							<header class="entry-header">
 								<h1 class="entry-title">[*longtitle*]</h1>
 							</header><@ENDIF>
@@ -16,7 +16,29 @@
 								{{@FILE assets/templates/projectsoft/tpl/gosuslugi.html}}
 								<@ENDIF>
 								[*content*]
+								<p class="clearfix"></p>
 							</div>
+						</article>
+						<article class="page page-home-news type-page">
+							<header class="entry-header">
+								<h2 class="text-center entry-title page-h2-title">Новости школы</h2>
+							</header>[[DocLister?
+							  &parents=`2`
+							  &display=`3`
+							  &tvList=`imageSoc, news_date`
+							  &tvPrefix=``
+							  &orderBy=`news_date DESC`
+							  &sortBy=`news_date`
+							  &sortDir=`DESC`
+							  &tvSortType=`TVDATETIME`
+							  &prepare=`\ProjectSoft\PrepareDL::prepareItem`
+							  &noneTPL=``
+							  &ownerTPL=`@FILE:projectsoft/tpl/news_owner`
+							  &tpl=`@FILE:projectsoft/tpl/news_tpl`
+							  &showParent=`0`
+							  &urlScheme=`full`
+							  &noneWrapOuter=`0`
+							]]
 						</article>
 					</div>
 				</div>

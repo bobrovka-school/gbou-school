@@ -77,16 +77,18 @@
 					margin-left: -15px;
 					position: relative;
 					z-index: 2;
+					&,
+					&::before {
+						color: #eee;
+					}
 				}
 				a {
-					&,
-					+ i {
+					& {
 						color: #eee;
 					}
 				}
 				span {
-					&,
-					+ i {
+					&{
 						color: #fff;
 					}
 					background-color: #000;
@@ -100,6 +102,12 @@
 					> a {
 						color: #fff;
 						background-color: #000;
+					}
+					i {
+						&::before {
+							color: #fff;
+							background-color: #000;
+						}
 					}
 				}
 				&:focus,

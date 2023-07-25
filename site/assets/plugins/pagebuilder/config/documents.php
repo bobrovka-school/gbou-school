@@ -11,12 +11,12 @@
 
 		'order' => 2,
 
-		'container' => ['programms'],
+//		'container' => ['programms'],
 
 		'templates' => [
 			'owner' => '
 				<div class="documents">
-					<h3 class="text-center news-title">[+text+]</h3>
+				[+text:ifnotempty=`<h3 class="text-center news-title">`+][+text+][+text:ifnotempty=`</h3>`+]
 					<ul class="documents--list">
 						[+documents+]
 					</ul>
@@ -32,7 +32,7 @@
 		],
 		'fields' => [
 			'text' => [
-				'caption' => 'Название блока',
+				'caption' => 'Название блока (необязательно)',
 				'type'    => 'text',
 			],
 			'documents' => [

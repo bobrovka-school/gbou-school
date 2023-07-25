@@ -68,6 +68,12 @@
 			return !1;
 		});
 	new isvek.Bvi({
-		target: '.eya-panel'
+		target: '.eya-panel',
+		builtElements: true,
+		images: true,
+		lang: 'ru-RU',
+		panelFixed: false,
+		speech: false,
+		fontSize: 14
 	});
 }(jQuery));

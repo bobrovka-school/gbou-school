@@ -28,37 +28,51 @@ $this->set('toolbar3', 'image media | link unlink | table | charmap emoticons', 
 $this->set('toolbar4', 'custom_format', 'string');
 // Основное меню (отключаем)
 $this->set('menubar', false, 'bool');
+// rel="noopener" disabled
+$this->set('allow_unsafe_link_target', true, 'bool');
 // Выставляем свой формат выравнивания текста
 $this->set('formats', '{
-            alignleft: {
-                selector: "p,h1,h2,h3,h4,h5,h6,table,td,th,div,ul,ol,li,dl,dt,dd,a,span,strong,i,em,b,time",
-                classes: "text-left"
-            },
-            aligncenter: {
-                selector: "p,h1,h2,h3,h4,h5,h6,table,td,th,div,ul,ol,li,dl,dt,dd,a,span,strong,i,em,b,time",
-                classes: "text-center"
-            },
-            alignright: {
-                selector: "p,h1,h2,h3,h4,h5,h6,table,td,th,div,ul,ol,li,dl,dt,dd,a,span,strong,i,em,b,time",
-                classes: "text-right"
-            },
-            alignjustify: {
-                selector: "p,h1,h2,h3,h4,h5,h6,table,td,th,div,ul,ol,li,dl,dt,dd,a,span,strong,i,em,b,time",
-                classes: "text-justify"
-            },
-            bold: {
-                inline : "strong"
-            },
-            italic: {
-                inline : "em"
-            },
-            underline: {
-                inline : "u"
-            },
-            strikethrough: {
-                inline : "del"
-            }
-        }', 'json');
-
+			alignleft: {
+				selector: "p,h1,h2,h3,h4,h5,h6,table,td,th,div,ul,ol,li,dl,dt,dd,a,span,strong,i,em,b,time",
+				classes: "text-left"
+			},
+			aligncenter: {
+				selector: "p,h1,h2,h3,h4,h5,h6,table,td,th,div,ul,ol,li,dl,dt,dd,a,span,strong,i,em,b,time",
+				classes: "text-center"
+			},
+			alignright: {
+				selector: "p,h1,h2,h3,h4,h5,h6,table,td,th,div,ul,ol,li,dl,dt,dd,a,span,strong,i,em,b,time",
+				classes: "text-right"
+			},
+			alignjustify: {
+				selector: "p,h1,h2,h3,h4,h5,h6,table,td,th,div,ul,ol,li,dl,dt,dd,a,span,strong,i,em,b,time",
+				classes: "text-justify"
+			},
+			bold: {
+				inline : "strong"
+			},
+			italic: {
+				inline : "em"
+			},
+			underline: {
+				inline : "u"
+			},
+			strikethrough: {
+				inline : "del"
+			}
+		}', 'json');
+$this->set('table_class_list', '[
+		{title: "None", value: "table"},
+		{title: "Table Bordered", value: "table-bordered"},
+		{title: "Table Striped", value: "table-striped"},
+		{title: "Table Hover", value: "table-hover"},
+		{title: "Table Condensed", value: "table-condensed"}
+	]', 'json');
+$this->set('invalid_styles', '{ 
+		"table": "width height border border-width border-style", 
+		"tr" : "width height border border-width border-style",
+		"th" : "width height border border-width border-style",
+		"td" : "width height border border-width border-style"
+	}', 'json');
 // Ресайзер
 $this->set('visualblocks_default_state', true, 'bool');

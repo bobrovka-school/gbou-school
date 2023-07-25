@@ -1,3 +1,25 @@
 
-<script src="[(site_url)]assets/templates/projectsoft/js/appjs.min.js?c6802532619b27990c498c507929ed6c"></script>
-<script src="[(site_url)]assets/templates/projectsoft/js/main.min.js?c6802532619b27990c498c507929ed6c"></script>
+<script src="[(site_url)]assets/templates/projectsoft/js/appjs.min.js?72beb9e3d8694d1567c8cfab69945ccc"></script>
+<script src="[(site_url)]assets/templates/projectsoft/js/main.min.js?72beb9e3d8694d1567c8cfab69945ccc"></script>
+<script>
+	var Hyphenopoly = {
+		require: {
+			ru		: "ru"
+		},
+		paths	: {
+			maindir	: "/assets/templates/projectsoft/js//Hyphenopoly/",
+			patterndir	: "/assets/templates/projectsoft/js//Hyphenopoly/patterns/"
+		},
+		setup	: {
+			selectors	: {
+				".hyphenation"	: {
+					"minWordLength"	: 1
+				},
+				"table"	: {
+					"minWordLength"	: 1
+				}
+			}
+		}
+	};
+</script>
+<!--script(src="[(site_url)]assets/templates/projectsoft/js/Hyphenopoly/Hyphenopoly_Loader.js")-->

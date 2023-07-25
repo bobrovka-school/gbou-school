@@ -62,9 +62,24 @@ a {
 	transition: color .3s ease;
 	&,
 	&:focus {
-		color: #d33;
+		color: @link-color;
 	}
 	&:hover {
-		color: #f00;
+		color: @link-hover-color;
+	}
+}
+.site-title {
+	a {
+		word-break: normal;
+	}
+}
+table {
+	&,
+	&.table,
+	&.table-bordered,
+	&.table-condensed,
+	&.table-hover,
+	&.table-striped {
+		max-width: 780px !important;
 	}
 }

@@ -1,0 +1,44 @@
+.btn {
+	text-decoration: none !important;
+	&.more {
+		position: relative;
+		overflow: hidden;
+		white-space: nowrap;
+		color: #3a3d41;
+		border: 1px solid #3a3d41;
+		background-color: #fff;
+		border-radius: 0;
+		&::before {
+			font-family: "IconsSite" !important;
+			speak: none;
+			font-style: normal;
+			font-weight: normal;
+			font-variant: normal;
+			text-transform: none;
+			line-height: 1;
+			text-rendering: auto;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+			display: flex;
+			width: 100%;
+			height: 100%;
+			content: "\e929"!important;
+			left: -100%;
+			top: 0;
+			padding: 0em 12px;
+			position: absolute;
+			transition: left .4s ease;
+			background-color: #3a3d41;
+			color: #fff;
+			line-height: 1;
+			justify-content: center;
+			flex-wrap: wrap;
+			align-content: center;
+		}
+		&:hover {
+			&::before {
+				left: 0;
+			}
+		}
+	}
+}

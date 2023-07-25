@@ -498,7 +498,15 @@ module.exports = function(grunt) {
 					'**'
 				],
 				dest: __dirname + "/site/comon/json/",
-			}
+			},
+			hyphen: {
+				expand: true,
+				cwd: 'src/js/Hyphenopoly',
+				src: [
+					'**'
+				],
+				dest: '<%= globalConfig.gosave %>/js/Hyphenopoly/',
+			},
 		},
 		pug: {
 			serv: {

@@ -5,26 +5,31 @@
 // @import "fonts/opensans";
 @import "fonts/roboto";
 
-/* Button Visually Impaired */
-@import (inline) "../../bower_components/button-visually-impaired-javascript/dist/css/bvi.css";
 
 /* Reset */
 @import "inc/reset";
 @import "inc/text";
-@import "inc/blockquote";
 
 /* FancyBox */
 @import (inline) "../../bower_components/fancybox/dist/jquery.fancybox.css";
 @import "plugins/fancybox";
 
+/* Button Visually Impaired */
+@import (inline) "../../bower_components/button-visually-impaired-javascript/dist/css/bvi.css";
 
 /* Slic Slider */
 @import "../../bower_components/slick-carousel/slick/slick";
 @import "plugins/slick";
 @import "plugins/slick_header";
+@import "plugins/eya";
+
+/* Bootstrap vars */
+@import "../../bower_components/bootstrap/less/variables";
+
+/* Local vars */
+@import "variables";
 
 /* Bootstrap */
-@import "../../bower_components/bootstrap/less/variables";
 @import "../../bower_components/bootstrap/less/mixins";
 @import "../../bower_components/bootstrap/less/normalize";
 
@@ -54,10 +59,18 @@
 
 /* Buttons*/
 @import "plugins/btn";
+@import "inc/btn";
 
 /* Yandex.Map */
 @import "plugins/yandex";
 
+/* Table*/
+@import "inc/table";
+
+/* Blockquote*/
+@import "inc/blockquote";
+
+@import "inc/embed";
 @import "inc/breadcrumb";
 @import "inc/container";
 @import "inc/navigation";
@@ -70,6 +83,8 @@
 @import "inc/main";
 @import "inc/entry";
 @import "inc/content";
+@import "inc/documents";
+@import "inc/gallery";
 @import "inc/page";
 @import "inc/footer";
-@import "inc/masthead";
+@import "inc/news";
