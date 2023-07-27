@@ -1,7 +1,7 @@
 <?php
 return [
 	'title' => 'Файлы, документы, изображения',
-	'show_in_templates' => [5],
+	'show_in_templates' => [5, 9],
 //		'show_in_docs' => [ 2 ],
 //		'hide_in_docs' => [ 10, 63 ],
 //		'addType' => 'files',

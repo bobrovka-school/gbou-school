@@ -14,7 +14,7 @@ switch ($e->name) {
 		// Create folders
 		PluginEvolution::createDocFolders($modx, $params);
 		break;
-	// Создание документов pdf, jp(e)g, png, gif, bmp, zip, 7z, rar, doc(x), xls(x),  etc... если они не существуют
+	// Создание документов pdf, jp(e)g, png, gif, (bmp, zip, 7z, rar, doc(x), xls(x), не реализовано...)  etc... если они не существуют
 	case "OnPageNotFound":
 		PluginEvolution::routeNotFound($modx, $params);
 		break;

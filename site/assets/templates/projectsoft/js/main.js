@@ -2135,7 +2135,113 @@
 				_i.addClass('icon-menu-close').removeClass('icon-menu-open')
 			);
 			return !1;
-		});
+		})
+		.on("click", "a[href$='.pdf'], a[href$='.docx'], a[href$='.xlsx']", function(e){
+			var base = window.location.origin + '/',
+				reg = new RegExp("^" + base),
+				href = this.href,
+				test = this.href,
+				go = false,
+				arr = href.split('.'),
+				ext = arr.at(-1).toLowerCase(),
+				options = {};
+			if(reg.test(href)){
+				$(this).data('google', go);
+				$(this).data('options', options);
+				switch (ext){
+					case "pdf":
+						href = href.replace(base, '');
+						go = window.location.origin + '/viewer/pdf_viewer/?file=' + href;
+						options = {
+							src: go,
+							opts : {
+								afterShow : function( instance, current ) {
+									$(".fancybox-content").css({
+										height: '100% !important',
+										overflow: 'hidden'
+									}).addClass('pdf_viewer');
+								},
+								afterLoad : function( instance, current ) {
+									$(".fancybox-content").css({
+										height: '100% !important',
+										overflow: 'hidden'
+									}).addClass('pdf_viewer');
+								},
+							}
+						};
+						e.preventDefault();
+						$.fancybox.open(options);
+						return !1;
+						break;
+					case "xlsx":
+						go = window.location.origin + '/viewer/xlsx_viewer/?file=' + test;
+						options = {
+							src: go,
+							type: 'iframe',
+							opts : {
+								afterShow : function( instance, current ) {
+									$(".fancybox-content").css({
+										height: '100% !important',
+										overflow: 'hidden'
+									}).addClass('xlsx_viewer');
+								},
+								afterLoad : function( instance, current ) {
+									$(".fancybox-content").css({
+										height: '100% !important',
+										overflow: 'hidden'
+									}).addClass('xlsx_viewer');
+								},
+							}
+						};
+						e.preventDefault();
+						$.fancybox.open(options);
+						return !1;
+						break;
+					case "docx":
+						go = window.location.origin + '/viewer/docx_viewer/?file=' + test;
+						options = {
+							src: go,
+							type: 'iframe',
+							opts : {
+								afterShow : function( instance, current ) {
+									$(".fancybox-content").css({
+										height: '100% !important',
+										overflow: 'hidden'
+									}).addClass('docx_viewer');
+								},
+								afterLoad : function( instance, current ) {
+									$(".fancybox-content").css({
+										height: '100% !important',
+										overflow: 'hidden'
+									}).addClass('docx_viewer');
+								},
+							}
+						};
+						e.preventDefault();
+						$.fancybox.open(options);
+						return !1;
+						break;
+				}
+			}
+	})
+	.on("click", "a[href$='.jpg'], a[href$='.jpeg'], a[href$='.png'], a[href$='.gif']", function(e){
+		// Изображения  на сервере
+		var base = window.location.origin,
+			reg = new RegExp("^" + base),
+			href = this.href,
+			$this = $(this);
+		if(reg.test(href)){
+			if(!$this.hasClass("fancybox")){
+				if(typeof $this.data("fancybox") !== "string") {
+					e.preventDefault();
+					$.fancybox.open({
+						src: href
+					});
+					return !1;
+				}
+			}
+		}
+	});
 	new isvek.Bvi({
 		target: '.eya-panel',
 		builtElements: true,
