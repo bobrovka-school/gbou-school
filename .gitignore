@@ -73,6 +73,11 @@ site/assets/plugins/tinymce4/*
 !site/assets/plugins/tinymce4/theme
 site/assets/plugins/tinymce4/theme/*
 !site/assets/plugins/tinymce4/theme/theme.tinymce4.site.inc.php
+!site/assets/plugins/tinymce4/tinymce
+site/assets/plugins/tinymce4/tinymce/*
+!site/assets/plugins/tinymce4/tinymce/plugins
+site/assets/plugins/tinymce4/tinymce/plugins/*
+!site/assets/plugins/tinymce4/tinymce/plugins/emotic
 
 # Plugin Global
 !site/assets/plugins/global
