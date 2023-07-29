@@ -2,9 +2,11 @@
 bower_components
 node_modules
 
-# test
+# test or temp
 test
 tests
+temp
+src/temp
 
 # SublimeText workspace file
 *.sublime-workspace
@@ -63,6 +65,7 @@ site/assets/plugins/pagebuilder/config/*
 !site/assets/plugins/pagebuilder/config/documents.php
 !site/assets/plugins/pagebuilder/config/files.php
 !site/assets/plugins/pagebuilder/config/gallery.php
+!site/assets/plugins/pagebuilder/config/richtext.php
 
 # Plugin TinyMCE4
 !site/assets/plugins/tinymce4

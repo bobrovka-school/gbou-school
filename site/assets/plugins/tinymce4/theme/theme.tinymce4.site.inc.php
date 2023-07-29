@@ -17,7 +17,7 @@
   * */
 
 // Используемые плагины
-$this->set('plugins', 'autolink lists layer table modxlink image emoticons media contextmenu paste visualchars nonbreaking visualblocks charmap wordcount code autoresize template', 'string');
+$this->set('plugins', 'autolink lists layer table modxlink image emoticons emotic media contextmenu paste visualchars nonbreaking visualblocks charmap wordcount code autoresize template', 'string');
 
 // Первая строка тулбара
 $this->set('toolbar1', 'formatselect | undo redo | cut copy paste pastetext | visualchars | visualblocks | code', 'string');
@@ -29,7 +29,7 @@ $this->set('toolbar2', 'bold italic underline strikethrough subscript superscrip
 $this->set('toolbar3', 'image media | link unlink | table | charmap emoticons', 'string');
 
 // Четвёртая строка тулбара (отключаем)
-$this->set('toolbar4', 'template', 'string');
+$this->set('toolbar4', 'template | emotic', 'string');
 
 // Основное меню (отключаем)
 $this->set('menubar', false, 'bool');

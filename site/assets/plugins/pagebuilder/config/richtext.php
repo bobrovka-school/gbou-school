@@ -1,7 +1,7 @@
 <?php
 
 	return [
-		'title' => 'Page Documents',
+		'title' => 'Page Richtext',
 
 		'show_in_templates' => [5, 9, 7],
 
@@ -15,19 +15,14 @@
 
 		'templates' => [
 			'owner' => '
-				<div class="documents">
+				<div class="richtext">
 				[+text:ifnotempty=`<h3 class="text-center news-title">`+][+text+][+text:ifnotempty=`</h3>`+]
-					<ul class="documents--list">
-						[+documents+]
-					</ul>
+					[+documents+]
 				</div>
 			',
 			'documents' => '
-				<li class="documents--list-item">
-					<p>
-						<a target="_blank" href="[+file+]" download="[+text+]">[+text+]</a>
-					</p>
-				</li>
+				[+title:ifnotempty=`<h4 class="text-center news-title">`+][+title+][+title:ifnotempty=`</h4>`+]
+				[+richtext+]
 			',
 		],
 		'fields' => [
@@ -36,16 +31,16 @@
 				'type'    => 'text',
 			],
 			'documents' => [
-				'caption' => 'Документы',
+				'caption' => 'Текстовые блоки',
 				'type'    => 'group',
 				'fields'  => [
-					'text' => [
-						'caption' => 'Название',
+					'title' => [
+						'caption' => 'Заголовок блока (необязательно)',
 						'type'    => 'text',
 					],
-					'file' => [
-						'caption' => 'Файл',
-						'type'    => 'file',
+					'richtext' => [
+						'caption' => 'Текст',
+						'type'    => 'richtext',
 					]
 				]
 			]

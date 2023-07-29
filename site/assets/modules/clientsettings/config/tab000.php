@@ -66,6 +66,42 @@ return array (
 			'note' => 'Фотография Директора',
 			'default_text' => '',
 		),
+		'director_ur_position' => array (
+			'caption' => 'Должность УР',
+			'type' => 'text',
+			'note' => 'Должность УР',
+			'default_text' => 'Зам. директора по УР',
+		),
+		'director_ur' => array (
+			'caption' => 'ФИО УР',
+			'type' => 'text',
+			'note' => 'ФИО по УР (занимающий должность полностью)',
+			'default_text' => 'Саликова Людмила Александровна',
+		),
+		'director_ur_photo' => array (
+			'caption' => 'Фотография УР<br><span style="color: red;">К размеру 300x300</span>',
+			'type' => 'image',
+			'note' => 'Фотография УР',
+			'default_text' => '',
+		),
+		'director_vr_position' => array (
+			'caption' => 'Должность ВР',
+			'type' => 'text',
+			'note' => 'Должность ВР',
+			'default_text' => 'Зам. директора по ВР',
+		),
+		'director_vr' => array (
+			'caption' => 'ФИО ВР',
+			'type' => 'text',
+			'note' => 'ФИО по ВР (занимающий должность полностью)',
+			'default_text' => 'Милёшина Анастасия Геннадьевна',
+		),
+		'director_vr_photo' => array (
+			'caption' => 'Фотография ВР<br><span style="color: red;">К размеру 300x300</span>',
+			'type' => 'image',
+			'note' => 'Фотография ВР',
+			'default_text' => '',
+		),
 		'google_map' => array (
 			'caption' => 'Google Map',
 			'type' => 'text',
