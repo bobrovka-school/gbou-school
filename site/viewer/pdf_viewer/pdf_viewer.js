@@ -949,7 +949,7 @@ const defaultOptions = {
 		kind: OptionKind.VIEWER + OptionKind.PREFERENCE
 	};
 	defaultOptions.sandboxBundleSrc = {
-		value: "../build/pdf.sandbox.js",
+		value: "pdf.js/build/pdf.sandbox.js",
 		kind: OptionKind.VIEWER
 	};
 }
@@ -1633,7 +1633,7 @@ const PDFViewerApplication = {
 			return;
 		}
 		if (_app_options.AppOptions._hasUserOptions()) {
-			console.warn("_readPreferences: The Preferences may override manually set AppOptions; " + 'please use the "disablePreferences"-option in order to prevent that.');
+			//console.warn("_readPreferences: The Preferences may override manually set AppOptions; " + 'please use the "disablePreferences"-option in order to prevent that.');
 		}
 		try {
 			_app_options.AppOptions.setAll(await this.preferences.getAll());
@@ -1986,12 +1986,12 @@ const PDFViewerApplication = {
 	},
 	setTitle(title = this._title) {
 		this._title = title;
-		console.log(this);
+		//console.log(this.pdfDocument);
 		let ext = this._docFilename.split('.').at(-1).toLowerCase(),
 			dwn = document.querySelector("#downloadTag")
 		const editorIndicator = this._hasAnnotationEditors && !this.pdfRenderingQueue.printing,
 			ttl = createTextVersion(`${title}`).trim();
-		if(dwn && this.pdfDocument){
+		if(dwn){
 			let ex = ttl.split('.').at(-1).toLowerCase();
 			let dwnName = ext != ex ? `${ttl}.${ext}` : ttl;
 			dwn.setAttribute('href', this._downloadUrl);
@@ -2460,7 +2460,7 @@ const PDFViewerApplication = {
 				if (!js) {
 					return false;
 				}
-				console.warn("Warning: JavaScript support is not enabled");
+				//console.warn("Warning: JavaScript support is not enabled");
 				return true;
 			});
 			if (!triggerAutoPrint) {
@@ -2490,7 +2490,7 @@ const PDFViewerApplication = {
 		this.metadata = metadata;
 		this._contentDispositionFilename ??= contentDispositionFilename;
 		this._contentLength ??= contentLength;
-		console.log(`PDF ${pdfDocument.fingerprints[0]} [${info.PDFFormatVersion} ` + `${(info.Producer || "-").trim()} / ${(info.Creator || "-").trim()}] ` + `(PDF.js: ${_pdfjsLib.version || "?"} [${_pdfjsLib.build || "?"}])`);
+		//console.log(`PDF ${pdfDocument.fingerprints[0]} [${info.PDFFormatVersion} ` + `${(info.Producer || "-").trim()} / ${(info.Creator || "-").trim()}] ` + `(PDF.js: ${_pdfjsLib.version || "?"} [${_pdfjsLib.build || "?"}])`);
 		let pdfTitle = info.Title;
 		const metadataTitle = metadata?.get("dc:title");
 		if (metadataTitle) {
@@ -2505,15 +2505,15 @@ const PDFViewerApplication = {
 		}
 		if (info.IsXFAPresent && !info.IsAcroFormPresent && !pdfDocument.isPureXfa) {
 			if (pdfDocument.loadingParams.enableXfa) {
-				console.warn("Warning: XFA Foreground documents are not supported");
+				//console.warn("Warning: XFA Foreground documents are not supported");
 			} else {
-				console.warn("Warning: XFA support is not enabled");
+				//console.warn("Warning: XFA support is not enabled");
 			}
 		} else if ((info.IsAcroFormPresent || info.IsXFAPresent) && !this.pdfViewer.renderForms) {
-			console.warn("Warning: Interactive form support is not enabled");
+			//console.warn("Warning: Interactive form support is not enabled");
 		}
 		if (info.IsSignaturesPresent) {
-			console.warn("Warning: Digital signatures validation is not supported");
+			//console.warn("Warning: Digital signatures validation is not supported");
 		}
 		this.eventBus.dispatch("metadataloaded", {
 			source: this
@@ -2942,9 +2942,9 @@ exports.PDFViewerApplication = PDFViewerApplication;
 				return;
 			}
 			const fileOrigin = new URL(file, window.location.href).origin;
-			console.log("fileOriin", fileOrigin);
-			console.log("viewerOrigin", viewerOrigin);
-			console.log("viewerOrigin", viewerOrigin);
+			//console.log("fileOriin", fileOrigin);
+			//console.log("viewerOrigin", viewerOrigin);
+			//console.log("viewerOrigin", viewerOrigin);
 			if (fileOrigin !== viewerOrigin) {
 				throw new Error("file origin does not match viewer's");
 			}
@@ -3024,7 +3024,7 @@ function webViewerInitialized() {
 	if (!PDFViewerApplication.supportsDocumentFonts) {
 		_app_options.AppOptions.set("disableFontFace", true);
 		PDFViewerApplication.l10n.get("web_fonts_disabled").then(msg => {
-			console.warn(msg);
+			//console.warn(msg);
 		});
 	}
 	if (!PDFViewerApplication.supportsPrinting) {
@@ -6653,7 +6653,7 @@ class PDFPresentationMode {
 			annotationEditorMode: null
 		};
 		if (pdfViewer.spreadMode !== _ui_utils.SpreadMode.NONE && !(pdfViewer.pageViewsReady && pdfViewer.hasEqualPageSizes)) {
-			console.warn("Ignoring Spread modes when entering PresentationMode, " + "since the document may contain varying page sizes.");
+			//console.warn("Ignoring Spread modes when entering PresentationMode, " + "since the document may contain varying page sizes.");
 			this.#args.spreadMode = pdfViewer.spreadMode;
 		}
 		if (pdfViewer.annotationEditorMode !== _pdfjsLib.AnnotationEditorType.DISABLE) {
@@ -7221,7 +7221,7 @@ class PDFScriptingManager {
 					});
 					break;
 				case "println":
-					console.log(value);
+					//console.log(value);
 					break;
 				case "zoom":
 					if (isInPresentationMode) {
@@ -7799,7 +7799,7 @@ class PDFThumbnailViewer {
 		this.pageColors = pageColors || null;
 		if (this.pageColors && !(CSS.supports("color", this.pageColors.background) && CSS.supports("color", this.pageColors.foreground))) {
 			if (this.pageColors.background || this.pageColors.foreground) {
-				console.warn("PDFThumbnailViewer: Ignoring `pageColors`-option, since the browser doesn't support the values used.");
+				//console.warn("PDFThumbnailViewer: Ignoring `pageColors`-option, since the browser doesn't support the values used.");
 			}
 			this.pageColors = null;
 		}
@@ -8439,7 +8439,7 @@ class PDFViewer {
 		this.pageColors = options.pageColors || null;
 		if (this.pageColors && !(CSS.supports("color", this.pageColors.background) && CSS.supports("color", this.pageColors.foreground))) {
 			if (this.pageColors.background || this.pageColors.foreground) {
-				console.warn("PDFViewer: Ignoring `pageColors`-option, since the browser doesn't support the values used.");
+				//console.warn("PDFViewer: Ignoring `pageColors`-option, since the browser doesn't support the values used.");
 			}
 			this.pageColors = null;
 		}
@@ -8693,7 +8693,7 @@ class PDFViewer {
 		const optionalContentConfigPromise = pdfDocument.getOptionalContentConfig();
 		const permissionsPromise = this.#enablePermissions ? pdfDocument.getPermissions() : Promise.resolve();
 		if (pagesCount > PagesCountLimit.FORCE_SCROLL_MODE_PAGE) {
-			console.warn("Forcing PAGE-scrolling for performance reasons, given the length of the document.");
+			//console.warn("Forcing PAGE-scrolling for performance reasons, given the length of the document.");
 			const mode = this._scrollMode = _ui_utils.ScrollMode.PAGE;
 			this.eventBus.dispatch("scrollmodechanged", {
 				source: this,
@@ -8743,7 +8743,7 @@ class PDFViewer {
 			if (annotationEditorMode !== _pdfjsLib.AnnotationEditorType.DISABLE) {
 				const mode = annotationEditorMode;
 				if (pdfDocument.isPureXfa) {
-					console.warn("Warning: XFA-editing is not implemented.");
+					//console.warn("Warning: XFA-editing is not implemented.");
 				} else if (isValidAnnotationEditorMode(mode)) {
 					this.#annotationEditorUIManager = new _pdfjsLib.AnnotationEditorUIManager(this.container, this.eventBus, pdfDocument?.annotationStorage);
 					if (mode !== _pdfjsLib.AnnotationEditorType.NONE) {
@@ -12625,7 +12625,7 @@ document.webL10n = function (window, document, undefined) {
 			try {
 				args = JSON.parse(l10nArgs);
 			} catch (e) {
-				console.warn('could not parse arguments for #' + l10nId);
+				//console.warn('could not parse arguments for #' + l10nId);
 			}
 		}
 		return {
@@ -12712,7 +12712,7 @@ document.webL10n = function (window, document, undefined) {
 				xhrLoadText(url, function (content) {
 					parseRawLines(content, false, callback);
 				}, function () {
-					console.warn(url + ' not found.');
+					//console.warn(url + ' not found.');
 					callback();
 				});
 			}
@@ -12757,7 +12757,7 @@ document.webL10n = function (window, document, undefined) {
 		if (langCount === 0) {
 			var dict = getL10nDictionary();
 			if (dict && dict.locales && dict.default_locale) {
-				console.log('using the embedded JSON directory, early way out');
+				//console.log('using the embedded JSON directory, early way out');
 				gL10nData = dict.locales[lang];
 				if (!gL10nData) {
 					var defaultLocale = dict.default_locale.toLowerCase();
@@ -12773,7 +12773,7 @@ document.webL10n = function (window, document, undefined) {
 				}
 				callback();
 			} else {
-				console.log('no resource to load, early way out');
+				//console.log('no resource to load, early way out');
 			}
 			gReadyState = 'complete';
 			return;
@@ -12791,7 +12791,7 @@ document.webL10n = function (window, document, undefined) {
 			var href = link.href;
 			this.load = function (lang, callback) {
 				parseResource(href, lang, callback, function () {
-					console.warn(href + ' not found.');
+					//console.warn(href + ' not found.');
 					console.warn('"' + lang + '" resource not found');
 					gLanguage = '';
 					callback();
@@ -13124,7 +13124,7 @@ document.webL10n = function (window, document, undefined) {
 		};
 		var index = locales2rules[lang.replace(/-.*$/, '')];
 		if (!(index in pluralRules)) {
-			console.warn('plural form unknown for [' + lang + ']');
+			//console.warn('plural form unknown for [' + lang + ']');
 			return function () {
 				return 'other';
 			};
@@ -13155,7 +13155,7 @@ document.webL10n = function (window, document, undefined) {
 	function getL10nData(key, args, fallback) {
 		var data = gL10nData[key];
 		if (!data) {
-			console.warn('#' + key + ' is undefined.');
+			//console.warn('#' + key + ' is undefined.');
 			if (!fallback) {
 				return null;
 			}
@@ -13197,7 +13197,7 @@ document.webL10n = function (window, document, undefined) {
 			if (arg in gL10nData) {
 				return gL10nData[arg];
 			}
-			console.log('argument {{' + arg + '}} for #' + key + ' is undefined.');
+			//console.log('argument {{' + arg + '}} for #' + key + ' is undefined.');
 			return matched_text;
 		});
 	}
@@ -13206,7 +13206,7 @@ document.webL10n = function (window, document, undefined) {
 		if (!l10n.id) return;
 		var data = getL10nData(l10n.id, l10n.args);
 		if (!data) {
-			console.warn('#' + l10n.id + ' is undefined.');
+			//console.warn('#' + l10n.id + ' is undefined.');
 			return;
 		}
 		if (data[gTextProp]) {
@@ -13438,7 +13438,7 @@ PDFPrintService.prototype = {
 			return size.width === this.pagesOverview[0].width && size.height === this.pagesOverview[0].height;
 		}, this);
 		if (!hasEqualPageSizes) {
-			console.warn("Not all pages have the same size. The printed " + "result may be incorrect!");
+			//console.warn("Not all pages have the same size. The printed " + "result may be incorrect!");
 		}
 		this.pageStyleSheet = document.createElement("style");
 		const pageSize = this.pagesOverview[0];
@@ -13531,7 +13531,7 @@ PDFPrintService.prototype = {
 const print = window.print;
 window.print = function () {
 	if (activeService) {
-		console.warn("Ignored window.print() because of a pending print job.");
+		//console.warn("Ignored window.print() because of a pending print job.");
 		return;
 	}
 	ensureOverlay().then(function () {

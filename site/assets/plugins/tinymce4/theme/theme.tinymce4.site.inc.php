@@ -34,8 +34,6 @@ $this->set('toolbar4', 'template | emotic', 'string');
 // Основное меню (отключаем)
 $this->set('menubar', false, 'bool');
 
-// rel="noopener" disabled
-$this->set('allow_unsafe_link_target', true, 'bool');
 
 // Выставляем свой формат выравнивания текста
 $this->set('formats', '{
@@ -106,3 +104,5 @@ $this->set('table_resize_bars', false, 'bool');
 // ???
 $this->set('table_header_type', 'thead', 'string');
 $this->set('visualblocks_default_state', true, 'bool');
+// rel="noopener" disabled
+$this->set('allow_unsafe_link_target', true, 'bool');

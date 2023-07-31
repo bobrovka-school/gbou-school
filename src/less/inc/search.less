@@ -1,0 +1,44 @@
+#search {
+	form {
+		input,
+		button {
+			appearance: none;
+			outline: none !important;
+		}
+		input {
+			&[type=text] {
+				padding: 5px 15px;
+				border: 1px solid #d6d6d6;
+				width: ~'calc(100% -  2.2em)';
+				display: none;
+			}
+		}
+		button {
+			width: 2.2em;
+			float: right;
+			border: unset !important;
+			display: none;
+			user-select: none;
+			&.icon {
+				display: block;
+			}
+		}
+	}
+	&-form {
+		display: block;
+		.clearfix();
+		&.active {
+			input {
+				&[type=text] {
+					display: inline;
+				}
+			}
+			button {
+				display: block;
+				&.icon {
+					display: none;
+				}
+			}
+		}
+	}
+}

@@ -8,6 +8,13 @@
 				<@ELSE><a href="[(site_url)]">[(site_name)]</a><@ENDIF>
 			</p>
 			<p class="site-description">Мы рады видеть Вас на официальном сайте государственного бюджетного общеобразовательного учреждения средней общеобразовательной школы с. Бобровка муниципального района Кинельский Самарской области</p>
+			<div id="search">
+				<form id="search-form" action="/search/" method="GET">
+					<button class="icon-search" type="submit"></button>
+					<button class="icon-search icon" type="button"></button>
+					<input type="text" name="search" value="[!$_GET['search']!]">
+				</form>
+			</div>
 		</div>
 	</div>
 	<div class="header-slick">
