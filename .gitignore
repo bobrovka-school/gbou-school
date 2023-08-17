@@ -28,6 +28,7 @@ site/assets/lib
 site/assets/site
 site/assets/vendor
 site/assets/thumbs
+site/assets/.thumbs
 
 # Snippets
 site/assets/snippets/*
