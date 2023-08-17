@@ -10,6 +10,7 @@ Disallow: /assets/snippets/
 Disallow: /assets/packages/ 
 Disallow: /assets/tvs/
 Disallow: /install/
+Disallow: /search/
 
 Allow: /assets/cache/images/
 Allow: /assets/modules/*.css

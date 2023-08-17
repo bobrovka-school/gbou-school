@@ -10,18 +10,15 @@
 			<p class="site-description">Мы рады видеть Вас на официальном сайте государственного бюджетного общеобразовательного учреждения средней общеобразовательной школы с. Бобровка муниципального района Кинельский Самарской области</p>
 			<div id="search">
 				<form id="search-form" action="/search/" method="GET">
-					<button class="icon-search" type="submit"></button>
-					<button class="icon-search icon" type="button"></button>
-					<input type="text" name="search" value="[!$_GET['search']!]">
+					<input class="bvi-no-styles" type="text" name="text" value="[!$_GET['text']!]" placeholder="Поиск" required>
 				</form>
 			</div>
 		</div>
 	</div>
 	<div class="header-slick">
-		<div id="slick-header">
-			<div class="slick-item"><img src="[(site_url)]assets/templates/projectsoft/images/slider-0001.jpg" alt="[(site_name)]"></div>
-			<div class="slick-item"><img src="[(site_url)]assets/templates/projectsoft/images/slider-0002.jpg" alt="[(site_name)]"></div>
-			<div class="slick-item"><img src="[(site_url)]assets/templates/projectsoft/images/slider-0003.jpg" alt="[(site_name)]"></div>
-		</div>
+		[[multiTV?
+			&fromJson=`[(sliders)]`
+			&tvName=`sliders`
+		]]
 	</div>{{@FILE assets/templates/projectsoft/tpl/menu.html}}
 </div>

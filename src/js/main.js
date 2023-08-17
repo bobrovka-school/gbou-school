@@ -41,27 +41,10 @@
 		dots: false,
 		arrows: true
 	});
-	$('input[name="search"]').on('blur', function(e){
-		let $_this = $(this);
-		setTimeout(function() {
-			$_this.closest('form').removeClass('active');
-		}, 200);
-		
-	});
 	$(document)
 		.on('click', function(e){
 			$('[role="navigation"]').removeClass('open-menu');
 			$('button i').removeClass('icon-menu-close').addClass('icon-menu-open')
-		})
-		.on('click', '.icon-search.icon', function(e) {
-			let frm = $(e.target).closest('form');
-			let txt = $('input[name="search"]', frm);
-			frm.toggleClass('active');
-			setTimeout(function(){
-				txt.focus();
-				txt[0].selectionStart = txt[0].selectionEnd = txt[0].value.length;
-				
-			}, 100);
 		})
 		.on('click', '[data-menu-href]', function(e){
 			e.preventDefault();
@@ -199,8 +182,13 @@
 		builtElements: true,
 		images: true,
 		lang: 'ru-RU',
-		panelFixed: false,
+		panelFixed: true,
 		speech: false,
 		fontSize: 14
+	});
+
+	window.addEventListener('message', function (event) {
+		var message = JSON.parse(event.data);
+		
 	});
 }(jQuery));

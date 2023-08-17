@@ -13,13 +13,12 @@ html(lang="ru" prefix="og: http://ogp.me/ns#")
 							|<@IF:[*id:neq(1)*]>
 							header.entry-header
 								h1.entry-title
-									|[*longtitle*]
+									|[*longtitle:ifempty=`[*pagetitle*]`*]
 							|<@ENDIF>
 							.entry-content
 								|{{@FILE assets/templates/projectsoft/tpl/news.html}}
 				.secondary#secondary(role="complementary")
-					.widgets
-						|
+					|{{@FILE assets/templates/projectsoft/tpl/widgets.html}}
 				.main-footer
 					|{{@FILE assets/templates/projectsoft/tpl/sites_link.html}} 
 			|{{@FILE assets/templates/projectsoft/tpl/footer.html}}

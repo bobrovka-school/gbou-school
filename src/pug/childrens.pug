@@ -12,7 +12,7 @@ html(lang="ru" prefix="og: http://ogp.me/ns#")
 						article(id!="page-[*id*]" class!="page page-[*id*] type-page clearfix")
 							header.entry-header
 								h1.entry-title
-									|[*longtitle*]
+									|[*longtitle:ifempty=`[*pagetitle*]`*]
 							.entry-content
 								|[*content*]
 								.childrens
@@ -37,7 +37,7 @@ html(lang="ru" prefix="og: http://ogp.me/ns#")
 									|	&evenClass=``
 									|]]
 				.secondary#secondary(role="complementary")
-					.widgets
+					|{{@FILE assets/templates/projectsoft/tpl/widgets.html}}
 				.main-footer
 					|{{@FILE assets/templates/projectsoft/tpl/sites_link.html}} 
 			|{{@FILE assets/templates/projectsoft/tpl/footer.html}}

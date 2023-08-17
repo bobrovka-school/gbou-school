@@ -1,44 +1,41 @@
 #search {
 	form {
-		input,
-		button {
+		input {
 			appearance: none;
 			outline: none !important;
 		}
 		input {
 			&[type=text] {
+				float: right;
 				padding: 5px 15px;
 				border: 1px solid #d6d6d6;
-				width: ~'calc(100% -  2.2em)';
-				display: none;
-			}
-		}
-		button {
-			width: 2.2em;
-			float: right;
-			border: unset !important;
-			display: none;
-			user-select: none;
-			&.icon {
-				display: block;
+				background-image: data-uri('../glyphs/search.svg');
+				background-repeat: no-repeat;
+				background-position: 5px center;
+				background-size: auto 70%;
+				padding-left: 2em;
+				transition: width .3s ease;
+				width: 100%;
+				font-size: 16px !important;
+				&:placeholder-shown {
+					width: 6em;
+				}
+				&:focus,
+				&:focus-within,
+				&:focus-visible {
+					width: 100%;
+				}
+				&::placeholder {
+					font-size: 12px !important;
+				}
 			}
 		}
 	}
 	&-form {
 		display: block;
 		.clearfix();
-		&.active {
-			input {
-				&[type=text] {
-					display: inline;
-				}
-			}
-			button {
-				display: block;
-				&.icon {
-					display: none;
-				}
-			}
-		}
 	}
+}
+.evoSearch_highlight {
+	background-color: yellow;
 }

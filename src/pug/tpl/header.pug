@@ -12,15 +12,10 @@
 				|Мы рады видеть Вас на официальном сайте государственного бюджетного общеобразовательного учреждения средней общеобразовательной школы с. Бобровка муниципального района Кинельский Самарской области
 			#search
 				form#search-form(action="/search/" method="GET")
-					button.icon-search(type="submit")
-					button.icon-search.icon(type="button")
-					input(type="text" name="search" value="[!$_GET['search']!]")
+					input(type="text" name="text" value="[!$_GET['text']!]" placeholder="Поиск" required class="bvi-no-styles")
 	.header-slick
-		#slick-header
-			.slick-item
-				img(src="[(site_url)]assets/templates/projectsoft/images/slider-0001.jpg" alt="[(site_name)]")
-			.slick-item
-				img(src="[(site_url)]assets/templates/projectsoft/images/slider-0002.jpg" alt="[(site_name)]")
-			.slick-item
-				img(src="[(site_url)]assets/templates/projectsoft/images/slider-0003.jpg" alt="[(site_name)]")
+		|[[multiTV?
+		|	&fromJson=`[(sliders)]`
+		|	&tvName=`sliders`
+		|]]
 	|{{@FILE assets/templates/projectsoft/tpl/menu.html}}

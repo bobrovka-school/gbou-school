@@ -9,7 +9,7 @@
 					<div id="content" role="main">
 						<article class="page page-[*id*] type-page clearfix" id="page-[*id*]">
 							<header class="entry-header">
-								<h1 class="entry-title">[*longtitle*]</h1>
+								<h1 class="entry-title">[*longtitle:ifempty=`[*pagetitle*]`*]</h1>
 							</header>
 							<div class="entry-content">[*content*]
 								<div class="childrens">
@@ -37,9 +37,7 @@
 						</article>
 					</div>
 				</div>
-				<div class="secondary" id="secondary" role="complementary">
-					<div class="widgets"></div>
-				</div>
+				<div class="secondary" id="secondary" role="complementary">{{@FILE assets/templates/projectsoft/tpl/widgets.html}}</div>
 				<div class="main-footer">{{@FILE assets/templates/projectsoft/tpl/sites_link.html}} </div>
 			</div>{{@FILE assets/templates/projectsoft/tpl/footer.html}}
 		</div>{{@FILE assets/templates/projectsoft/tpl/site_scripts.html}}
