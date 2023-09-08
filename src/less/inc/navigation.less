@@ -39,11 +39,11 @@
 					left: 100%;
 					position: absolute;
 					visibility: hidden;
-					opacity: 0;
+					display: none;
+					//opacity: 0;
 					max-width: 100%;
 					box-shadow: 0 0 1px #fff !important;
-					z-index: -100;
-					transition: opacity .3s ease;
+					//transition: opacity .3s ease;
 					> li {
 						display: flex;
 						position: relative;
@@ -128,7 +128,6 @@
 						display: block;
 						z-index: 1000;
 						visibility: visible;
-						opacity: 1;
 					}
 				}
 			}
@@ -148,7 +147,6 @@
 							position: absolute;
 							display: block;
 							visibility: visible;
-							opacity: 1;
 							z-index: 1000;
 						}
 					}
@@ -223,9 +221,33 @@
 									> li {
 										> a,
 										> span {
-											padding-left: 45px;
+											padding-left: 40px;
 										}
-										
+										> ul {
+											> li {
+												> a,
+												> span {
+													padding-left: 50px;
+												}
+												> ul {
+													> li {
+														> a,
+														> span {
+															padding-left: 60px;
+														}
+														> ul {
+															> li {
+																> a,
+																> span {
+																	padding-left: 70px;
+																}
+																
+															}
+														}
+													}
+												}
+											}
+										}
 									}
 								}
 							}

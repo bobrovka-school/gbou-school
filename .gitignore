@@ -60,6 +60,7 @@ site/assets/plugins/*
 # Custom plugins
 !site/assets/plugins/EvoVideo
 !site/assets/plugins/help_widget
+!site/assets/plugins/mcecss
 
 # Plugin PageBuilder
 !site/assets/plugins/pagebuilder
