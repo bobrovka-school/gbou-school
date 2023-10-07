@@ -18,12 +18,18 @@ body {
 	}
 	> .main {
 		flex: 1 0 auto;
-		padding-top: 2.5em
+		padding-top: 2.5em;
+		padding-left: 15px;
+		padding-right: 15px;
 	}
 	@media screen and (max-width: 910px) {
 		margin-top: unset;
 		margin-bottom: unset;
 		min-height: 100vh;
+		> .main {
+			padding-left: unset;
+			padding-right: unset;
+		}
 	}
 	.eya-panel {
 		position: absolute;
