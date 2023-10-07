@@ -5,7 +5,12 @@ on:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
-
+  workflow_dispatch:
+    inputs:
+        Name:
+            description: Main Branch
+            required: true
+            default: 'Main Branch'
 jobs:
   build:
     runs-on: ubuntu-latest
