@@ -1,11 +1,17 @@
 module.exports = function(grunt) {
+	require('dotenv').config();
+	const DEBUG = parseInt(process.env.DEBUG) || false;
 	var fs = require('fs'),
 		chalk = require('chalk'),
+		PACK = grunt.file.readJSON('package.json'),
 		uniqid = function () {
-			var md5 = require('md5');
-			result = md5((new Date()).getTime()).toString();
-			grunt.verbose.writeln("Generate hash: " + chalk.cyan(result) + " >>> OK");
-			return result;
+			if(DEBUG){
+				var md5 = require('md5');
+				result = md5((new Date()).getTime()).toString();
+				grunt.verbose.writeln("Generate hash: " + chalk.cyan(result) + " >>> OK");
+				return result;
+			}
+			return `v${PACK.version}`;
 		};
 	
 	String.prototype.hashCode = function() {
@@ -20,7 +26,7 @@ module.exports = function(grunt) {
 	};
 	
 	var gc = {
-		fontvers: "1.0.0",
+		fontvers: `${PACK.version}`,
 		assets: "assets/templates/projectsoft",
 		gosave: "site/assets/templates/projectsoft",
 		default: [
@@ -117,7 +123,7 @@ module.exports = function(grunt) {
 	require('time-grunt')(grunt);
 	grunt.initConfig({
 		globalConfig : gc,
-		pkg : grunt.file.readJSON('package.json'),
+		pkg : PACK,
 		clean: {
 			options: {
 				force: true

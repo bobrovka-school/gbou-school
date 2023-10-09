@@ -2,6 +2,9 @@
 bower_components
 node_modules
 
+# dotenv
+.env
+
 # test or temp
 test
 tests
