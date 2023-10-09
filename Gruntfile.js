@@ -31,7 +31,7 @@ module.exports = function(grunt) {
 		gosave: "site/assets/templates/projectsoft",
 		default: [
 			"clean:all",
-			"webfont",
+			//"webfont",
 			"concat",
 			"uglify",
 			//"ttf2eot",
