@@ -158,6 +158,13 @@ module.exports = function(grunt) {
 					'src/js/main.js'
 				],
 				dest: 'test/js/main.js'
+			},
+			main: {
+				src: [
+					//'src/js/jquery.btn.js',
+					'src/js/prism.js'
+				],
+				dest: 'test/js/prism.js'
 			}
 		},
 		uglify: {
@@ -174,6 +181,7 @@ module.exports = function(grunt) {
 						flatten : true,
 						src: [
 							'test/js/appjs.js',
+							'test/js/prism.js',
 							'test/js/main.js'
 						],
 						dest: '<%= globalConfig.gosave %>/js',

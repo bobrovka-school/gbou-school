@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @font-face {
   font-family: "IconsSite";
-  src: url("/assets/templates/projectsoft/fonts/iconssite.woff2?3c11e4dff96231f3d37cd5a65ec8f7b0") format("woff2"), url("/assets/templates/projectsoft/fonts/iconssite.woff?3c11e4dff96231f3d37cd5a65ec8f7b0") format("woff"), url("/assets/templates/projectsoft/fonts/iconssite.ttf?3c11e4dff96231f3d37cd5a65ec8f7b0") format("truetype");
+  src: url("/assets/templates/projectsoft/fonts/iconssite.woff2?7fbd50e710015bf19dd45441660b9c68") format("woff2"), url("/assets/templates/projectsoft/fonts/iconssite.woff?7fbd50e710015bf19dd45441660b9c68") format("woff"), url("/assets/templates/projectsoft/fonts/iconssite.ttf?7fbd50e710015bf19dd45441660b9c68") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -289,84 +289,84 @@
   font-family: 'Roboto';
   font-style: italic;
   font-weight: 100;
-  src: url("/assets/templates/projectsoft/fonts/Roboto-ThinItalic.woff2?3c11e4dff96231f3d37cd5a65ec8f7b0") format("woff2"), url("/assets/templates/projectsoft/fonts/Roboto-ThinItalic.woff?3c11e4dff96231f3d37cd5a65ec8f7b0") format("woff"), url("/assets/templates/projectsoft/fonts/Roboto-ThinItalic.ttf?3c11e4dff96231f3d37cd5a65ec8f7b0") format("truetype");
+  src: url("/assets/templates/projectsoft/fonts/Roboto-ThinItalic.woff2?7fbd50e710015bf19dd45441660b9c68") format("woff2"), url("/assets/templates/projectsoft/fonts/Roboto-ThinItalic.woff?7fbd50e710015bf19dd45441660b9c68") format("woff"), url("/assets/templates/projectsoft/fonts/Roboto-ThinItalic.ttf?7fbd50e710015bf19dd45441660b9c68") format("truetype");
 }
 
 @font-face {
   font-family: 'Roboto';
   font-style: italic;
   font-weight: 300;
-  src: url("/assets/templates/projectsoft/fonts/Roboto-LightItalic.woff2?3c11e4dff96231f3d37cd5a65ec8f7b0") format("woff2"), url("/assets/templates/projectsoft/fonts/Roboto-LightItalic.woff?3c11e4dff96231f3d37cd5a65ec8f7b0") format("woff"), url("/assets/templates/projectsoft/fonts/Roboto-LightItalic.ttf?3c11e4dff96231f3d37cd5a65ec8f7b0") format("truetype");
+  src: url("/assets/templates/projectsoft/fonts/Roboto-LightItalic.woff2?7fbd50e710015bf19dd45441660b9c68") format("woff2"), url("/assets/templates/projectsoft/fonts/Roboto-LightItalic.woff?7fbd50e710015bf19dd45441660b9c68") format("woff"), url("/assets/templates/projectsoft/fonts/Roboto-LightItalic.ttf?7fbd50e710015bf19dd45441660b9c68") format("truetype");
 }
 
 @font-face {
   font-family: 'Roboto';
   font-style: italic;
   font-weight: 400;
-  src: url("/assets/templates/projectsoft/fonts/Roboto-Italic.woff2?3c11e4dff96231f3d37cd5a65ec8f7b0") format("woff2"), url("/assets/templates/projectsoft/fonts/Roboto-Italic.woff?3c11e4dff96231f3d37cd5a65ec8f7b0") format("woff"), url("/assets/templates/projectsoft/fonts/Roboto-Italic.ttf?3c11e4dff96231f3d37cd5a65ec8f7b0") format("truetype");
+  src: url("/assets/templates/projectsoft/fonts/Roboto-Italic.woff2?7fbd50e710015bf19dd45441660b9c68") format("woff2"), url("/assets/templates/projectsoft/fonts/Roboto-Italic.woff?7fbd50e710015bf19dd45441660b9c68") format("woff"), url("/assets/templates/projectsoft/fonts/Roboto-Italic.ttf?7fbd50e710015bf19dd45441660b9c68") format("truetype");
 }
 
 @font-face {
   font-family: 'Roboto';
   font-style: italic;
   font-weight: 500;
-  src: url("/assets/templates/projectsoft/fonts/Roboto-MediumItalic.woff2?3c11e4dff96231f3d37cd5a65ec8f7b0") format("woff2"), url("/assets/templates/projectsoft/fonts/Roboto-MediumItalic.woff?3c11e4dff96231f3d37cd5a65ec8f7b0") format("woff"), url("/assets/templates/projectsoft/fonts/Roboto-MediumItalic.ttf?3c11e4dff96231f3d37cd5a65ec8f7b0") format("truetype");
+  src: url("/assets/templates/projectsoft/fonts/Roboto-MediumItalic.woff2?7fbd50e710015bf19dd45441660b9c68") format("woff2"), url("/assets/templates/projectsoft/fonts/Roboto-MediumItalic.woff?7fbd50e710015bf19dd45441660b9c68") format("woff"), url("/assets/templates/projectsoft/fonts/Roboto-MediumItalic.ttf?7fbd50e710015bf19dd45441660b9c68") format("truetype");
 }
 
 @font-face {
   font-family: 'Roboto';
   font-style: italic;
   font-weight: 700;
-  src: url("/assets/templates/projectsoft/fonts/Roboto-BoldItalic.woff2?3c11e4dff96231f3d37cd5a65ec8f7b0") format("woff2"), url("/assets/templates/projectsoft/fonts/Roboto-BoldItalic.woff?3c11e4dff96231f3d37cd5a65ec8f7b0") format("woff"), url("/assets/templates/projectsoft/fonts/Roboto-BoldItalic.ttf?3c11e4dff96231f3d37cd5a65ec8f7b0") format("truetype");
+  src: url("/assets/templates/projectsoft/fonts/Roboto-BoldItalic.woff2?7fbd50e710015bf19dd45441660b9c68") format("woff2"), url("/assets/templates/projectsoft/fonts/Roboto-BoldItalic.woff?7fbd50e710015bf19dd45441660b9c68") format("woff"), url("/assets/templates/projectsoft/fonts/Roboto-BoldItalic.ttf?7fbd50e710015bf19dd45441660b9c68") format("truetype");
 }
 
 @font-face {
   font-family: 'Roboto';
   font-style: italic;
   font-weight: 900;
-  src: url("/assets/templates/projectsoft/fonts/Roboto-BlackItalic.woff2?3c11e4dff96231f3d37cd5a65ec8f7b0") format("woff2"), url("/assets/templates/projectsoft/fonts/Roboto-BlackItalic.woff?3c11e4dff96231f3d37cd5a65ec8f7b0") format("woff"), url("/assets/templates/projectsoft/fonts/Roboto-BlackItalic.ttf?3c11e4dff96231f3d37cd5a65ec8f7b0") format("truetype");
+  src: url("/assets/templates/projectsoft/fonts/Roboto-BlackItalic.woff2?7fbd50e710015bf19dd45441660b9c68") format("woff2"), url("/assets/templates/projectsoft/fonts/Roboto-BlackItalic.woff?7fbd50e710015bf19dd45441660b9c68") format("woff"), url("/assets/templates/projectsoft/fonts/Roboto-BlackItalic.ttf?7fbd50e710015bf19dd45441660b9c68") format("truetype");
 }
 
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 100;
-  src: url("/assets/templates/projectsoft/fonts/Roboto-Thin.woff2?3c11e4dff96231f3d37cd5a65ec8f7b0") format("woff2"), url("/assets/templates/projectsoft/fonts/Roboto-Thin.woff?3c11e4dff96231f3d37cd5a65ec8f7b0") format("woff"), url("/assets/templates/projectsoft/fonts/Roboto-Thin.ttf?3c11e4dff96231f3d37cd5a65ec8f7b0") format("truetype");
+  src: url("/assets/templates/projectsoft/fonts/Roboto-Thin.woff2?7fbd50e710015bf19dd45441660b9c68") format("woff2"), url("/assets/templates/projectsoft/fonts/Roboto-Thin.woff?7fbd50e710015bf19dd45441660b9c68") format("woff"), url("/assets/templates/projectsoft/fonts/Roboto-Thin.ttf?7fbd50e710015bf19dd45441660b9c68") format("truetype");
 }
 
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 300;
-  src: url("/assets/templates/projectsoft/fonts/Roboto-Light.woff2?3c11e4dff96231f3d37cd5a65ec8f7b0") format("woff2"), url("/assets/templates/projectsoft/fonts/Roboto-Light.woff?3c11e4dff96231f3d37cd5a65ec8f7b0") format("woff"), url("/assets/templates/projectsoft/fonts/Roboto-Light.ttf?3c11e4dff96231f3d37cd5a65ec8f7b0") format("truetype");
+  src: url("/assets/templates/projectsoft/fonts/Roboto-Light.woff2?7fbd50e710015bf19dd45441660b9c68") format("woff2"), url("/assets/templates/projectsoft/fonts/Roboto-Light.woff?7fbd50e710015bf19dd45441660b9c68") format("woff"), url("/assets/templates/projectsoft/fonts/Roboto-Light.ttf?7fbd50e710015bf19dd45441660b9c68") format("truetype");
 }
 
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
-  src: url("/assets/templates/projectsoft/fonts/Roboto-Regular.woff2?3c11e4dff96231f3d37cd5a65ec8f7b0") format("woff2"), url("/assets/templates/projectsoft/fonts/Roboto-Regular.woff?3c11e4dff96231f3d37cd5a65ec8f7b0") format("woff"), url("/assets/templates/projectsoft/fonts/Roboto-Regular.ttf?3c11e4dff96231f3d37cd5a65ec8f7b0") format("truetype");
+  src: url("/assets/templates/projectsoft/fonts/Roboto-Regular.woff2?7fbd50e710015bf19dd45441660b9c68") format("woff2"), url("/assets/templates/projectsoft/fonts/Roboto-Regular.woff?7fbd50e710015bf19dd45441660b9c68") format("woff"), url("/assets/templates/projectsoft/fonts/Roboto-Regular.ttf?7fbd50e710015bf19dd45441660b9c68") format("truetype");
 }
 
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
-  src: url("/assets/templates/projectsoft/fonts/Roboto-Medium.woff2?3c11e4dff96231f3d37cd5a65ec8f7b0") format("woff2"), url("/assets/templates/projectsoft/fonts/Roboto-Medium.woff?3c11e4dff96231f3d37cd5a65ec8f7b0") format("woff"), url("/assets/templates/projectsoft/fonts/Roboto-Medium.ttf?3c11e4dff96231f3d37cd5a65ec8f7b0") format("truetype");
+  src: url("/assets/templates/projectsoft/fonts/Roboto-Medium.woff2?7fbd50e710015bf19dd45441660b9c68") format("woff2"), url("/assets/templates/projectsoft/fonts/Roboto-Medium.woff?7fbd50e710015bf19dd45441660b9c68") format("woff"), url("/assets/templates/projectsoft/fonts/Roboto-Medium.ttf?7fbd50e710015bf19dd45441660b9c68") format("truetype");
 }
 
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
-  src: url("/assets/templates/projectsoft/fonts/Roboto-Bold.woff2?3c11e4dff96231f3d37cd5a65ec8f7b0") format("woff2"), url("/assets/templates/projectsoft/fonts/Roboto-Bold.woff?3c11e4dff96231f3d37cd5a65ec8f7b0") format("woff"), url("/assets/templates/projectsoft/fonts/Roboto-Bold.ttf?3c11e4dff96231f3d37cd5a65ec8f7b0") format("truetype");
+  src: url("/assets/templates/projectsoft/fonts/Roboto-Bold.woff2?7fbd50e710015bf19dd45441660b9c68") format("woff2"), url("/assets/templates/projectsoft/fonts/Roboto-Bold.woff?7fbd50e710015bf19dd45441660b9c68") format("woff"), url("/assets/templates/projectsoft/fonts/Roboto-Bold.ttf?7fbd50e710015bf19dd45441660b9c68") format("truetype");
 }
 
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 900;
-  src: url("/assets/templates/projectsoft/fonts/Roboto-Black.woff2?3c11e4dff96231f3d37cd5a65ec8f7b0") format("woff2"), url("/assets/templates/projectsoft/fonts/Roboto-Black.woff?3c11e4dff96231f3d37cd5a65ec8f7b0") format("woff"), url("/assets/templates/projectsoft/fonts/Roboto-Black.ttf?3c11e4dff96231f3d37cd5a65ec8f7b0") format("truetype");
+  src: url("/assets/templates/projectsoft/fonts/Roboto-Black.woff2?7fbd50e710015bf19dd45441660b9c68") format("woff2"), url("/assets/templates/projectsoft/fonts/Roboto-Black.woff?7fbd50e710015bf19dd45441660b9c68") format("woff"), url("/assets/templates/projectsoft/fonts/Roboto-Black.ttf?7fbd50e710015bf19dd45441660b9c68") format("truetype");
 }
 body,
 button,
@@ -482,6 +482,268 @@ body .bvi-body[data-bvi-images=false] iframe:not(.bvi-no-styles) {
 
 .text-justify {
   text-align: justify;
+}
+code[class*="language-"],
+pre[class*="language-"] {
+  color: black;
+  background: none;
+  text-shadow: 0 1px white;
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  font-size: 1em;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+  tab-size: 4;
+  -webkit-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+pre[class*="language-"]::selection,
+pre[class*="language-"] ::selection,
+code[class*="language-"]::selection,
+code[class*="language-"] ::selection {
+  text-shadow: none;
+  background: #b3d4fc;
+}
+pre[class*="language-"] {
+  padding: 1em;
+  margin: 0.5em 0;
+  overflow: auto;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+  background: #f5f2f0;
+}
+:not(pre) > code[class*="language-"] {
+  padding: 0.1em;
+  border-radius: 0.3em;
+  white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: slategray;
+}
+
+.token.punctuation {
+  color: #999;
+}
+
+.token.namespace {
+  opacity: 0.7;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+  color: #905;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+  color: #690;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+  color: #9a6e3a;
+  background: hsla(0, 0%, 100%, 0.5);
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+  color: #07a;
+}
+
+.token.function,
+.token.class-name {
+  color: #DD4A68;
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+  color: #e90;
+}
+
+.token.important,
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+pre[class*="language-"].line-numbers {
+  position: relative;
+  padding-left: 3.8em;
+  counter-reset: linenumber;
+}
+
+pre[class*="language-"].line-numbers > code {
+  position: relative;
+  white-space: inherit;
+}
+
+.line-numbers .line-numbers-rows {
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  font-size: 100%;
+  left: -3.8em;
+  width: 3em;
+  letter-spacing: -1px;
+  border-right: 1px solid #999;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.line-numbers-rows > span {
+  display: block;
+  counter-increment: linenumber;
+}
+
+.line-numbers-rows > span:before {
+  content: counter(linenumber);
+  color: #999;
+  display: block;
+  padding-right: 0.8em;
+  text-align: right;
+}
+
+div.code-toolbar {
+  position: relative;
+}
+
+div.code-toolbar > .toolbar {
+  position: absolute;
+  z-index: 10;
+  top: 0.3em;
+  right: 0.2em;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0;
+}
+
+div.code-toolbar:hover > .toolbar {
+  opacity: 1;
+}
+div.code-toolbar:focus-within > .toolbar {
+  opacity: 1;
+}
+
+div.code-toolbar > .toolbar > .toolbar-item {
+  display: inline-block;
+}
+
+div.code-toolbar > .toolbar > .toolbar-item > a {
+  cursor: pointer;
+}
+
+div.code-toolbar > .toolbar > .toolbar-item > button {
+  background: none;
+  border: 0;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  overflow: visible;
+  padding: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+div.code-toolbar > .toolbar > .toolbar-item > a,
+div.code-toolbar > .toolbar > .toolbar-item > button,
+div.code-toolbar > .toolbar > .toolbar-item > span {
+  color: #bbb;
+  font-size: 0.8em;
+  padding: 0 0.5em;
+  background: #f5f2f0;
+  background: rgba(224, 224, 224, 0.2);
+  box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.2);
+  border-radius: 0.5em;
+}
+
+div.code-toolbar > .toolbar > .toolbar-item > a:hover,
+div.code-toolbar > .toolbar > .toolbar-item > a:focus,
+div.code-toolbar > .toolbar > .toolbar-item > button:hover,
+div.code-toolbar > .toolbar > .toolbar-item > button:focus,
+div.code-toolbar > .toolbar > .toolbar-item > span:hover,
+div.code-toolbar > .toolbar > .toolbar-item > span:focus {
+  color: inherit;
+  text-decoration: none;
+}
+
+.command-line-prompt {
+  border-right: 1px solid #999;
+  display: block;
+  float: left;
+  font-size: 100%;
+  letter-spacing: -1px;
+  margin-right: 1em;
+  pointer-events: none;
+  text-align: right;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.command-line-prompt > span:before {
+  opacity: 0.7;
+  content: ' ';
+  display: block;
+  padding-right: 0.8em;
+}
+
+.command-line-prompt > span[data-user]:before {
+  content: "[" attr(data-user) "@" attr(data-host) "] $";
+}
+
+.command-line-prompt > span[data-user="root"]:before {
+  content: "[" attr(data-user) "@" attr(data-host) "] #";
+}
+
+.command-line-prompt > span[data-prompt]:before {
+  content: attr(data-prompt);
+}
+
+.command-line-prompt > span[data-continuation-prompt]:before {
+  content: attr(data-continuation-prompt);
+}
+
+.command-line span.token.output {
+  opacity: 0.7;
+}
+
+code[class*=language-],
+pre[class*=language-],
+pre[class*=language-].line-numbers > code {
+  white-space: pre-wrap;
 }
 body.compensate-for-scrollbar {
   overflow: hidden;
@@ -8153,6 +8415,13 @@ body .bvi-body[data-bvi-images=false] .videos--list .bvi-caption-alt {
     padding-left: unset;
     width: unset;
     margin-left: 40px;
+  }
+}
+
+@media print {
+  code[class*="language-"],
+  pre[class*="language-"] {
+    text-shadow: none;
   }
 }
 
