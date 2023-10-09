@@ -1,6 +1,6 @@
 {
 	"name": "bobrovka_site",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Сайт ГБОУ СОШ с. Бобровка",
 	"main": "Grunfile.js",
 	"scripts": {
