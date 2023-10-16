@@ -3,7 +3,7 @@
 	return [
 		'title' => 'Page Documents',
 
-		'show_in_templates' => [5, 9, 7],
+		'show_in_templates' => [5, 9, 8, 7],
 
 //		'show_in_docs' => [ 82 ],
 
