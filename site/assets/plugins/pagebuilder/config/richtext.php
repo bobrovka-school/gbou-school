@@ -3,7 +3,7 @@
 	return [
 		'title' => 'Page Richtext',
 
-		'show_in_templates' => [5, 9, 7],
+		'show_in_templates' => [5, 7, 8, 9],
 
 //		'show_in_docs' => [ 82 ],
 
