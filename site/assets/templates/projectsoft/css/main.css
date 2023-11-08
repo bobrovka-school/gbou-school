@@ -4134,15 +4134,6 @@ body .bvi-body[data-bvi-fontfamily=times]:not(i):not(span):not(.bvi-no-styles) {
   font-family: "Times New roman", serif !important;
 }
 
-body .bvi-body[data-bvi-builtelements=false]:not(.bvi-no-styles) .wp-audio-shortcode,
-body .bvi-body[data-bvi-builtelements=false]:not(.bvi-no-styles) iframe,
-body .bvi-body[data-bvi-builtelements=false]:not(.bvi-no-styles) object,
-body .bvi-body[data-bvi-builtelements=false]:not(.bvi-no-styles) video,
-body .bvi-body[data-bvi-builtelements=false]:not(.bvi-no-styles) ymaps,
-body .bvi-body[data-bvi-builtelements=false]:not(.bvi-no-styles) figure {
-  display: none !important;
-}
-
 body .bvi-body[data-bvi-builtelements=true]:not(.bvi-no-styles) .wp-audio-shortcode,
 body .bvi-body[data-bvi-builtelements=true]:not(.bvi-no-styles) iframe,
 body .bvi-body[data-bvi-builtelements=true]:not(.bvi-no-styles) object,
@@ -4150,6 +4141,15 @@ body .bvi-body[data-bvi-builtelements=true]:not(.bvi-no-styles) video,
 body .bvi-body[data-bvi-builtelements=true]:not(.bvi-no-styles) ymaps,
 body .bvi-body[data-bvi-builtelements=true]:not(.bvi-no-styles) figure {
   display: block !important;
+}
+
+body .bvi-body[data-bvi-builtelements=false]:not(.bvi-no-styles) .wp-audio-shortcode,
+body .bvi-body[data-bvi-builtelements=false]:not(.bvi-no-styles) iframe,
+body .bvi-body[data-bvi-builtelements=false]:not(.bvi-no-styles) object,
+body .bvi-body[data-bvi-builtelements=false]:not(.bvi-no-styles) video,
+body .bvi-body[data-bvi-builtelements=false]:not(.bvi-no-styles) ymaps,
+body .bvi-body[data-bvi-builtelements=false]:not(.bvi-no-styles) figure {
+  display: none !important;
 }
 
 body .bvi-body .bvi-speech {

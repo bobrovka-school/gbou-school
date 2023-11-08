@@ -10,11 +10,9 @@ html(lang="ru" prefix="og: http://ogp.me/ns#")
 				.primary
 					#content(role="main")
 						article(id!="page-[*id*]" class!="page page-[*id*] type-page")
-							|<@IF:[*id:neq(1)*]>
 							header.entry-header
 								h1.entry-title
-									|[*longtitle*]
-							|<@ENDIF>
+									|[*longtitle:ifempty=`[*pagetitle*]`*]
 							.entry-content
 								|{{@FILE assets/templates/projectsoft/tpl/news.html}}
 				.secondary#secondary(role="complementary")
