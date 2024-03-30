@@ -29,6 +29,7 @@ jobs:
             **/viewer/**
             **/assets/templates/projectsoft/images/**
             **/assets/templates/projectsoft/fonts/**
+            **/assets/thumbs/**
       - name: Удаление статус файла
         uses: StephanThierry/ftp-delete-action@v2.1
         with:
