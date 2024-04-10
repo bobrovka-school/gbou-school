@@ -3162,6 +3162,13 @@ body .bvi-body[data-bvi-images=false] .videos--list .bvi-caption-alt {
   text-align: center;
 }
 
+.embed-responsive .mce-object-iframe {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
 @media (max-width: 767px) {
   p.dl-horizontal,
   dl.dl-horizontal {
