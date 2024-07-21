@@ -7454,7 +7454,6 @@ body .bvi-body[data-bvi-builtelements="false"] .embed .embed-responsive {
   position: absolute;
   visibility: hidden;
   display: none;
-  max-width: 100%;
   box-shadow: 0 0 1px #fff !important;
 }
 

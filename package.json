@@ -46,6 +46,7 @@
 		"time-grunt": "git+https://github.com/ProjectSoft-STUDIONIONS/time-grunt.git"
 	},
 	"dependencies": {
-		"less": "^4.2.0"
+		"less": "^4.2.0",
+		"ttf2woff2": "^4.0.5"
 	}
 }
