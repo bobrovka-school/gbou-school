@@ -7358,6 +7358,10 @@ body .bvi-body[data-bvi-builtelements="false"] .embed .embed-responsive {
   font-size: 0.85em;
 }
 
+.breadcrumb > li {
+  display: inlibe;
+}
+
 .breadcrumb > li + li:before {
   padding-right: 0px;
 }

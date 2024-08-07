@@ -16,7 +16,7 @@ jobs:
       - name: Проверка репозитория
         uses: actions/checkout@v4.1.1
 
-      - name: Deploy to Hosting
+      - name: Заливка на сервер
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
           server: ${{ secrets.FTP_SERVER }}
@@ -27,8 +27,6 @@ jobs:
           state-name: .status.json
           exclude: |
             **/viewer/**
-            **/assets/templates/projectsoft/images/**
-            **/assets/templates/projectsoft/fonts/**
             **/assets/thumbs/**
       - name: Удаление статус файла
         uses: StephanThierry/ftp-delete-action@v2.1
