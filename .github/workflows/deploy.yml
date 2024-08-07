@@ -1,4 +1,4 @@
-name: Deploy to Hosting
+name: Залить на сервер
 on:
   schedule:
     # - cron: "0 1 * * 1"
