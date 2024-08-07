@@ -34,7 +34,7 @@
 			},
 			paramPlace: 3,
 			type: 'iframe',
-			url: '//player.vimeo.com/video/$2',
+			url: 'https://player.vimeo.com/video/$2',
 		},
 
 		rutube: {
@@ -44,13 +44,13 @@
 			},
 			paramPlace: 1,
 			type: 'iframe',
-			url: '//rutube.ru/play/embed/$2',
+			url: 'https://rutube.ru/play/embed/$2',
 		},
 
 		instagram: {
 			matcher: /(instagr\.am|instagram\.com)\/p\/([a-zA-Z0-9_\-]+)\/?/i,
 			type: 'image',
-			url: '//$1/p/$2/media/?size=l',
+			url: 'https://$1/p/$2/media/?size=l',
 		},
 
 		// Examples:
@@ -64,7 +64,7 @@
 			type: 'iframe',
 			url: function (rez) {
 				return (
-					'//maps.google.' +
+					'https://maps.google.' +
 					rez[2] +
 					'/?ll=' +
 					(rez[9]

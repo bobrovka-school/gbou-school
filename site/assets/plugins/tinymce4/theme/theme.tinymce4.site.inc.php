@@ -106,3 +106,7 @@ $this->set('table_header_type', 'thead', 'string');
 $this->set('visualblocks_default_state', true, 'bool');
 // rel="noopener" disabled
 $this->set('allow_unsafe_link_target', true, 'bool');
+
+$this->set('image_dimensions', false, 'bool');
+$this->set('image_description', false, 'bool');
+

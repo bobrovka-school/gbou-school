@@ -6,7 +6,7 @@
 			<@IF:[(director:isnotempty}]>
 			<p><strong>[(director)]</strong></p><@ENDIF>
 			<@IF:[(director_photo:isnotempty)]>
-			<p class="widget_director-header-img"><img src="[[thumb? &input=`[(director_photo)]` &options=`w=270,h=270,zc=C`]]" alt="[(director)]"><@IF:[(director:isnotempty}]><span class="bvi-caption-alt">[(director)]</span><@ENDIF></p><@ENDIF>
+			<p class="widget_director-header-img"><img src="[[thumb? &input=`[(director_photo)]` &options=`w=270,h=270,zc=C`]]" alt="[(director)]" loading="lazy"><@IF:[(director:isnotempty}]><span class="bvi-caption-alt">[(director)]</span><@ENDIF></p><@ENDIF>
 		</header>
 		<div class="widget_director-content">
 			<dl><@IF:[(address:isnotempty)]>

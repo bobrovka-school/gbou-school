@@ -13,7 +13,7 @@
 			|<@ENDIF>
 			|<@IF:[(director_photo:isnotempty)]>
 			p.widget_director-header-img
-				img(src!="[[thumb? &input=`[(director_photo)]` &options=`w=270,h=270,zc=C`]]" alt="[(director)]")
+				img(src!="[[thumb? &input=`[(director_photo)]` &options=`w=270,h=270,zc=C`]]" alt="[(director)]" loading="lazy")
 				|<@IF:[(director:isnotempty}]>
 				span.bvi-caption-alt
 					|[(director)]
