@@ -5,6 +5,9 @@ package-lock.json
 # dotenv
 .env
 
+# composer
+SOSH_composer
+
 # test or temp
 test
 tests

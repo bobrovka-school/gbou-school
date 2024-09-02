@@ -7,8 +7,18 @@
 	<meta name="cmsmagazine" content="d8e7426ec72ad3e4ea38b09ebf01284">
 	<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
 	<meta name="yandex-verification" content="[(yandex_verification)]">
-	<style type="text/css"></style>
+	<meta name="color-scheme" content="only light">
+	<meta name="theme-color" content="#ffffff">
 	<title>[*titl*]</title>[*noIndex*]
+	<meta name="title" content="[*pagetitle:notags:strip*]">
+	<meta name="description" content="[*desc:notags:strip*]">
+	<meta name="keywords" content="[*keyw:notags:strip*]">
+	<meta name="author" content="[(site_name)]">
+	<!-- Open Graph-->
+	<meta name="og:url" content="[(site_url)][~[*id*]~]">
+	<meta property="og:type" content="website">
+	<meta name="og:title" content="[*pagetitle:notags:strip*]">
+	<meta name="og:description" content="[*desc:notags:strip*]">[[ogImage]]
 	<!-- Favicons-->
 	<link rel="apple-touch-icon" sizes="57x57" href="[(site_url)]apple-icon-57x57.png">
 	<link rel="apple-touch-icon" sizes="60x60" href="[(site_url)]apple-icon-60x60.png">
@@ -27,22 +37,12 @@
 	<link rel="manifest" href="[(site_url)]manifest.json">
 	<meta name="msapplication-TileColor" content="#ffffff">
 	<meta name="msapplication-TileImage" content="[(site_url)]ms-icon-144x144.png">
-	<meta name="theme-color" content="#ffffff">
 	<link type="text/css" rel="stylesheet" href="[(site_url)]assets/templates/projectsoft/css/main.min.css?v1.0.3">
-	<link type="text/css" rel="stylesheet" href="[(site_url)]css.css?v1.0.3">
 	<meta name="apple-mobile-web-app-title" content="[(site_name:notags:strip)]">
 	<meta name="application-name" content="[(site_name:notags:strip)]">
-	<meta name="title" content="[*pagetitle:notags:strip*]">
-	<meta name="description" content="[*desc:notags:strip*]">
-	<meta name="keywords" content="[*keyw:notags:strip*]">
-	<meta name="author" content="[(site_name)]">
+	<link type="text/css" rel="stylesheet" href="[(site_url)]css.css?v1.0.3">
 	<!-- RSS-->
 	<link rel="alternate" type="application/rss+xml" title="RSS-лента [(site_name)]" href="[(site_url)]rss.xml"><@IF:[*id:is(2)*]>
 	<!-- Canonical-->
 	<link rel="canonical" href="[(site_url)][~[*id*]~]"><@ENDIF>
-	<!-- Open Graph-->
-	<meta name="og:url" content="[(site_url)][~[*id*]~]">
-	<meta property="og:type" content="website">
-	<meta name="og:title" content="[*pagetitle:notags:strip*]">
-	<meta name="og:description" content="[*desc:notags:strip*]">[[ogImage]]
 </head>
