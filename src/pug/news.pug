@@ -14,6 +14,8 @@ html(lang="ru" prefix="og: http://ogp.me/ns#")
 								h1.entry-title
 									|[*pagetitle*]
 							.entry-content
+								|[*content*]
+							.entry-content
 								//- Новости
 								|<@IF:[*id:is(2)*]>
 								|{{@FILE assets/templates/projectsoft/tpl/news.html}}
