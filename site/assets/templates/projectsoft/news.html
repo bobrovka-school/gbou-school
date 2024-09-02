@@ -11,7 +11,14 @@
 							<header class="entry-header">
 								<h1 class="entry-title">[*pagetitle*]</h1>
 							</header>
-							<div class="entry-content">{{@FILE assets/templates/projectsoft/tpl/news.html}}</div>
+							<div class="entry-content">
+								<@IF:[*id:is(2)*]>
+								{{@FILE assets/templates/projectsoft/tpl/news.html}}
+								<@ENDIF>
+								<@IF:[*id:is(128)*]>
+								{{@FILE assets/templates/projectsoft/tpl/news_tochka.html}}
+								<@ENDIF>
+							</div>
 						</article>
 					</div>
 				</div>

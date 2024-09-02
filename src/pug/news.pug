@@ -14,7 +14,19 @@ html(lang="ru" prefix="og: http://ogp.me/ns#")
 								h1.entry-title
 									|[*pagetitle*]
 							.entry-content
+								//- Новости
+								|<@IF:[*id:is(2)*]>
 								|{{@FILE assets/templates/projectsoft/tpl/news.html}}
+								|<@ENDIF>
+								//- Мероприятия Точка роста
+								|<@IF:[*id:is(128)*]>
+								|{{@FILE assets/templates/projectsoft/tpl/news_tochka.html}}
+								|<@ENDIF>
+								//- Детский садик Если будет нужно - подставить id ресурса
+									|<@IF:[*id:is()*]>
+									|{{@FILE assets/templates/projectsoft/tpl/news_spds.html}}
+									|<@ENDIF>
+				
 				.secondary#secondary(role="complementary")
 					|{{@FILE assets/templates/projectsoft/tpl/widgets.html}}
 				.main-footer
