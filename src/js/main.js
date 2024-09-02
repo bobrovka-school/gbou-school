@@ -25,6 +25,9 @@
 			$style.innerText = `body.fancybox-active.compensate-for-scrollbar .bodywrapp::after {background-position: calc(100% - ${wr}px) 0;}`;
 		}
 	};
+	$.fancybox.defaults.beforeShow = function(instance, slide) {
+		console.log(slide);
+	};
 	$.fancybox.defaults.afterClose = function(instance, slide) {
 		$style.innerText = ``;
 	};
