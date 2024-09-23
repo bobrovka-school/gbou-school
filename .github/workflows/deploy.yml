@@ -29,6 +29,7 @@ jobs:
           exclude: |
             **/viewer/**
             **/assets/thumbs/**
+            **/Hyphenopoly/**
       - name: Удаление статус файла
         uses: StephanThierry/ftp-delete-action@v2.1
         with:
