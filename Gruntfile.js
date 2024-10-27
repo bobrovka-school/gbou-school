@@ -256,28 +256,6 @@ module.exports = function(grunt) {
 					]
 				}
 			},
-			viewer: {
-				options : {
-					compress: false,
-					ieCompat: false,
-					plugins: [
-						new NpmImportPlugin({prefix: '~'})
-					],
-					modifyVars: {
-						'hashes': '\'' + uniqid() + '\'',
-						'fontpath': '/<%= globalConfig.assets %>/fonts',
-						'imgpath': '/<%= globalConfig.assets %>/images',
-						'white': '#ffffff',
-						'bgcolor': '#0098ff',
-						'padding': '15px',
-					}
-				},
-				files : {
-					'test/css/style.css' : [
-						'site/icons-full/style.less'
-					]
-				}
-			}
 		},
 		autoprefixer:{
 			options: {
@@ -296,13 +274,6 @@ module.exports = function(grunt) {
 					]
 				}
 			},
-			viewer: {
-				files: {
-					'test/css/prefix.style.css' : [
-						'test/css/style.css'
-					]
-				}
-			}
 		},
 		group_css_media_queries: {
 			group: {
@@ -311,11 +282,6 @@ module.exports = function(grunt) {
 					'test/css/media/tinymce.css': ['test/css/prefix.tinymce.css']
 				}
 			},
-			viewer: {
-				files: {
-					'test/css/media/style.css': ['test/css/prefix.style.css']
-				}
-			}
 		},
 		replace: {
 			css: {
@@ -371,31 +337,6 @@ module.exports = function(grunt) {
 					}
 				]
 			},
-			viewer: {
-				options: {
-					patterns: [
-						{
-							match: /\/\*.+?\*\//gs,
-							replacement: ''
-						},
-						{
-							match: /\r?\n\s+\r?\n/g,
-							replacement: '\n'
-						}
-					]
-				},
-				files: [
-					{
-						expand: true,
-						flatten : true,
-						src: [
-							'test/css/media/style.css'
-						],
-						dest: 'site/icons-full/',
-						filter: 'isFile'
-					}
-				]
-			},
 		},
 		cssmin: {
 			options: {
@@ -406,11 +347,6 @@ module.exports = function(grunt) {
 				files: {
 					'<%= globalConfig.gosave %>/css/main.min.css' : ['test/css/replace/main.css'],
 					'<%= globalConfig.gosave %>/css/tinymce.min.css' : ['test/css/replace/tinymce.css']
-				}
-			},
-			viewer: {
-				files: {
-					'site/icons-full/style.min.css' : ['site/icons-full/style.css']
 				}
 			},
 		},
@@ -633,11 +569,4 @@ module.exports = function(grunt) {
 	grunt.registerTask('fonts',		gc.fonts);
 	grunt.registerTask('html',		gc.pug);
 	grunt.registerTask('speed',		gc.speed);
-	grunt.registerTask('viewer',		[
-		"less:viewer",
-		"autoprefixer:viewer",
-		"group_css_media_queries:viewer",
-		"replace:viewer",
-		"cssmin:viewer"
-	]);
 };
