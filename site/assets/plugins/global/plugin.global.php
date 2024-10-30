@@ -94,6 +94,11 @@ switch ($e->name) {
 				$modx->invokeEvent('OnPageNotFound');
 			endif;
 		endif;
+		if(isset($_GET["p"]) || isset($_GET['page_id'])):
+			$responseCode = 'HTTP/1.0 404 Not Found';
+			header($responseCode);
+			$modx->invokeEvent('OnPageNotFound');
+		endif;
 		PluginEvolution::minifyHTML($modx);
 		break;
 }
