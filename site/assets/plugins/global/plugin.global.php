@@ -94,11 +94,11 @@ switch ($e->name) {
 				$modx->invokeEvent('OnPageNotFound');
 			endif;
 		endif;
+		// Удалим из поиска старые параметры страниц, которые не используются нашей системой.
 		if(isset($_GET["p"]) || isset($_GET['page_id'])):
 			$responseCode = 'HTTP/1.0 404 Not Found';
 			header($responseCode);
-			$modx->sendForward($id, $responseCode);
-			//$modx->invokeEvent('OnPageNotFound');
+			$modx->invokeEvent('OnPageNotFound');
 		endif;
 		PluginEvolution::minifyHTML($modx);
 		break;
