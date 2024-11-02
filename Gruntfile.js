@@ -165,7 +165,7 @@ module.exports = function(grunt) {
 				],
 				dest: 'test/js/main.js'
 			},
-			main: {
+			prism: {
 				src: [
 					//'src/js/jquery.btn.js',
 					'src/js/prism.js'
