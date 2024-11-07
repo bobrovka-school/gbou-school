@@ -9,6 +9,9 @@
 					right: 0;
 				}
 			}
+			.error_list {
+				color: red !important;
+			}
 		}
 	}
 	&-title {
@@ -31,7 +34,7 @@
 				width: 100%;
 				padding-left: 22px;
 				padding-right: 22px;
-				padding-top: 0.6em;
+				padding-top: 1em;
 				padding-bottom: 0.6em;
 				line-height: 1.5em;
 				margin-top: 0.3em;
@@ -41,22 +44,24 @@
 				border-radius: 0.2em;
 				outline: unset!important;
 				user-select: auto;
+				height: unset;
 				~label {
 					background-color: transparent;
 					position: absolute;
 					line-height: 1;
-					top: 1.2em;
+					top: 1em;
 					left: 15px;
 					pointer-events: none;
 					padding: 0 7px;
 					color: #888;
 					transition: all .3s ease;
-					font-size: .8em;
+					font-size: 1.1em;
 					user-select: none!important;
 					white-space: nowrap!important;
 					max-width: ~"calc(100% - 30px)";
 					border-top-left-radius: 3px;
 					border-top-right-radius: 3px;
+					pointer-events: none;
 				}
 				&::placeholder {
 					color: transparent!important;
@@ -66,8 +71,9 @@
 				&:focus {
 					box-shadow: 0 0 3px 0px #333;
 					~label {
-						top: -0.4em;
-						background-color: #fff;
+						top: .7em;
+						background-color: transparent;
+						font-size: 0.7em;
 						color: #333;
 					}
 				}
