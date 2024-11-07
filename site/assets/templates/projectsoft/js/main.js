@@ -2113,6 +2113,13 @@
 		dots: false,
 		arrows: true
 	});
+	/**
+	 ** Phone mask
+	**/
+	$('input[name="phone"]').inputmask({"mask": "+7(999)999-99-99"});
+	/**
+	 ** End Phone mask
+	 **/
 	$(document)
 		.on('click', function(e){
 			$('[role="navigation"]').removeClass('open-menu');
@@ -2252,6 +2259,65 @@
 				}
 			}
 		}
+	})
+	/**
+	 * Форма обратной связи
+	 **/
+	.on("click", '*[data-trigger="sendbot"]', function(e){
+		e.preventDefault();
+		let $this = $(e.target),
+			$data = $("#" + $this.data('trigger'));
+		if($data.length){
+			/**/
+			$.fancybox.open($data, {
+				modal: true,
+				infobar: false,
+				clickOutside: false,
+				buttons: [
+					"close"
+				],
+			});
+			/**/
+		}
+		return !1;
+	})
+	.on('submit', 'form', function(e){
+		e.preventDefault();
+		const $form = $(e.target).closest('.modal-form'),
+			data = new FormData(e.target),
+			url = e.target.action,
+			method = e.target.method;
+		//return !1;
+		/**/
+		$("body").addClass('formSend');
+		$.ajax({
+			url: url,
+			type: method,
+			data: data,
+			async: true,
+			cache: false,
+			contentType: false,
+			processData: false,
+			dataType: 'json'
+		}).done(function(a, b, c) {
+			if(a.forms) {
+				if(a.forms.form) {
+					let form = $(a.forms.form),
+						modal = $('.modal-form', form);
+					$form.html(modal.html());
+					$('input[name="phone"]').inputmask({"mask": "+7(999)999-99-99"});
+				}
+			};
+		})
+		.fail(function(a, b, c, d) {
+			console.log('fail');
+			console.log(arguments);
+		})
+		.always(function() {
+			$("body").removeClass('formSend');
+		});
+		return !1;
+		/**/
 	});
 	new isvek.Bvi({
 		target: '.eya-panel',
