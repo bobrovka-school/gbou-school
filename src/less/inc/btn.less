@@ -5,27 +5,33 @@
 		position: relative;
 		overflow: hidden;
 		white-space: nowrap;
-		color: #3a3d41;
-		border: 1px solid #3a3d41;
-		background-color: #fff;
+		color: @btn-form-color;
+		border: 1px solid @btn-box-shadow-color;
+		background-color: @btn-form-background-color;
 		border-radius: 0;
 	}
 	&-default {
 		&:hover {
-			background-color: #3a3d41;
-			color: #ffffff;
-			border-color: #3a3d41;
+			background-color: @btn-form-color;
+			color: @btn-form-background-color;
+			border-color: @btn-border-color;
 		}
 		&:active {
-			color: #fff;
-			background-color: #3a3d41;
-			background-image: none;
-			border-color: #3a3d41;
+			&,
+			&:hover {
+				color: @btn-form-background-color;
+				background-color: @btn-form-color;
+				background-image: none;
+				border-color: @btn-border-color;
+			}
 		}
 		&:focus {
-			color: #fff;
-			background-color: #3a3d41;
-			border-color: #3a3d41;
+			&,
+			&:active {
+				color: @btn-form-background-color;
+				background-color: @btn-form-color;
+				border-color: @btn-border-color;
+			}
 		}
 	}
 	&.more {
