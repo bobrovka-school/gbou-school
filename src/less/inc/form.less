@@ -99,4 +99,33 @@
 			}
 		}
 	}
+	&Send {
+		position: relative;
+		&::before,
+		&::after {
+			content: "";
+			position: fixed;
+			display: block;
+			z-index: 99999999999999999;
+		}
+		&::before {
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			width: 100vw;
+			height: 100vh;
+			background-color: rgba(0, 0, 0, .3);
+		}
+		&::after {
+			width: 100px;
+			height: 100px;
+			left: ~'calc(50vw - 50px)';
+			top: ~'calc(50vh - 50px)';
+			background-image: data-uri('../images/preload.svg');
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-size: contain;
+		}
+	}
 }
