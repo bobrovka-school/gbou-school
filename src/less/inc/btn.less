@@ -1,6 +1,6 @@
 .btn {
 	text-decoration: none !important;
-	&-default
+	&-default,
 	&.more {
 		position: relative;
 		overflow: hidden;
@@ -9,9 +9,23 @@
 		border: 1px solid #3a3d41;
 		background-color: #fff;
 		border-radius: 0;
+	}
+	&-default {
 		&:hover {
 			background-color: #3a3d41;
 			color: #ffffff;
+			border-color: #3a3d41;
+		}
+		&:active {
+			color: #fff;
+			background-color: #3a3d41;
+			background-image: none;
+			border-color: #3a3d41;
+		}
+		&:focus {
+			color: #fff;
+			background-color: #3a3d41;
+			border-color: #3a3d41;
 		}
 	}
 	&.more {
