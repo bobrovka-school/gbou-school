@@ -3,7 +3,7 @@
 	<article class="widget_director">
 		<header class="widget_director-header"><@IF:[(director_position:isnotempty)]>
 			<h3 class="widget_director-title"><strong>[(director_position)]:</strong></h3><@ENDIF>
-			<@IF:[(director:isnotempty}]>
+			<@IF:[(director:isnotempty)]>
 			<p><strong>[(director)]</strong></p><@ENDIF>
 			<@IF:[(director_photo:isnotempty)]>
 			<p class="widget_director-header-img"><img src="[[thumb? &input=`[(director_photo)]` &options=`w=270,h=270,zc=C`]]" alt="[(director)]" loading="lazy"><@IF:[(director:isnotempty}]><span class="bvi-caption-alt">[(director)]</span><@ENDIF></p><@ENDIF>
