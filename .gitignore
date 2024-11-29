@@ -60,6 +60,9 @@ site/assets/modules/clientsettings/*
 site/assets/modules/clientsettings/config/*
 !site/assets/modules/clientsettings/config/*.php
 
+# Generate OpenGraph Image
+!site/assets/modules/renderogimage
+
 # Plugins
 site/assets/plugins/*
 
