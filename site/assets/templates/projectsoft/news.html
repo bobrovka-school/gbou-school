@@ -1,5 +1,55 @@
 <!DOCTYPE html>
-<html lang="ru" prefix="og: http://ogp.me/ns#">{{@FILE assets/templates/projectsoft/tpl/head.html}}
+<html lang="ru" prefix="og: http://ogp.me/ns#">
+	<head>
+		<base href="[(site_url)]">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="cmsmagazine" content="d8e7426ec72ad3e4ea38b09ebf01284">
+		<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+		<meta name="yandex-verification" content="[(yandex_verification)]">
+		<meta name="color-scheme" content="only light">
+		<meta name="theme-color" content="#ffffff">
+		<title>[*titl*]</title>[*noIndex*]
+		<meta name="title" content="[*pagetitle:notags:strip*]">
+		<meta name="description" content="[*desc:notags:strip*]">
+		<meta name="keywords" content="[*keyw:notags:strip*]">
+		<meta name="author" content="[(site_name)]">
+		<!-- Open Graph-->
+		<meta name="og:url" content="[(site_url)][~[*id*]~]">
+		<meta property="og:type" content="website">
+		<meta name="og:title" content="[*pagetitle:notags:strip*]">
+		<meta name="og:description" content="[*desc:notags:strip*]">[[ogImage]]
+		<!-- Favicons-->
+		<link rel="apple-touch-icon" sizes="57x57" href="[(site_url)]apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="[(site_url)]apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="[(site_url)]apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="[(site_url)]apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="[(site_url)]apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="[(site_url)]apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="[(site_url)]apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="[(site_url)]apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="[(site_url)]/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192" href="[(site_url)]android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="[(site_url)]favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="[(site_url)]favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="[(site_url)]favicon-16x16.png">
+		<link rel="icon" type="image/ico" href="[(site_url)]favicon.ico">
+		<link rel="manifest" href="[(site_url)]manifest.json">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="[(site_url)]ms-icon-144x144.png">
+		<meta name="apple-mobile-web-app-title" content="[(site_name:notags:strip)]">
+		<meta name="application-name" content="[(site_name:notags:strip)]">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&amp;display=swap" rel="stylesheet">
+		<link type="text/css" rel="stylesheet" href="[(site_url)]assets/templates/projectsoft/css/main.min.css?22f5eeeaf5200c24524feea7da5c3d83">
+		<link type="text/css" rel="stylesheet" href="[(site_url)]css.css?22f5eeeaf5200c24524feea7da5c3d83">
+		<!-- RSS-->
+		<link rel="alternate" type="application/rss+xml" title="RSS-лента [(site_name)]" href="[(site_url)]rss.xml"><@IF:[*id:is(2)*]>
+		<!-- Canonical-->
+		<link rel="canonical" href="[(site_url)][~[*id*]~]"><@ENDIF>
+	</head>
 	<body>
 		<div class="body bvi-no-styles">
 			<div class="eya-panel"><a href="javascript:;" title="Версия для слабовидящих"><i class="icon-eye-new"></i>Версия для слабовидящих</a></div>
@@ -54,12 +104,11 @@
 						&stateClass=`stateClass`
 						&&urlScheme=`full`
 					!]
-					<@IF:[*id:neq(1)*]>
 					[!DLCrumbs
+						&hideMain=`1`
 						&showCurrent=`1`
 						&ownerTPL=`@CODE:<nav><ul class="breadcrumb bvi-no-styles" aria-label="Breadcrumb" itemscope itemtype="http://schema.org/BreadcrumbList">[+crumbs.wrap+]</ul></nav>`
 					!]
-					<@ENDIF>
 				</div>
 			</header>
 			<div class="main">
@@ -87,9 +136,60 @@
 						</article>
 					</div>
 				</div>
-				<div class="secondary" id="secondary" role="complementary">{{@FILE assets/templates/projectsoft/tpl/widgets.html}}</div>
-				<div class="main-footer">{{@FILE assets/templates/projectsoft/tpl/sites_link.html}}</div>{{@FILE assets/templates/projectsoft/tpl/sendbot.html}}
-			</div>{{@FILE assets/templates/projectsoft/tpl/footer.html}}
-		</div>{{@FILE assets/templates/projectsoft/tpl/site_scripts.html}}
+				<div class="secondary" id="secondary" role="complementary">
+					<div class="widgets">
+						<@IF:[*id:is(1)*]>
+						{{@FILE assets/templates/projectsoft/tpl/widget_director.html}}
+						<@ENDIF>
+					</div>[[multiTV?
+						&fromJson=`[(widgets_bar)]`
+						&tvName=`widgets_bar`
+						&display=`all`
+					]]
+				</div>
+				<div class="main-footer">
+					[[multiTV? 
+						&fromJson=`[(govlist)]` 
+						&tvName=`govlist`
+						&display=`all`
+					]]
+				</div>
+				<!--InitFormSendBot-->
+				[!FormLister?
+					&controller=`Form`
+					&formid=`sendbot`
+					&config=`sendbot:/comon/json`
+					&to=`[(email_to)]`
+					&noemail=`true`
+				!]
+				<!--FormSendBot-->
+			</div>
+			<footer class="footer bvi-no-styles" id="colophon" role="contentinfo">
+				<div class="container bvi-no-styles">
+					<div class="footer-row bvi-no-styles">
+						<div class="footer-col-left bvi-no-styles">
+							<p class="bvi-no-styles">
+								Авторские права © [!$_SERVER['REQUEST_TIME']:dateFormat='Y'!]
+								&nbsp;<a class="bvi-no-styles" href="[(site_url)]">ГБОУ СОШ с. Бобровка м. р. Кинельский Самарской области</a>
+							</p>
+						</div>
+						<div class="footer-col-center bvi-no-styles">
+							<p class="bvi-no-styles"><a class="bvi-no-styles icon-rss" href="[(site_url)]rss.xml" target="_blank"></a></p>
+						</div>
+						<div class="footer-col-right bvi-no-styles">
+							<p class="bvi-no-styles">
+								Developed by:
+								&nbsp;<a class="bvi-no-styles" href="https://github.com/ProjectSoft-STUDIONIONS" target="_blank">ProjectSoft © 2000 - [!$_SERVER['REQUEST_TIME']:dateFormat='Y'!]</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<div class="fancybox__wrapper"></div>
+		</div>
+		<script src="assets/templates/projectsoft/js/appjs.min.js?22f5eeeaf5200c24524feea7da5c3d83"></script>
+		<script src="assets/templates/projectsoft/js/main.min.js?22f5eeeaf5200c24524feea7da5c3d83"></script>
+		<script src="assets/templates/projectsoft/js/prism.min.js?22f5eeeaf5200c24524feea7da5c3d83"></script>
+		<!-- Метрика-->{{yandexMetrica}}
 	</body>
 </html>

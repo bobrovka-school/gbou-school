@@ -54,12 +54,11 @@
 						&stateClass=`stateClass`
 						&&urlScheme=`full`
 					!]
-					<@IF:[*id:neq(1)*]>
 					[!DLCrumbs
+						&hideMain=`1`
 						&showCurrent=`1`
 						&ownerTPL=`@CODE:<nav><ul class="breadcrumb bvi-no-styles" aria-label="Breadcrumb" itemscope itemtype="http://schema.org/BreadcrumbList">[+crumbs.wrap+]</ul></nav>`
 					!]
-					<@ENDIF>
 				</div>
 			</header>
 			<div class="main">
@@ -78,9 +77,60 @@
 						</article>
 					</div>
 				</div>
-				<div class="secondary" id="secondary" role="complementary">{{@FILE assets/templates/projectsoft/tpl/widgets.html}}</div>
-				<div class="main-footer">{{@FILE assets/templates/projectsoft/tpl/sites_link.html}}</div>{{@FILE assets/templates/projectsoft/tpl/sendbot.html}}
-			</div>{{@FILE assets/templates/projectsoft/tpl/footer.html}}
-		</div>{{@FILE assets/templates/projectsoft/tpl/site_scripts.html}}
+				<div class="secondary" id="secondary" role="complementary">
+					<div class="widgets">
+						<@IF:[*id:is(1)*]>
+						{{@FILE assets/templates/projectsoft/tpl/widget_director.html}}
+						<@ENDIF>
+					</div>[[multiTV?
+						&fromJson=`[(widgets_bar)]`
+						&tvName=`widgets_bar`
+						&display=`all`
+					]]
+				</div>
+				<div class="main-footer">
+					[[multiTV? 
+						&fromJson=`[(govlist)]` 
+						&tvName=`govlist`
+						&display=`all`
+					]]
+				</div>
+				<!--InitFormSendBot-->
+				[!FormLister?
+					&controller=`Form`
+					&formid=`sendbot`
+					&config=`sendbot:/comon/json`
+					&to=`[(email_to)]`
+					&noemail=`true`
+				!]
+				<!--FormSendBot-->
+			</div>
+			<footer class="footer bvi-no-styles" id="colophon" role="contentinfo">
+				<div class="container bvi-no-styles">
+					<div class="footer-row bvi-no-styles">
+						<div class="footer-col-left bvi-no-styles">
+							<p class="bvi-no-styles">
+								Авторские права © [!$_SERVER['REQUEST_TIME']:dateFormat='Y'!]
+								&nbsp;<a class="bvi-no-styles" href="[(site_url)]">ГБОУ СОШ с. Бобровка м. р. Кинельский Самарской области</a>
+							</p>
+						</div>
+						<div class="footer-col-center bvi-no-styles">
+							<p class="bvi-no-styles"><a class="bvi-no-styles icon-rss" href="[(site_url)]rss.xml" target="_blank"></a></p>
+						</div>
+						<div class="footer-col-right bvi-no-styles">
+							<p class="bvi-no-styles">
+								Developed by:
+								&nbsp;<a class="bvi-no-styles" href="https://github.com/ProjectSoft-STUDIONIONS" target="_blank">ProjectSoft © 2000 - [!$_SERVER['REQUEST_TIME']:dateFormat='Y'!]</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<div class="fancybox__wrapper"></div>
+		</div>
+		<script src="assets/templates/projectsoft/js/appjs.min.js?e70967888b91106fedeaaaae53f9cd10"></script>
+		<script src="assets/templates/projectsoft/js/main.min.js?e70967888b91106fedeaaaae53f9cd10"></script>
+		<script src="assets/templates/projectsoft/js/prism.min.js?e70967888b91106fedeaaaae53f9cd10"></script>
+		<!-- Метрика-->{{yandexMetrica}}
 	</body>
 </html>

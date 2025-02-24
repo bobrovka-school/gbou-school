@@ -101,6 +101,6 @@ switch ($e->name) {
 			header($responseCode);
 			$modx->invokeEvent('OnPageNotFound');
 		endif;
-		PluginEvolution::minifyHTML($modx);
+		// PluginEvolution::minifyHTML($modx);
 		break;
 }

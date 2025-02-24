@@ -43,9 +43,9 @@ html(lang="ru" prefix="og: http://ogp.me/ns#")
 							|   &noneWrapOuter=`0`
 							|]]
 				.secondary#secondary(role="complementary")
-					|{{@FILE assets/templates/projectsoft/tpl/widgets.html}}
+					include tpl/widgets.pug
 				.main-footer
-					|{{@FILE assets/templates/projectsoft/tpl/sites_link.html}}
-				|{{@FILE assets/templates/projectsoft/tpl/sendbot.html}}
-			|{{@FILE assets/templates/projectsoft/tpl/footer.html}}
-		|{{@FILE assets/templates/projectsoft/tpl/site_scripts.html}}
+					include tpl/sites_link.pug
+				include tpl/sendbot.pug
+			include tpl/footer.pug
+		include tpl/site_scripts.pug
