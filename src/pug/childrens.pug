@@ -5,7 +5,7 @@ html(lang="ru" prefix="og: http://ogp.me/ns#")
 		.body.bvi-no-styles
 			include inc/eya.pug
 			header#masthead(role="banner")
-				|{{@FILE assets/templates/projectsoft/tpl/header.html}}
+				include tpl/header.pug
 			.main
 				.primary
 					#content(role="main")
@@ -16,7 +16,7 @@ html(lang="ru" prefix="og: http://ogp.me/ns#")
 							.entry-content
 								|[*content*]
 								.childrens
-									// Вывод дочерних ресурсов
+									//- Вывод дочерних ресурсов
 									|[[DLMenu?
 									|	&parents=`[*id*]`
 									|	&maxDepth=`1`

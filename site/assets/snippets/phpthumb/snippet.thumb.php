@@ -40,6 +40,7 @@ $phpThumbPath = isset($phpThumbPath) ? $phpThumbPath : 'assets/snippets/phpthumb
  * @see: https://github.com/kalessil/phpinspectionsea/blob/master/docs/probable-bugs.md#mkdir-race-condition
  */
 $path = MODX_BASE_PATH . $cacheFolder;
+
 if (!file_exists($path) && mkdir($path) && is_dir($path)) {
     chmod($path, $newFolderAccessMode);
 }
