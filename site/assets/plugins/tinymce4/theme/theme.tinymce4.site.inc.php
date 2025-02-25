@@ -67,6 +67,9 @@ $this->set('formats', '{
 			}
 		}', 'json');
 
+// Классы для ссылок
+$this->set('link_class_list', '[{title: "None", value: ""},{title: "Видео с RUTUBE, YouTube", value: "fancybox-video"}]', 'json' );
+
 // Классы для таблицы
 $this->set('table_class_list', '[
 		{title: "None", value: "table"},

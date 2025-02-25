@@ -36,6 +36,10 @@ html(lang="ru" prefix="og: http://ogp.me/ns#")
 								|<@IF:[*id:is(136)*]>
 								|{{@FILE assets/templates/projectsoft/tpl/news_muzey.html}}
 								|<@ENDIF>
+								//- День победы
+								|<@IF:[*id:is(70)*]>
+								|{{@FILE assets/templates/projectsoft/tpl/news_victory.html}}
+								|<@ENDIF>
 				//- Виджеты
 				.secondary#secondary(role="complementary")
 					include tpl/widgets.pug

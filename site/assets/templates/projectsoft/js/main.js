@@ -2261,6 +2261,26 @@
 		}
 	})
 	/**
+	 * Ссылка на видео с RUTUBE или YouTube
+	 */
+	.on("click", "a.fancybox-video", function(e){
+		let href = this.href,
+			$this = $(this),
+			regYT = /(youtube\.com|youtu\.be|youtube\-nocookie\.com)\/(watch\?(.*&)?v=|v\/|u\/|embed\/?)?(videoseries\?list=(.*)|[\w-]{11}|\?listType=(.*)&list=(.*))(.*)/i,
+			regRUT = /^https?:\/\/rutube.ru\/(?:video|shorts)\/(.*\/)?([\w]+)(.*)\/?/;
+		if(regYT.test(href) || regRUT.test(href)) {
+			if ('fancybox' in $this.data()) {
+				e.preventDefault();
+				return !1;
+			}else{
+				e.preventDefault();
+				$this.attr("data-fancybox", "");
+				$this.click();
+				return !1;
+			}
+		}
+	})
+	/**
 	 * Форма обратной связи
 	 **/
 	.on("click", '*[data-trigger="sendbot"]', function(e){
