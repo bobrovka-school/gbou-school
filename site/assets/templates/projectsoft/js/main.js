@@ -2282,11 +2282,14 @@
 		return !1;
 	})
 	.on('submit', 'form', function(e){
-		e.preventDefault();
 		const $form = $(e.target).closest('.modal-form'),
 			data = new FormData(e.target),
 			url = e.target.action,
 			method = e.target.method;
+		if(!$form.length){
+			return;
+		}
+		e.preventDefault();
 		//return !1;
 		/**/
 		$("body").addClass('formSend');

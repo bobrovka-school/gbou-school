@@ -1,12 +1,16 @@
 doctype html
 html(lang="ru" prefix="og: http://ogp.me/ns#")
-	|{{@FILE assets/templates/projectsoft/tpl/head.html}}
+	//- Блок head
+	include tpl/head.pug
 	body
 		.body.bvi-no-styles
+			//- Кнопка «Версия для слабовидящих»
 			include inc/eya.pug
+			//- Шапка сайта
 			header#masthead(role="banner")
 				include tpl/header.pug
 			.main
+				//- Основной контент
 				.primary
 					#content(role="main")
 						article(id!="page-[*id*]" class!="page page-[*id*] type-page")
@@ -15,10 +19,15 @@ html(lang="ru" prefix="og: http://ogp.me/ns#")
 									|[*longtitle:ifempty=`[*pagetitle*]`*]
 							.entry-content
 								|{{@FILE assets/templates/projectsoft/tpl/lessions.html}}
+				//- Виджеты
 				.secondary#secondary(role="complementary")
 					include tpl/widgets.pug
+				//- Ссылки на сайты РФ
 				.main-footer
 					include tpl/sites_link.pug
+				//- Форма обратной связи
 				include tpl/sendbot.pug
+			//- Подвал
 			include tpl/footer.pug
+		//- Подключение скриптов
 		include tpl/site_scripts.pug

@@ -1,19 +1,23 @@
 #search {
 	form {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: end;
 		input {
 			appearance: none;
 			outline: none !important;
 		}
 		input {
+			&[type=search],
 			&[type=text] {
-				float: right;
 				padding: 5px 15px;
 				border: 1px solid #d6d6d6;
-				background-image: data-uri('../glyphs/search.svg');
-				background-repeat: no-repeat;
-				background-position: 5px center;
-				background-size: auto 70%;
-				padding-left: 2em;
+				//background-image: data-uri('../glyphs/search.svg');
+				//background-repeat: no-repeat;
+				//background-position: 5px center;
+				//background-size: auto 70%;
+				//padding-left: 2em;
 				transition: width .3s ease;
 				width: 100%;
 				font-size: 16px !important;
@@ -30,10 +34,11 @@
 				}
 			}
 		}
-	}
-	&-form {
-		display: block;
-		.clearfix();
+		.btn,
+		.btn-default {
+			border: 1px solid #d6d6d6;
+			border-left-width: 0;
+		}
 	}
 }
 .evoSearch_highlight {

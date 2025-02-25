@@ -9,17 +9,15 @@
 	<meta name="yandex-verification" content="[(yandex_verification)]">
 	<meta name="color-scheme" content="only light">
 	<meta name="theme-color" content="#ffffff">
-	<title>[*titl*]</title>[*noIndex*]
+	<title>[*titl*]</title>
 	<meta name="title" content="[*pagetitle:notags:strip*]">
 	<meta name="description" content="[*desc:notags:strip*]">
 	<meta name="keywords" content="[*keyw:notags:strip*]">
 	<meta name="author" content="[(site_name)]">
-	<!-- Open Graph-->
 	<meta name="og:url" content="[(site_url)][~[*id*]~]">
 	<meta property="og:type" content="website">
 	<meta name="og:title" content="[*pagetitle:notags:strip*]">
-	<meta name="og:description" content="[*desc:notags:strip*]">[[ogImage]]
-	<!-- Favicons-->
+	<meta name="og:description" content="[*desc:notags:strip*]">
 	<link rel="apple-touch-icon" sizes="57x57" href="[(site_url)]apple-icon-57x57.png">
 	<link rel="apple-touch-icon" sizes="60x60" href="[(site_url)]apple-icon-60x60.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="[(site_url)]apple-icon-72x72.png">
@@ -42,10 +40,16 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&amp;display=swap" rel="stylesheet">
-	<link type="text/css" rel="stylesheet" href="[(site_url)]assets/templates/projectsoft/css/main.min.css?a496d94300b35073be500df0eaade637">
-	<link type="text/css" rel="stylesheet" href="[(site_url)]css.css?a496d94300b35073be500df0eaade637">
-	<!-- RSS-->
+	<link type="text/css" rel="stylesheet" href="[(site_url)]assets/templates/projectsoft/css/main.min.css?2f924a5810c75849b56e04b201a736d5">
+	<link type="text/css" rel="stylesheet" href="[(site_url)]css.css?2f924a5810c75849b56e04b201a736d5">
 	<link rel="alternate" type="application/rss+xml" title="RSS-лента [(site_name)]" href="[(site_url)]rss.xml"><@IF:[*id:is(2)*]>
-	<!-- Canonical-->
 	<link rel="canonical" href="[(site_url)][~[*id*]~]"><@ENDIF>
+	[[DocLister?
+		&parents=`[*id*]`
+		&maxDepth=`1`
+		&showParent=`0`
+		&urlScheme=`full`
+		&ownerTPL=`@CODE: <style>[+wrap+]</style>`
+		&rowTpl=`@CODE: /** **/`
+	]]
 </head>

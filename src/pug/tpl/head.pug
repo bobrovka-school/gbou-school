@@ -10,18 +10,18 @@ head
 	meta(name="theme-color" content="#ffffff")
 	title
 		|[*titl*]
-	|[*noIndex*]
+	//- |[*noIndex*]
 	meta(name="title" content="[*pagetitle:notags:strip*]")
 	meta(name="description" content="[*desc:notags:strip*]")
 	meta(name="keywords" content="[*keyw:notags:strip*]")
 	meta(name="author" content="[(site_name)]")
-	// Open Graph
+	//- Open Graph
 	meta(name="og:url" content="[(site_url)][~[*id*]~]")
 	meta(property="og:type" content="website")
 	meta(name="og:title" content="[*pagetitle:notags:strip*]")
 	meta(name="og:description" content="[*desc:notags:strip*]")
-	|[[ogImage]]
-	// Favicons
+	//- |[[ogImage]]
+	//- Favicons
 	link(rel="apple-touch-icon" sizes="57x57" href="[(site_url)]apple-icon-57x57.png")
 	link(rel="apple-touch-icon" sizes="60x60" href="[(site_url)]apple-icon-60x60.png")
 	link(rel="apple-touch-icon" sizes="72x72" href="[(site_url)]apple-icon-72x72.png")
@@ -46,9 +46,17 @@ head
 	link(href="https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap" rel="stylesheet")
 	link(type="text/css" rel="stylesheet" href="[(site_url)]assets/templates/projectsoft/css/main.min.css?" + hash)
 	link(type="text/css" rel="stylesheet" href="[(site_url)]css.css?" + hash)
-	// RSS
+	//- RSS
 	link(rel="alternate" type="application/rss+xml" title="RSS-лента [(site_name)]" href="[(site_url)]rss.xml")
+	//- Canonical
 	|<@IF:[*id:is(2)*]>
-	// Canonical
 	link(rel="canonical" href="[(site_url)][~[*id*]~]")
 	|<@ENDIF>
+	|[[DocLister?
+	|	&parents=`[*id*]`
+	|	&maxDepth=`1`
+	|	&showParent=`0`
+	|	&urlScheme=`full`
+	|	&ownerTPL=`@CODE: <style>[+wrap+]</style>`
+	|	&rowTpl=`@CODE: /** **/`
+	|]]

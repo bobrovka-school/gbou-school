@@ -10,7 +10,7 @@
 	&innerRowTpl=`@CODE:<li class="[+classNames+] bvi-no-styles" itemprop="itemListElement" itemscope itemtype="http://schema.org/ItemList"><a class="bvi-no-styles" itemprop="url" href="[+url+]">[+title+]</a><meta itemprop="name" content="[+title:notags:strip+]"></li>`
 	&innerRowHereTpl=`@CODE:<li class="[+classNames+] bvi-no-styles" itemprop="itemListElement" itemscope itemtype="http://schema.org/ItemList"><a class="bvi-no-styles" itemprop="url" href="[+url+]">[+title+]</a><meta itemprop="name" content="[+title:notags:strip+]"></li>`
 	&parents=`0`
-	&&addWhereList=`hidemenu = 0 AND parent NOT IN(2, 98, 57)`
+	&addWhereList=`hidemenu = 0 AND parent NOT IN(2, 98, 57)`
 	&showParent=`1`
 	&innerClass=`inner`
 	&outerClass=`outer`
@@ -25,10 +25,5 @@
 	&oddClass=``
 	&evenClass=``
 	&stateClass=`stateClass`
-	&&urlScheme=`full`
-!]
-[!DLCrumbs
-	&hideMain=`1`
-	&showCurrent=`1`
-	&ownerTPL=`@CODE:<nav><ul class="breadcrumb bvi-no-styles" aria-label="Breadcrumb" itemscope itemtype="http://schema.org/BreadcrumbList">[+crumbs.wrap+]</ul></nav>`
+	&urlScheme=`full`
 !]
