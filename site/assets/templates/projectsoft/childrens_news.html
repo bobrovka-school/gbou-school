@@ -41,8 +41,8 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&amp;display=swap" rel="stylesheet">
-		<link type="text/css" rel="stylesheet" href="[(site_url)]assets/templates/projectsoft/css/main.min.css?be0bfa736e2115ccd0fe93f89a101d34">
-		<link type="text/css" rel="stylesheet" href="[(site_url)]css.css?be0bfa736e2115ccd0fe93f89a101d34">
+		<link type="text/css" rel="stylesheet" href="[(site_url)]assets/templates/projectsoft/css/main.min.css?e3ad3a0ba5af7206e1666064ffb662cb">
+		<link type="text/css" rel="stylesheet" href="[(site_url)]css.css?e3ad3a0ba5af7206e1666064ffb662cb">
 		<link rel="alternate" type="application/rss+xml" title="RSS-лента [(site_name)]" href="[(site_url)]rss.xml"><@IF:[*id:is(2)*]>
 		<link rel="canonical" href="[(site_url)][~[*id*]~]"><@ENDIF>
 		[[DocLister?
@@ -151,7 +151,7 @@
 								  &tvSortType=`TVDATETIME`
 								  &prepare=`\ProjectSoft\PrepareDL::prepareItem`
 								  &noneTPL=``
-								  &ownerTPL=`@CODE: <div class="row"><div class="container-fluid content news hyphenation">[+dl.wrap+]</div></div>`
+								  &ownerTPL=`@CODE: <div class="row"><div class="container-fluid content news hyphenation"><h2 class="text-center">[*titleNews*]</h2>[+dl.wrap+]</div></div>`
 								  &tpl=`@FILE:projectsoft/tpl/news_tpl`
 								  &showParent=`0`
 								  &urlScheme=`full`
@@ -224,9 +224,9 @@
 			</footer>
 			<div class="fancybox__wrapper"></div>
 		</div>
-		<script src="assets/templates/projectsoft/js/appjs.min.js?be0bfa736e2115ccd0fe93f89a101d34"></script>
-		<script src="assets/templates/projectsoft/js/main.min.js?be0bfa736e2115ccd0fe93f89a101d34"></script>
-		<script src="assets/templates/projectsoft/js/prism.min.js?be0bfa736e2115ccd0fe93f89a101d34"></script>
+		<script src="assets/templates/projectsoft/js/appjs.min.js?e3ad3a0ba5af7206e1666064ffb662cb"></script>
+		<script src="assets/templates/projectsoft/js/main.min.js?e3ad3a0ba5af7206e1666064ffb662cb"></script>
+		<script src="assets/templates/projectsoft/js/prism.min.js?e3ad3a0ba5af7206e1666064ffb662cb"></script>
 		<!-- Метрика-->{{yandexMetrica}}
 	</body>
 </html>
