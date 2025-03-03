@@ -54,7 +54,7 @@ html(lang="ru" prefix="og: http://ogp.me/ns#")
 								|   &tvSortType=`TVDATETIME`
 								|   &prepare=`\ProjectSoft\PrepareDL::prepareItem`
 								|   &noneTPL=``
-								|   &ownerTPL=`@CODE: <div class="row"><div class="container-fluid content news hyphenation"><h2 class="text-center">[*titleNews*]</h2>[+dl.wrap+]</div></div>`
+								|   &ownerTPL=`@CODE: <div class="row"><div class="container-fluid content news hyphenation">[*titleNews:isnotempty:then('<h2 class="text-center">[*titleNews*]</h2>')*][+dl.wrap+]</div></div>`
 								|   &tpl=`@FILE:projectsoft/tpl/news_tpl`
 								|   &showParent=`0`
 								|   &urlScheme=`full`
