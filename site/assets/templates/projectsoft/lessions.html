@@ -41,8 +41,8 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&amp;display=swap" rel="stylesheet">
-		<link type="text/css" rel="stylesheet" href="[(site_url)]assets/templates/projectsoft/css/main.min.css?e5444cf324ea542c2283ed825d8c8269">
-		<link type="text/css" rel="stylesheet" href="[(site_url)]css.css?e5444cf324ea542c2283ed825d8c8269">
+		<link type="text/css" rel="stylesheet" href="[(site_url)]assets/templates/projectsoft/css/main.min.css?cc8b7386414942967091d36ec96167b1">
+		<link type="text/css" rel="stylesheet" href="[(site_url)]css.css?cc8b7386414942967091d36ec96167b1">
 		<link rel="alternate" type="application/rss+xml" title="RSS-лента [(site_name)]" href="[(site_url)]rss.xml"><@IF:[*id:is(2)*]>
 		<link rel="canonical" href="[(site_url)][~[*id*]~]"><@ENDIF>
 		[[DocLister?
@@ -104,6 +104,11 @@
 						&evenClass=``
 						&stateClass=`stateClass`
 						&urlScheme=`full`
+					!]
+					[!DLCrumbs
+						&hideMain=`0`
+						&showCurrent=`1`
+						&ownerTPL=`@CODE:<nav><ul class="breadcrumb bvi-no-styles" aria-label="Breadcrumb" itemscope itemtype="http://schema.org/BreadcrumbList">[+crumbs.wrap+]</ul></nav>`
 					!]
 				</div>
 			</header>
@@ -169,9 +174,9 @@
 			</footer>
 			<div class="fancybox__wrapper"></div>
 		</div>
-		<script src="assets/templates/projectsoft/js/appjs.min.js?e5444cf324ea542c2283ed825d8c8269"></script>
-		<script src="assets/templates/projectsoft/js/main.min.js?e5444cf324ea542c2283ed825d8c8269"></script>
-		<script src="assets/templates/projectsoft/js/prism.min.js?e5444cf324ea542c2283ed825d8c8269"></script>
+		<script src="assets/templates/projectsoft/js/appjs.min.js?cc8b7386414942967091d36ec96167b1"></script>
+		<script src="assets/templates/projectsoft/js/main.min.js?cc8b7386414942967091d36ec96167b1"></script>
+		<script src="assets/templates/projectsoft/js/prism.min.js?cc8b7386414942967091d36ec96167b1"></script>
 		<!-- Метрика-->{{yandexMetrica}}
 	</body>
 </html>
