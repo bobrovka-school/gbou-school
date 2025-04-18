@@ -12,14 +12,10 @@
 	},
 	"build_systems": [
 		{
-			"name": "Build Site Project",
+			"name": "Запуск полной сборки проекта",
 			"working_dir": "${project_path}",
-			"shell_cmd": "npm run build"
-		},
-		{
-			"name": "Site Project Install",
-			"working_dir": "${project_path}",
-			"shell_cmd": "npm i --legacy-peer-deps && bower install"
+			"cmd": ["start", "/wait", "npm", "run", "build"],
+			"shell": true
 		}
 	]
 }
