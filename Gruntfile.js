@@ -34,10 +34,15 @@ module.exports = function(grunt) {
 			"webfont",
 			"concat",
 			"uglify",
+
+			// Если нужно перегенерировать шрифты - раскоментировать
 			//"ttf2woff",
 			//"ttf2woff2",
+
+			// Если нужно оптимизировать новые изображения - раскоментировать
 			//"imagemin",
 			//"tinyimg",
+
 			"less",
 			"autoprefixer",
 			"group_css_media_queries",
