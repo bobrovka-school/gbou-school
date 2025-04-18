@@ -68,19 +68,22 @@
 					|<@ENDIF>
 					|<@IF:[(ok_link_group:isnotempty)]>
 					p
-						i.icon-vk
+						i.icon-ok
 						a(href="[(ok_link_group)]" target="_blank")
 							|Группа в Одноклассеиках
 					|<@ENDIF>
 					|<@IF:[(rutube_link_group:isnotempty)]>
 					p
-						i.icon-vk
+						i.icon-rutube
 						a(href="[(rutube_link_group)]" target="_blank")
 							|Канал на RUTUBE
 					|<@ENDIF>
 					|<@IF:[(tlg_link_group:isnotempty)]>
 					p
-						i.icon-vk
+						i.icon-telegram
 						a(href="[(tlg_link_group)]" target="_blank")
 							|Канал в Telegram
 					|<@ENDIF>
+			p.text-center
+				button.callme-btn.btn.btn-default(type="button" data-trigger="sendbot")
+					|ФОРМА ОБРАТНОЙ СВЯЗИ
