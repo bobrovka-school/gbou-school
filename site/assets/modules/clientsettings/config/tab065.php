@@ -24,7 +24,7 @@ return array (
 		'rutube_link_group' => array (
 			'caption' => 'Ссылка на канал RUTUBE',
 			'type' => 'text',
-			'note' => 'Получить с помощю Бота https://t.me/username_to_id_bot',
+			'note' => '',
 			'default_text' => '',
 		),
 	),

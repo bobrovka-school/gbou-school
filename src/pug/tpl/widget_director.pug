@@ -60,8 +60,27 @@
 						i.icon-home
 						a(href="[(site_url)]" target="_blank")
 							|[(site_url)]
-					// Добавить в модуль группы!!!
+					|<@IF:[(vk_link_group:isnotempty)]>
 					p
 						i.icon-vk
-						a(href="https://vk.com/club196971711" target="_blank")
+						a(href="[(vk_link_group)]" target="_blank")
 							|Группа в ВКонтакте
+					|<@ENDIF>
+					|<@IF:[(ok_link_group:isnotempty)]>
+					p
+						i.icon-vk
+						a(href="[(ok_link_group)]" target="_blank")
+							|Группа в Одноклассеиках
+					|<@ENDIF>
+					|<@IF:[(rutube_link_group:isnotempty)]>
+					p
+						i.icon-vk
+						a(href="[(rutube_link_group)]" target="_blank")
+							|Канал на RUTUBE
+					|<@ENDIF>
+					|<@IF:[(tlg_link_group:isnotempty)]>
+					p
+						i.icon-vk
+						a(href="[(tlg_link_group)]" target="_blank")
+							|Канал в Telegram
+					|<@ENDIF>

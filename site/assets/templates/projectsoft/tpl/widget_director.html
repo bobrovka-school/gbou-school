@@ -34,9 +34,14 @@
 					<p><strong>Сайт:</strong></p>
 				</dt>
 				<dd>
-					<p><i class="icon-home"></i><a href="[(site_url)]" target="_blank">[(site_url)]</a></p>
-					<!-- Добавить в модуль группы!!!-->
-					<p><i class="icon-vk"></i><a href="https://vk.com/club196971711" target="_blank">Группа в ВКонтакте</a></p>
+					<p><i class="icon-home"></i><a href="[(site_url)]" target="_blank">[(site_url)]</a></p><@IF:[(vk_link_group:isnotempty)]>
+					<p><i class="icon-vk"></i><a href="[(vk_link_group)]" target="_blank">Группа в ВКонтакте</a></p><@ENDIF>
+					<@IF:[(ok_link_group:isnotempty)]>
+					<p><i class="icon-vk"></i><a href="[(ok_link_group)]" target="_blank">Группа в Одноклассеиках</a></p><@ENDIF>
+					<@IF:[(rutube_link_group:isnotempty)]>
+					<p><i class="icon-vk"></i><a href="[(rutube_link_group)]" target="_blank">Канал на RUTUBE</a></p><@ENDIF>
+					<@IF:[(tlg_link_group:isnotempty)]>
+					<p><i class="icon-vk"></i><a href="[(tlg_link_group)]" target="_blank">Канал в Telegram</a></p><@ENDIF>
 				</dd>
 			</dl>
 		</div>
